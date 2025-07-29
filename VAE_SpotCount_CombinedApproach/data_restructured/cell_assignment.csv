@@ -1,0 +1,5801 @@
+cell,leiden_final
+1,Endothelial
+2,Smooth Muscle
+3,Smooth Muscle
+4,Smooth Muscle
+5,Smooth Muscle
+6,Smooth Muscle
+7,Smooth Muscle
+8,Telocyte
+9,Smooth Muscle
+10,Telocyte
+11,Smooth Muscle
+12,Smooth Muscle
+13,ICC
+14,ICC
+15,Smooth Muscle
+16,Smooth Muscle
+17,Smooth Muscle
+18,Stromal
+19,Stromal
+20,Smooth Muscle
+21,Smooth Muscle
+22,Smooth Muscle
+23,Smooth Muscle
+24,Smooth Muscle
+25,Smooth Muscle
+26,Smooth Muscle
+27,Smooth Muscle
+28,ICC
+29,Smooth Muscle
+30,Smooth Muscle
+31,Smooth Muscle
+32,Removed
+33,Smooth Muscle
+34,Removed
+35,Smooth Muscle
+36,Smooth Muscle
+37,Smooth Muscle
+38,Smooth Muscle
+39,Macrophage + DC
+40,Stromal
+41,Telocyte
+42,Smooth Muscle
+43,Telocyte
+44,Removed
+45,Smooth Muscle
+46,Smooth Muscle
+47,Telocyte
+48,Smooth Muscle
+49,Smooth Muscle
+50,Stromal
+51,Smooth Muscle
+52,Smooth Muscle
+53,Smooth Muscle
+54,Endothelial
+55,Smooth Muscle
+56,Smooth Muscle
+57,Stromal
+58,Stromal
+59,Smooth Muscle
+60,Stromal
+61,Smooth Muscle
+62,Smooth Muscle
+63,Stromal
+64,Stromal
+65,Stromal
+66,Smooth Muscle
+67,Removed
+68,Smooth Muscle
+69,Removed
+70,Smooth Muscle
+71,ICC
+72,Removed
+73,Removed
+74,Stromal
+75,Smooth Muscle
+76,Smooth Muscle
+77,Smooth Muscle
+78,Smooth Muscle
+79,Smooth Muscle
+80,Smooth Muscle
+81,Stromal
+82,Stromal
+83,Macrophage + DC
+84,Removed
+85,Smooth Muscle
+86,Removed
+87,Smooth Muscle
+88,Smooth Muscle
+89,Macrophage + DC
+90,Removed
+91,Paneth
+92,Paneth
+93,Smooth Muscle
+94,Smooth Muscle
+95,Smooth Muscle
+96,Stromal
+97,Removed
+98,Smooth Muscle
+99,Paneth
+100,Smooth Muscle
+101,Smooth Muscle
+102,Smooth Muscle
+103,Smooth Muscle
+104,Telocyte
+105,Paneth
+106,Smooth Muscle
+107,Removed
+108,Removed
+109,Smooth Muscle
+110,Paneth
+111,Telocyte
+112,Stromal
+113,Removed
+114,Stromal
+115,Macrophage + DC
+116,Stromal
+117,Stromal
+118,Removed
+119,Removed
+120,Smooth Muscle
+121,Smooth Muscle
+122,Macrophage + DC
+123,B (Plasma)
+124,Macrophage + DC
+125,Smooth Muscle
+126,Stromal
+127,Stromal
+128,Telocyte
+129,Smooth Muscle
+130,Removed
+131,Paneth
+132,Removed
+133,T (CD4+)
+134,B (Plasma)
+135,Smooth Muscle
+136,Smooth Muscle
+137,Paneth
+138,Smooth Muscle
+139,Smooth Muscle
+140,Smooth Muscle
+141,Removed
+142,Stromal
+143,Paneth
+144,Paneth
+145,Paneth
+146,Smooth Muscle
+147,Paneth
+148,Paneth
+149,Telocyte
+150,Smooth Muscle
+151,ICC
+152,Smooth Muscle
+153,B (Plasma)
+154,Paneth
+155,Smooth Muscle
+156,Stromal
+157,Paneth
+158,Paneth
+159,Smooth Muscle
+160,Endothelial
+161,Stromal
+162,Stromal
+163,Smooth Muscle
+164,Removed
+165,Paneth
+166,Removed
+167,Smooth Muscle
+168,Stromal
+169,Smooth Muscle
+170,Endothelial
+171,Stromal
+172,Stromal
+173,Endothelial
+174,Smooth Muscle
+175,Smooth Muscle
+176,Paneth
+177,Paneth
+178,Telocyte
+179,Smooth Muscle
+180,Myenteric Plexus
+181,Smooth Muscle
+182,T (CD4+)
+183,Paneth
+184,Paneth
+185,Paneth
+186,Smooth Muscle
+187,Removed
+188,Myenteric Plexus
+189,Myenteric Plexus
+190,Removed
+191,Stromal
+192,Removed
+193,Paneth
+194,ICC
+195,Paneth
+196,Paneth
+197,Myenteric Plexus
+198,Paneth
+199,Smooth Muscle
+200,Smooth Muscle
+201,Myenteric Plexus
+202,Stromal
+203,Myenteric Plexus
+204,Paneth
+205,Removed
+206,Removed
+207,Telocyte
+208,Paneth
+209,Macrophage + DC
+210,Myenteric Plexus
+211,Stromal
+212,Stem + TA
+213,Enterocyte (Bottom Villus)
+214,Myenteric Plexus
+215,Stem + TA
+216,Myenteric Plexus
+217,Stromal
+218,Paneth
+219,Smooth Muscle
+220,Smooth Muscle
+221,Paneth
+222,Smooth Muscle
+223,Smooth Muscle
+224,Removed
+225,Macrophage + DC
+226,Stromal
+227,Paneth
+228,Removed
+229,Telocyte
+230,Smooth Muscle
+231,Tuft
+232,Paneth
+233,Stromal
+234,Macrophage + DC
+235,Macrophage + DC
+236,Endothelial
+237,Stromal
+238,Removed
+239,Smooth Muscle
+240,Paneth
+241,Telocyte
+242,Enterocyte (Bottom Villus)
+243,Myenteric Plexus
+244,Macrophage + DC
+245,Paneth
+246,B (Plasma)
+247,Telocyte
+248,Removed
+249,Myenteric Plexus
+250,Smooth Muscle
+251,Myenteric Plexus
+252,Stromal
+253,Stem + TA
+254,Goblet
+255,B (Plasma)
+256,Macrophage + DC
+257,Stromal
+258,Enterocyte (Bottom Villus)
+259,T (CD4+)
+260,Myenteric Plexus
+261,Paneth
+262,Paneth
+263,Stromal
+264,Paneth
+265,Removed
+266,Stromal
+267,Macrophage + DC
+268,Macrophage + DC
+269,Removed
+270,Myenteric Plexus
+271,Smooth Muscle
+272,Smooth Muscle
+273,Endothelial
+274,Paneth
+275,Paneth
+276,Removed
+277,Paneth
+278,Enterocyte (Bottom Villus)
+279,Stem + TA
+280,Paneth
+281,Enterocyte (Mid Villus)
+282,Removed
+283,B (Plasma)
+284,Stem + TA
+285,Stem + TA
+286,Stromal
+287,Stromal
+288,Stem + TA
+289,Paneth
+290,Macrophage + DC
+291,Paneth
+292,Removed
+293,Paneth
+294,Stem + TA
+295,Smooth Muscle
+296,Myenteric Plexus
+297,Myenteric Plexus
+298,Macrophage + DC
+299,Myenteric Plexus
+300,Stem + TA
+301,Myenteric Plexus
+302,Smooth Muscle
+303,Removed
+304,Smooth Muscle
+305,Paneth
+306,Enterocyte (Bottom Villus)
+307,Removed
+308,Myenteric Plexus
+309,Enterocyte (Bottom Villus)
+310,Paneth
+311,Macrophage + DC
+312,Endothelial
+313,Macrophage + DC
+314,Paneth
+315,Paneth
+316,T (CD4+)
+317,Stem + TA
+318,Removed
+319,Goblet
+320,Stem + TA
+321,Smooth Muscle
+322,Stromal
+323,Goblet
+324,Paneth
+325,Paneth
+326,Removed
+327,Myenteric Plexus
+328,Stromal
+329,Removed
+330,Stem + TA
+331,Removed
+332,Removed
+333,Paneth
+334,Endothelial
+335,Endothelial
+336,Stem + TA
+337,Stromal
+338,Telocyte
+339,Myenteric Plexus
+340,Smooth Muscle
+341,Paneth
+342,Smooth Muscle
+343,Paneth
+344,Paneth
+345,Smooth Muscle
+346,Removed
+347,Removed
+348,Smooth Muscle
+349,Smooth Muscle
+350,Telocyte
+351,Enterocyte (Bottom Villus)
+352,Smooth Muscle
+353,Removed
+354,Stem + TA
+355,Stem + TA
+356,Stem + TA
+357,Goblet
+358,Goblet
+359,Paneth
+360,Endothelial
+361,Paneth
+362,Paneth
+363,Myenteric Plexus
+364,Paneth
+365,Stromal
+366,Macrophage + DC
+367,Goblet
+368,Smooth Muscle
+369,B (Plasma)
+370,Enterocyte (Bottom Villus)
+371,Smooth Muscle
+372,ICC
+373,Enterocyte (Bottom Villus)
+374,Stromal
+375,Paneth
+376,Stem + TA
+377,Removed
+378,Stem + TA
+379,Stromal
+380,Stromal
+381,Stem + TA
+382,Macrophage + DC
+383,Smooth Muscle
+384,Smooth Muscle
+385,Removed
+386,Paneth
+387,Stem + TA
+388,Paneth
+389,Smooth Muscle
+390,B (Plasma)
+391,B (Plasma)
+392,ICC
+393,Macrophage + DC
+394,Smooth Muscle
+395,Enterocyte (Bottom Villus)
+396,Stem + TA
+397,Stem + TA
+398,Enterocyte (Bottom Villus)
+399,Telocyte
+400,Enterocyte (Mid Villus)
+401,Stromal
+402,Smooth Muscle
+403,Smooth Muscle
+404,B (Plasma)
+405,Paneth
+406,Paneth
+407,Smooth Muscle
+408,Enterocyte (Bottom Villus)
+409,Stem + TA
+410,Paneth
+411,Telocyte
+412,Smooth Muscle
+413,Smooth Muscle
+414,Paneth
+415,Smooth Muscle
+416,Smooth Muscle
+417,Stem + TA
+418,Enterocyte (Bottom Villus)
+419,Stromal
+420,Enterocyte (Bottom Villus)
+421,Removed
+422,Smooth Muscle
+423,Smooth Muscle
+424,Paneth
+425,Stem + TA
+426,Enterocyte (Bottom Villus)
+427,Paneth
+428,Enterocyte (Bottom Villus)
+429,Stem + TA
+430,Enterocyte (Bottom Villus)
+431,Smooth Muscle
+432,Paneth
+433,Removed
+434,Enterocyte (Bottom Villus)
+435,Enterocyte (Bottom Villus)
+436,Goblet
+437,Stromal
+438,Stromal
+439,Smooth Muscle
+440,Goblet
+441,Goblet
+442,Stem + TA
+443,Removed
+444,B (Plasma)
+445,Telocyte
+446,Smooth Muscle
+447,Stem + TA
+448,Smooth Muscle
+449,Stem + TA
+450,Smooth Muscle
+451,Smooth Muscle
+452,Smooth Muscle
+453,T (CD4+)
+454,Stromal
+455,Stem + TA
+456,Stem + TA
+457,Enterocyte (Mid Villus)
+458,Stem + TA
+459,Enterocyte (Bottom Villus)
+460,Enterocyte (Mid Villus)
+461,Removed
+462,Stromal
+463,Removed
+464,Smooth Muscle
+465,Smooth Muscle
+466,Smooth Muscle
+467,Enterocyte (Mid Villus)
+468,Removed
+469,Stem + TA
+470,Enterocyte (Bottom Villus)
+471,Enterocyte (Bottom Villus)
+472,Telocyte
+473,Stem + TA
+474,Stem + TA
+475,Endothelial
+476,Smooth Muscle
+477,Enterocyte (Mid Villus)
+478,T (CD4+)
+479,Stromal
+480,Goblet
+481,ICC
+482,Paneth
+483,Stem + TA
+484,Removed
+485,Smooth Muscle
+486,Paneth
+487,Enterocyte (Mid Villus)
+488,Smooth Muscle
+489,Stem + TA
+490,Stem + TA
+491,Enterocyte (Mid Villus)
+492,Stem + TA
+493,Enterocyte (Bottom Villus)
+494,Stem + TA
+495,Stem + TA
+496,Smooth Muscle
+497,Enterocyte (Mid Villus)
+498,Stem + TA
+499,Telocyte
+500,Goblet
+501,Goblet
+502,Paneth
+503,B (Plasma)
+504,Macrophage + DC
+505,Paneth
+506,Stem + TA
+507,Endothelial
+508,Stem + TA
+509,Removed
+510,Endothelial
+511,Goblet
+512,Stem + TA
+513,Smooth Muscle
+514,Stromal
+515,Stromal
+516,Paneth
+517,Stem + TA
+518,Removed
+519,Smooth Muscle
+520,Paneth
+521,Paneth
+522,Smooth Muscle
+523,Stem + TA
+524,Stem + TA
+525,Stromal
+526,Enterocyte (Mid Villus)
+527,Smooth Muscle
+528,Enterocyte (Bottom Villus)
+529,Telocyte
+530,Enterocyte (Bottom Villus)
+531,Stem + TA
+532,B (Plasma)
+533,Stem + TA
+534,Stem + TA
+535,Smooth Muscle
+536,Macrophage + DC
+537,Goblet
+538,Macrophage + DC
+539,Goblet
+540,Goblet
+541,Removed
+542,Removed
+543,Stem + TA
+544,Stem + TA
+545,Removed
+546,Macrophage + DC
+547,Stem + TA
+548,Goblet
+549,Smooth Muscle
+550,Smooth Muscle
+551,Stem + TA
+552,Enterocyte (Bottom Villus)
+553,Enterocyte (Mid Villus)
+554,Telocyte
+555,Enterocyte (Mid Villus)
+556,Smooth Muscle
+557,Endothelial
+558,Stem + TA
+559,B (Plasma)
+560,Stem + TA
+561,Smooth Muscle
+562,T (CD4+)
+563,Macrophage + DC
+564,Smooth Muscle
+565,Stem + TA
+566,Macrophage + DC
+567,Removed
+568,Enterocyte (Mid Villus)
+569,Smooth Muscle
+570,Stromal
+571,Smooth Muscle
+572,Telocyte
+573,Enterocyte (Mid Villus)
+574,B (Plasma)
+575,Enterocyte (Mid Villus)
+576,Enterocyte (Mid Villus)
+577,Stromal
+578,Smooth Muscle
+579,Macrophage + DC
+580,Macrophage + DC
+581,Stem + TA
+582,B (Plasma)
+583,Enterocyte (Bottom Villus)
+584,Smooth Muscle
+585,Stromal
+586,Stromal
+587,Smooth Muscle
+588,Smooth Muscle
+589,Paneth
+590,B (Plasma)
+591,Stem + TA
+592,Paneth
+593,Smooth Muscle
+594,Enterocyte (Bottom Villus)
+595,Smooth Muscle
+596,Stem + TA
+597,Macrophage + DC
+598,Paneth
+599,Stem + TA
+600,Goblet
+601,Macrophage + DC
+602,Stromal
+603,Stromal
+604,Smooth Muscle
+605,Enterocyte (Mid Villus)
+606,Smooth Muscle
+607,Smooth Muscle
+608,B (Plasma)
+609,Endothelial
+610,Smooth Muscle
+611,ICC
+612,Stromal
+613,Stromal
+614,Stem + TA
+615,Paneth
+616,Enterocyte (Mid Villus)
+617,Goblet
+618,Stromal
+619,Enterocyte (Bottom Villus)
+620,Macrophage + DC
+621,Stem + TA
+622,Stem + TA
+623,Paneth
+624,B (Plasma)
+625,Smooth Muscle
+626,Enterocyte (Mid Villus)
+627,Removed
+628,Enterocyte (Mid Villus)
+629,Stromal
+630,Stromal
+631,Telocyte
+632,Enterocyte (Bottom Villus)
+633,Endothelial
+634,Smooth Muscle
+635,Stem + TA
+636,B (Plasma)
+637,Stem + TA
+638,Smooth Muscle
+639,Enterocyte (Mid Villus)
+640,Enterocyte (Mid Villus)
+641,Stromal
+642,Endothelial
+643,Enterocyte (Mid Villus)
+644,Enterocyte (Mid Villus)
+645,Stem + TA
+646,Smooth Muscle
+647,Stromal
+648,Stromal
+649,Paneth
+650,Stromal
+651,Paneth
+652,Paneth
+653,Enterocyte (Bottom Villus)
+654,Smooth Muscle
+655,Goblet
+656,Stromal
+657,Stem + TA
+658,B (Plasma)
+659,Macrophage + DC
+660,Removed
+661,Macrophage + DC
+662,Stem + TA
+663,Enterocyte (Mid Villus)
+664,Paneth
+665,Stromal
+666,Smooth Muscle
+667,Enterocyte (Mid Villus)
+668,Smooth Muscle
+669,Goblet
+670,Macrophage + DC
+671,Telocyte
+672,Enterocyte (Mid Villus)
+673,Endothelial
+674,Telocyte
+675,Stromal
+676,Stem + TA
+677,Smooth Muscle
+678,Macrophage + DC
+679,Goblet
+680,Goblet
+681,Tuft
+682,Macrophage + DC
+683,Smooth Muscle
+684,Macrophage + DC
+685,Removed
+686,Goblet
+687,B (Plasma)
+688,Goblet
+689,Macrophage + DC
+690,Stromal
+691,Enterocyte (Mid Villus)
+692,Removed
+693,Enterocyte (Bottom Villus)
+694,Smooth Muscle
+695,Goblet
+696,Tuft
+697,Telocyte
+698,Stem + TA
+699,Enterocyte (Mid Villus)
+700,Paneth
+701,Macrophage + DC
+702,Stem + TA
+703,Stem + TA
+704,Removed
+705,Enterocyte (Mid Villus)
+706,Paneth
+707,Stem + TA
+708,Stromal
+709,Smooth Muscle
+710,B (Plasma)
+711,Smooth Muscle
+712,Stem + TA
+713,T (CD4+)
+714,Goblet
+715,Enterocyte (Mid Villus)
+716,Stem + TA
+717,Enterocyte (Mid Villus)
+718,Enterocyte (Mid Villus)
+719,Stromal
+720,Stromal
+721,Removed
+722,Stem + TA
+723,Enterocyte (Mid Villus)
+724,B (Plasma)
+725,B (Plasma)
+726,Goblet
+727,B (Plasma)
+728,Stem + TA
+729,Telocyte
+730,Stem + TA
+731,Smooth Muscle
+732,Telocyte
+733,Enterocyte (Mid Villus)
+734,Stem + TA
+735,Macrophage + DC
+736,Smooth Muscle
+737,Removed
+738,B (Plasma)
+739,B (Plasma)
+740,B (Plasma)
+741,Stem + TA
+742,Endothelial
+743,Smooth Muscle
+744,Enterocyte (Mid Villus)
+745,Enterocyte (Mid Villus)
+746,Stem + TA
+747,Smooth Muscle
+748,Smooth Muscle
+749,Goblet
+750,Stem + TA
+751,Enterocyte (Mid Villus)
+752,Macrophage + DC
+753,Stromal
+754,Enterocyte (Mid Villus)
+755,Stromal
+756,Enterocyte (Mid Villus)
+757,Stromal
+758,Smooth Muscle
+759,Enterocyte (Bottom Villus)
+760,T (CD4+)
+761,Stem + TA
+762,B (Plasma)
+763,B (Plasma)
+764,T (CD4+)
+765,Stem + TA
+766,T (CD4+)
+767,Smooth Muscle
+768,Enterocyte (Mid Villus)
+769,Endothelial
+770,Endothelial
+771,B (Plasma)
+772,Stem + TA
+773,Enterocyte (Mid Villus)
+774,Stromal
+775,Stem + TA
+776,Stromal
+777,Smooth Muscle
+778,Enterocyte (Mid Villus)
+779,Enterocyte (Mid Villus)
+780,Enterocyte (Mid Villus)
+781,Enterocyte (Mid Villus)
+782,Stromal
+783,Stem + TA
+784,Goblet
+785,Stromal
+786,Telocyte
+787,Goblet
+788,Telocyte
+789,Enterocyte (Mid Villus)
+790,Removed
+791,Enterocyte (Mid Villus)
+792,Removed
+793,Enterocyte (Mid Villus)
+794,Goblet
+795,B (Plasma)
+796,Smooth Muscle
+797,Stem + TA
+798,Stromal
+799,Stem + TA
+800,Endothelial
+801,Macrophage + DC
+802,Enterocyte (Mid Villus)
+803,B (Plasma)
+804,B (Plasma)
+805,Smooth Muscle
+806,Smooth Muscle
+807,B (Plasma)
+808,T (CD4+)
+809,Smooth Muscle
+810,Enterocyte (Mid Villus)
+811,Goblet
+812,ICC
+813,Endothelial
+814,Endothelial
+815,B (Plasma)
+816,Enterocyte (Bottom Villus)
+817,Stem + TA
+818,Smooth Muscle
+819,Smooth Muscle
+820,Endothelial
+821,Stem + TA
+822,Removed
+823,Stromal
+824,Smooth Muscle
+825,Stromal
+826,Removed
+827,Smooth Muscle
+828,Macrophage + DC
+829,Smooth Muscle
+830,Enterocyte (Mid Villus)
+831,Endothelial
+832,Smooth Muscle
+833,Goblet
+834,Smooth Muscle
+835,Enterocyte (Mid Villus)
+836,B (Plasma)
+837,Stem + TA
+838,Enterocyte (Mid Villus)
+839,Stem + TA
+840,B (Plasma)
+841,Removed
+842,Enterocyte (Bottom Villus)
+843,B (Plasma)
+844,Endothelial
+845,Removed
+846,T (CD4+)
+847,Stem + TA
+848,Removed
+849,Smooth Muscle
+850,Paneth
+851,Stromal
+852,Endothelial
+853,Removed
+854,Endothelial
+855,Enterocyte (Mid Villus)
+856,Smooth Muscle
+857,Stem + TA
+858,Telocyte
+859,Enterocyte (Mid Villus)
+860,Pericyte
+861,Stromal
+862,B (Plasma)
+863,Stromal
+864,Stromal
+865,B (Plasma)
+866,Macrophage + DC
+867,Goblet
+868,B (Plasma)
+869,Smooth Muscle
+870,B (Plasma)
+871,Stem + TA
+872,Smooth Muscle
+873,B (Plasma)
+874,ICC
+875,Endothelial
+876,Stromal
+877,Enterocyte (Mid Villus)
+878,Macrophage + DC
+879,Removed
+880,Smooth Muscle
+881,Enterocyte (Mid Villus)
+882,Stromal
+883,Enterocyte (Mid Villus)
+884,Macrophage + DC
+885,Stromal
+886,Endothelial
+887,Macrophage + DC
+888,Enterocyte (Bottom Villus)
+889,Macrophage + DC
+890,Enterocyte (Mid Villus)
+891,B (Plasma)
+892,Telocyte
+893,Removed
+894,Enterocyte (Mid Villus)
+895,Enterocyte (Mid Villus)
+896,Stem + TA
+897,Smooth Muscle
+898,Goblet
+899,Stem + TA
+900,Telocyte
+901,T (CD4+)
+902,Smooth Muscle
+903,Endothelial
+904,Enterocyte (Mid Villus)
+905,B (Plasma)
+906,Stem + TA
+907,Smooth Muscle
+908,Stem + TA
+909,Stromal
+910,Goblet
+911,B (Plasma)
+912,B (Plasma)
+913,Stem + TA
+914,Enterocyte (Mid Villus)
+915,Smooth Muscle
+916,T (CD4+)
+917,Smooth Muscle
+918,Enterocyte (Mid Villus)
+919,Goblet
+920,Endothelial
+921,Endothelial
+922,Stem + TA
+923,Enterocyte (Bottom Villus)
+924,Enterocyte (Mid Villus)
+925,B (Plasma)
+926,Macrophage + DC
+927,Telocyte
+928,Stem + TA
+929,B (Plasma)
+930,Macrophage + DC
+931,Smooth Muscle
+932,Smooth Muscle
+933,Telocyte
+934,Smooth Muscle
+935,Smooth Muscle
+936,Enterocyte (Bottom Villus)
+937,Stromal
+938,Removed
+939,Enterocyte (Mid Villus)
+940,Enterocyte (Mid Villus)
+941,Enterocyte (Mid Villus)
+942,Telocyte
+943,Stromal
+944,Stem + TA
+945,Stromal
+946,Endothelial
+947,Smooth Muscle
+948,Removed
+949,B (Plasma)
+950,Smooth Muscle
+951,Enterocyte (Bottom Villus)
+952,Enterocyte (Mid Villus)
+953,Smooth Muscle
+954,Stem + TA
+955,T (CD8+)
+956,B (Plasma)
+957,Enterocyte (Bottom Villus)
+958,Macrophage + DC
+959,Enterocyte (Mid Villus)
+960,Stem + TA
+961,Enterocyte (Mid Villus)
+962,Smooth Muscle
+963,B (Plasma)
+964,Removed
+965,Endothelial
+966,Stromal
+967,B (Plasma)
+968,Endothelial
+969,Stromal
+970,Smooth Muscle
+971,Removed
+972,Smooth Muscle
+973,T (CD4+)
+974,B (Plasma)
+975,Removed
+976,Smooth Muscle
+977,Macrophage + DC
+978,Telocyte
+979,Macrophage + DC
+980,B (Plasma)
+981,Stromal
+982,Smooth Muscle
+983,Stem + TA
+984,Telocyte
+985,Stem + TA
+986,Stromal
+987,Enterocyte (Bottom Villus)
+988,Stromal
+989,Stem + TA
+990,ICC
+991,B (Plasma)
+992,Enterocyte (Bottom Villus)
+993,Enterocyte (Mid Villus)
+994,Enterocyte (Mid Villus)
+995,Smooth Muscle
+996,Stromal
+997,Stem + TA
+998,Stromal
+999,Enterocyte (Bottom Villus)
+1000,T (CD4+)
+1001,Smooth Muscle
+1002,Removed
+1003,Goblet
+1004,Macrophage + DC
+1005,Macrophage + DC
+1006,B (Plasma)
+1007,Removed
+1008,Stem + TA
+1009,Stromal
+1010,Enterocyte (Mid Villus)
+1011,Enterocyte (Bottom Villus)
+1012,Enterocyte (Mid Villus)
+1013,Enterocyte (Mid Villus)
+1014,Smooth Muscle
+1015,Smooth Muscle
+1016,Stem + TA
+1017,Stem + TA
+1018,Smooth Muscle
+1019,Endothelial
+1020,Removed
+1021,Stem + TA
+1022,Enterocyte (Mid Villus)
+1023,Removed
+1024,T (CD4+)
+1025,Smooth Muscle
+1026,Smooth Muscle
+1027,Endothelial
+1028,Endothelial
+1029,Enterocyte (Bottom Villus)
+1030,T (CD4+)
+1031,Endothelial
+1032,Goblet
+1033,Smooth Muscle
+1034,Removed
+1035,Enterocyte (Mid Villus)
+1036,B (Plasma)
+1037,Stromal
+1038,Goblet
+1039,Enterocyte (Mid Villus)
+1040,Enterocyte (Mid Villus)
+1041,Stromal
+1042,Removed
+1043,Smooth Muscle
+1044,Endothelial
+1045,Enterocyte (Mid Villus)
+1046,Enterocyte (Mid Villus)
+1047,T (CD4+)
+1048,Stromal
+1049,Enterocyte (Mid Villus)
+1050,Macrophage + DC
+1051,Goblet
+1052,B (Plasma)
+1053,Enterocyte (Mid Villus)
+1054,Goblet
+1055,Endothelial
+1056,Enterocyte (Mid Villus)
+1057,B (Plasma)
+1058,Stem + TA
+1059,Telocyte
+1060,B (Plasma)
+1061,Enterocyte (Bottom Villus)
+1062,Smooth Muscle
+1063,Stromal
+1064,Stem + TA
+1065,T (CD4+)
+1066,B (Plasma)
+1067,Removed
+1068,B (Plasma)
+1069,Smooth Muscle
+1070,Enterocyte (Bottom Villus)
+1071,Stem + TA
+1072,Enterocyte (Mid Villus)
+1073,B (Plasma)
+1074,Stromal
+1075,Enterocyte (Bottom Villus)
+1076,T (CD4+)
+1077,Endothelial
+1078,Smooth Muscle
+1079,Paneth
+1080,Removed
+1081,Removed
+1082,Enterocyte (Mid Villus)
+1083,Goblet
+1084,Telocyte
+1085,B (Plasma)
+1086,Enterocyte (Mid Villus)
+1087,Macrophage + DC
+1088,Goblet
+1089,Enterocyte (Mid Villus)
+1090,Stromal
+1091,Enterocyte (Mid Villus)
+1092,Smooth Muscle
+1093,Stem + TA
+1094,Smooth Muscle
+1095,Smooth Muscle
+1096,Smooth Muscle
+1097,Stem + TA
+1098,Enterocyte (Mid Villus)
+1099,Enterocyte (Bottom Villus)
+1100,Stromal
+1101,Myenteric Plexus
+1102,Enterocyte (Mid Villus)
+1103,Removed
+1104,B (Plasma)
+1105,Telocyte
+1106,Enterocyte (Bottom Villus)
+1107,Paneth
+1108,Stem + TA
+1109,Macrophage + DC
+1110,Stem + TA
+1111,Paneth
+1112,Stromal
+1113,Smooth Muscle
+1114,Enterocyte (Mid Villus)
+1115,Enterocyte (Mid Villus)
+1116,Goblet
+1117,Stem + TA
+1118,Goblet
+1119,Enterocyte (Mid Villus)
+1120,Enterocyte (Mid Villus)
+1121,T (CD4+)
+1122,Paneth
+1123,Removed
+1124,Goblet
+1125,Macrophage + DC
+1126,Macrophage + DC
+1127,Macrophage + DC
+1128,Smooth Muscle
+1129,Smooth Muscle
+1130,Goblet
+1131,Enterocyte (Mid Villus)
+1132,B (Plasma)
+1133,Telocyte
+1134,Telocyte
+1135,B (Plasma)
+1136,Stem + TA
+1137,Smooth Muscle
+1138,Goblet
+1139,Macrophage + DC
+1140,Stem + TA
+1141,Smooth Muscle
+1142,ICC
+1143,Paneth
+1144,Stem + TA
+1145,B (Plasma)
+1146,Enterocyte (Mid Villus)
+1147,Endothelial
+1148,Removed
+1149,Enterocyte (Mid Villus)
+1150,Endothelial
+1151,Stromal
+1152,Smooth Muscle
+1153,Smooth Muscle
+1154,Enterocyte (Mid Villus)
+1155,B (Plasma)
+1156,Smooth Muscle
+1157,Paneth
+1158,Enterocyte (Mid Villus)
+1159,Stem + TA
+1160,Paneth
+1161,Enterocyte (Mid Villus)
+1162,Macrophage + DC
+1163,Enterocyte (Mid Villus)
+1164,Enterocyte (Bottom Villus)
+1165,Endothelial
+1166,Enterocyte (Mid Villus)
+1167,Enterocyte (Bottom Villus)
+1168,B (Plasma)
+1169,B (Plasma)
+1170,Enterocyte (Mid Villus)
+1171,Paneth
+1172,Macrophage + DC
+1173,Enterocyte (Mid Villus)
+1174,Smooth Muscle
+1175,Stromal
+1176,T (CD4+)
+1177,Enterocyte (Mid Villus)
+1178,Removed
+1179,Enterocyte (Bottom Villus)
+1180,Paneth
+1181,Macrophage + DC
+1182,Stem + TA
+1183,Stromal
+1184,Enterocyte (Bottom Villus)
+1185,Macrophage + DC
+1186,Macrophage + DC
+1187,B (Plasma)
+1188,Endothelial
+1189,Enterocyte (Mid Villus)
+1190,B (Plasma)
+1191,Smooth Muscle
+1192,Smooth Muscle
+1193,Enterocyte (Mid Villus)
+1194,Macrophage + DC
+1195,Smooth Muscle
+1196,B (Plasma)
+1197,Enterocyte (Mid Villus)
+1198,T (CD4+)
+1199,B (Plasma)
+1200,Smooth Muscle
+1201,Goblet
+1202,Stromal
+1203,Macrophage + DC
+1204,Enterocyte (Mid Villus)
+1205,Removed
+1206,Goblet
+1207,Stem + TA
+1208,Smooth Muscle
+1209,Stem + TA
+1210,Enterocyte (Mid Villus)
+1211,ICC
+1212,Enterocyte (Bottom Villus)
+1213,Stromal
+1214,Stromal
+1215,Smooth Muscle
+1216,Stromal
+1217,ICC
+1218,Macrophage + DC
+1219,B (Plasma)
+1220,Removed
+1221,Enterocyte (Mid Villus)
+1222,Enterocyte (Mid Villus)
+1223,Smooth Muscle
+1224,Smooth Muscle
+1225,B (Plasma)
+1226,Enterocyte (Bottom Villus)
+1227,Smooth Muscle
+1228,Endothelial
+1229,Smooth Muscle
+1230,Goblet
+1231,Macrophage + DC
+1232,Paneth
+1233,Goblet
+1234,Stem + TA
+1235,Stromal
+1236,Removed
+1237,Goblet
+1238,B (Plasma)
+1239,Removed
+1240,Enterocyte (Mid Villus)
+1241,Removed
+1242,Smooth Muscle
+1243,B (Plasma)
+1244,Smooth Muscle
+1245,Enterocyte (Bottom Villus)
+1246,Enterocyte (Mid Villus)
+1247,Smooth Muscle
+1248,Endothelial
+1249,Stem + TA
+1250,T (CD4+)
+1251,Telocyte
+1252,B (Plasma)
+1253,Smooth Muscle
+1254,Telocyte
+1255,Stem + TA
+1256,Smooth Muscle
+1257,Telocyte
+1258,Stem + TA
+1259,Macrophage + DC
+1260,Macrophage + DC
+1261,B (Plasma)
+1262,Goblet
+1263,Removed
+1264,B (Plasma)
+1265,B (Plasma)
+1266,Endothelial
+1267,Macrophage + DC
+1268,B (Plasma)
+1269,B (Plasma)
+1270,Stromal
+1271,Endothelial
+1272,Stem + TA
+1273,Stem + TA
+1274,Enterocyte (Mid Villus)
+1275,Stem + TA
+1276,Stromal
+1277,Smooth Muscle
+1278,B (Plasma)
+1279,"B (Follicular, Circulating)"
+1280,B (Plasma)
+1281,Enterocyte (Mid Villus)
+1282,Stem + TA
+1283,Enterocyte (Bottom Villus)
+1284,B (Plasma)
+1285,Endothelial
+1286,Paneth
+1287,Goblet
+1288,Macrophage + DC
+1289,Telocyte
+1290,Enterocyte (Mid Villus)
+1291,Stromal
+1292,B (Plasma)
+1293,Macrophage + DC
+1294,Enterocyte (Mid Villus)
+1295,Enterocyte (Mid Villus)
+1296,Enterocyte (Mid Villus)
+1297,Removed
+1298,Endothelial
+1299,Endothelial
+1300,Telocyte
+1301,T (CD4+)
+1302,Smooth Muscle
+1303,Macrophage + DC
+1304,B (Plasma)
+1305,Smooth Muscle
+1306,Stromal
+1307,B (Plasma)
+1308,Removed
+1309,B (Plasma)
+1310,Stromal
+1311,Smooth Muscle
+1312,Smooth Muscle
+1313,Smooth Muscle
+1314,Smooth Muscle
+1315,Paneth
+1316,Paneth
+1317,Stromal
+1318,Paneth
+1319,Stromal
+1320,T (CD4+)
+1321,Endothelial
+1322,Macrophage + DC
+1323,B (Plasma)
+1324,Removed
+1325,Pericyte
+1326,Smooth Muscle
+1327,Smooth Muscle
+1328,Goblet
+1329,B (Plasma)
+1330,Stem + TA
+1331,Stromal
+1332,Macrophage + DC
+1333,B (Plasma)
+1334,B (Plasma)
+1335,Stem + TA
+1336,Smooth Muscle
+1337,Enterocyte (Mid Villus)
+1338,Enterocyte (Mid Villus)
+1339,Removed
+1340,B (Plasma)
+1341,Stromal
+1342,Enterocyte (Mid Villus)
+1343,Paneth
+1344,Stem + TA
+1345,Stem + TA
+1346,B (Plasma)
+1347,Stem + TA
+1348,"B (Follicular, Circulating)"
+1349,Enterocyte (Bottom Villus)
+1350,B (Plasma)
+1351,ICC
+1352,Enterocyte (Mid Villus)
+1353,Stromal
+1354,Stromal
+1355,Paneth
+1356,Macrophage + DC
+1357,Paneth
+1358,T (CD8+)
+1359,B (Plasma)
+1360,Stromal
+1361,Stem + TA
+1362,Stem + TA
+1363,Stromal
+1364,Telocyte
+1365,Macrophage + DC
+1366,Smooth Muscle
+1367,Stem + TA
+1368,Stem + TA
+1369,B (Plasma)
+1370,Stromal
+1371,Enterocyte (Mid Villus)
+1372,Stem + TA
+1373,B (Plasma)
+1374,Smooth Muscle
+1375,Paneth
+1376,Stem + TA
+1377,Smooth Muscle
+1378,Stem + TA
+1379,Stromal
+1380,Enterocyte (Mid Villus)
+1381,Macrophage + DC
+1382,B (Plasma)
+1383,Paneth
+1384,Enterocyte (Mid Villus)
+1385,B (Plasma)
+1386,Stromal
+1387,Smooth Muscle
+1388,Removed
+1389,Paneth
+1390,B (Plasma)
+1391,Smooth Muscle
+1392,Removed
+1393,T (CD8+)
+1394,Stem + TA
+1395,Stem + TA
+1396,T (CD4+)
+1397,Stromal
+1398,B (Plasma)
+1399,Stem + TA
+1400,Smooth Muscle
+1401,Pericyte
+1402,Stromal
+1403,Enterocyte (Mid Villus)
+1404,Paneth
+1405,Endothelial
+1406,B (Plasma)
+1407,B (Plasma)
+1408,B (Plasma)
+1409,Macrophage + DC
+1410,Enterocyte (Mid Villus)
+1411,Paneth
+1412,Macrophage + DC
+1413,Removed
+1414,Paneth
+1415,Macrophage + DC
+1416,B (Plasma)
+1417,B (Plasma)
+1418,Stem + TA
+1419,Stem + TA
+1420,Stem + TA
+1421,Stem + TA
+1422,Stem + TA
+1423,Stromal
+1424,B (Plasma)
+1425,Smooth Muscle
+1426,Removed
+1427,Removed
+1428,Enterocyte (Mid Villus)
+1429,Macrophage + DC
+1430,Paneth
+1431,Telocyte
+1432,B (Plasma)
+1433,Smooth Muscle
+1434,B (Plasma)
+1435,Stromal
+1436,Stem + TA
+1437,Goblet
+1438,Stem + TA
+1439,Stem + TA
+1440,Paneth
+1441,Removed
+1442,Enterocyte (Mid Villus)
+1443,Enterocyte (Top Villus)
+1444,Enterocyte (Mid Villus)
+1445,B (Plasma)
+1446,Goblet
+1447,Smooth Muscle
+1448,Stem + TA
+1449,B (Plasma)
+1450,B (Plasma)
+1451,Removed
+1452,B (Plasma)
+1453,T (CD4+)
+1454,Stem + TA
+1455,Macrophage + DC
+1456,Paneth
+1457,Stromal
+1458,Macrophage + DC
+1459,Smooth Muscle
+1460,Enterocyte (Bottom Villus)
+1461,Stem + TA
+1462,Removed
+1463,Stromal
+1464,B (Plasma)
+1465,Stem + TA
+1466,Macrophage + DC
+1467,Paneth
+1468,Enterocyte (Mid Villus)
+1469,Stromal
+1470,Stromal
+1471,Enterocyte (Mid Villus)
+1472,Paneth
+1473,Removed
+1474,Goblet
+1475,Stem + TA
+1476,Goblet
+1477,Paneth
+1478,B (Plasma)
+1479,Paneth
+1480,B (Plasma)
+1481,Smooth Muscle
+1482,B (Plasma)
+1483,B (Plasma)
+1484,"B (Follicular, Circulating)"
+1485,T (CD4+)
+1486,Smooth Muscle
+1487,Enterocyte (Bottom Villus)
+1488,B (Plasma)
+1489,Smooth Muscle
+1490,B (Plasma)
+1491,Telocyte
+1492,Smooth Muscle
+1493,B (Plasma)
+1494,Stromal
+1495,Paneth
+1496,Smooth Muscle
+1497,Stem + TA
+1498,Removed
+1499,Enterocyte (Mid Villus)
+1500,Stem + TA
+1501,Enterocyte (Mid Villus)
+1502,Removed
+1503,Macrophage + DC
+1504,Smooth Muscle
+1505,Enterocyte (Mid Villus)
+1506,T (CD8+)
+1507,Stromal
+1508,Enterocyte (Mid Villus)
+1509,Smooth Muscle
+1510,Paneth
+1511,Paneth
+1512,B (Plasma)
+1513,T (CD8+)
+1514,Enterocyte (Mid Villus)
+1515,Stem + TA
+1516,Smooth Muscle
+1517,B (Plasma)
+1518,Stem + TA
+1519,Enterocyte (Mid Villus)
+1520,Enterocyte (Mid Villus)
+1521,Paneth
+1522,Stem + TA
+1523,T (CD8+)
+1524,Smooth Muscle
+1525,Goblet
+1526,Stem + TA
+1527,Enterocyte (Bottom Villus)
+1528,Paneth
+1529,Enterocyte (Mid Villus)
+1530,Macrophage + DC
+1531,Paneth
+1532,Stem + TA
+1533,Stem + TA
+1534,Removed
+1535,B (Plasma)
+1536,B (Plasma)
+1537,Removed
+1538,Smooth Muscle
+1539,T (CD8+)
+1540,Smooth Muscle
+1541,B (Plasma)
+1542,Stromal
+1543,Stem + TA
+1544,B (Plasma)
+1545,Removed
+1546,Stem + TA
+1547,Stem + TA
+1548,Macrophage + DC
+1549,Removed
+1550,Stem + TA
+1551,Endothelial
+1552,Paneth
+1553,B (Plasma)
+1554,Stromal
+1555,Stromal
+1556,Smooth Muscle
+1557,Smooth Muscle
+1558,Paneth
+1559,T (CD8+)
+1560,Removed
+1561,"B (Follicular, Circulating)"
+1562,Paneth
+1563,Stromal
+1564,Stem + TA
+1565,Macrophage + DC
+1566,Paneth
+1567,Removed
+1568,Enterocyte (Mid Villus)
+1569,Enterocyte (Bottom Villus)
+1570,Enterocyte (Mid Villus)
+1571,Enterocyte (Mid Villus)
+1572,T (CD4+)
+1573,Stromal
+1574,Smooth Muscle
+1575,Paneth
+1576,B (Plasma)
+1577,Smooth Muscle
+1578,Macrophage + DC
+1579,Stromal
+1580,B (Plasma)
+1581,B (Plasma)
+1582,Enterocyte (Mid Villus)
+1583,Smooth Muscle
+1584,Telocyte
+1585,B (Plasma)
+1586,Stem + TA
+1587,Stem + TA
+1588,Goblet
+1589,Stromal
+1590,B (Plasma)
+1591,Removed
+1592,Removed
+1593,Macrophage + DC
+1594,Paneth
+1595,Macrophage + DC
+1596,Stem + TA
+1597,B (Plasma)
+1598,B (Plasma)
+1599,B (Plasma)
+1600,Stem + TA
+1601,Stem + TA
+1602,Removed
+1603,B (Plasma)
+1604,Goblet
+1605,Paneth
+1606,Stem + TA
+1607,B (Plasma)
+1608,Smooth Muscle
+1609,Smooth Muscle
+1610,Smooth Muscle
+1611,Smooth Muscle
+1612,Stem + TA
+1613,Stem + TA
+1614,Paneth
+1615,T (CD4+)
+1616,Removed
+1617,Enterocyte (Top Villus)
+1618,Enterocyte (Bottom Villus)
+1619,Smooth Muscle
+1620,Stromal
+1621,Stromal
+1622,Goblet
+1623,Stem + TA
+1624,Goblet
+1625,Macrophage + DC
+1626,Enterocyte (Mid Villus)
+1627,Stem + TA
+1628,Enterocyte (Mid Villus)
+1629,Pericyte
+1630,Stem + TA
+1631,Paneth
+1632,Smooth Muscle
+1633,Stromal
+1634,Enterocyte (Mid Villus)
+1635,Enterocyte (Mid Villus)
+1636,Pericyte
+1637,Stem + TA
+1638,Enterocyte (Mid Villus)
+1639,Smooth Muscle
+1640,B (Plasma)
+1641,Goblet
+1642,Stromal
+1643,Endothelial
+1644,Smooth Muscle
+1645,Goblet
+1646,Goblet
+1647,B (Plasma)
+1648,Macrophage + DC
+1649,Removed
+1650,Endothelial
+1651,Telocyte
+1652,Paneth
+1653,Smooth Muscle
+1654,Goblet
+1655,T (CD8+)
+1656,B (Plasma)
+1657,Macrophage + DC
+1658,Smooth Muscle
+1659,Smooth Muscle
+1660,Stem + TA
+1661,Enterocyte (Mid Villus)
+1662,Goblet
+1663,Stem + TA
+1664,Stem + TA
+1665,Paneth
+1666,Enterocyte (Bottom Villus)
+1667,Macrophage + DC
+1668,Enterocyte (Mid Villus)
+1669,T (CD4+)
+1670,Removed
+1671,Removed
+1672,Smooth Muscle
+1673,Endothelial
+1674,Stem + TA
+1675,B (Plasma)
+1676,ICC
+1677,Enterocyte (Mid Villus)
+1678,Enterocyte (Bottom Villus)
+1679,Paneth
+1680,Stem + TA
+1681,Paneth
+1682,Smooth Muscle
+1683,Enterocyte (Mid Villus)
+1684,Smooth Muscle
+1685,Smooth Muscle
+1686,B (Plasma)
+1687,Stem + TA
+1688,B (Plasma)
+1689,Endothelial
+1690,Removed
+1691,Enterocyte (Top Villus)
+1692,Stem + TA
+1693,Macrophage + DC
+1694,B (Plasma)
+1695,Stem + TA
+1696,B (Plasma)
+1697,Stem + TA
+1698,ICC
+1699,Smooth Muscle
+1700,Enterocyte (Mid Villus)
+1701,Smooth Muscle
+1702,B (Plasma)
+1703,Macrophage + DC
+1704,Stromal
+1705,Goblet
+1706,Stem + TA
+1707,B (Plasma)
+1708,Macrophage + DC
+1709,Smooth Muscle
+1710,B (Plasma)
+1711,Enterocyte (Bottom Villus)
+1712,Macrophage + DC
+1713,Stem + TA
+1714,Stem + TA
+1715,Enterocyte (Mid Villus)
+1716,Enterocyte (Bottom Villus)
+1717,Paneth
+1718,Paneth
+1719,Smooth Muscle
+1720,Macrophage + DC
+1721,Removed
+1722,Pericyte
+1723,B (Plasma)
+1724,Goblet
+1725,Goblet
+1726,Smooth Muscle
+1727,Paneth
+1728,B (Plasma)
+1729,Stromal
+1730,Macrophage + DC
+1731,Enterocyte (Mid Villus)
+1732,Macrophage + DC
+1733,Removed
+1734,Stem + TA
+1735,Goblet
+1736,Stem + TA
+1737,T (CD4+)
+1738,ICC
+1739,Smooth Muscle
+1740,Smooth Muscle
+1741,Smooth Muscle
+1742,Smooth Muscle
+1743,Stem + TA
+1744,Paneth
+1745,Stem + TA
+1746,B (Plasma)
+1747,Endothelial
+1748,Removed
+1749,Macrophage + DC
+1750,Macrophage + DC
+1751,Goblet
+1752,Paneth
+1753,Enterocyte (Mid Villus)
+1754,Stem + TA
+1755,Enterocyte (Mid Villus)
+1756,Pericyte
+1757,Paneth
+1758,Removed
+1759,Smooth Muscle
+1760,Paneth
+1761,Smooth Muscle
+1762,Enterocyte (Mid Villus)
+1763,Paneth
+1764,Enterocyte (Mid Villus)
+1765,Enterocyte (Bottom Villus)
+1766,Stem + TA
+1767,Goblet
+1768,Stem + TA
+1769,Enterocyte (Bottom Villus)
+1770,Macrophage + DC
+1771,Enterocyte (Mid Villus)
+1772,Paneth
+1773,Smooth Muscle
+1774,Enterocyte (Mid Villus)
+1775,Goblet
+1776,Macrophage + DC
+1777,Enterocyte (Bottom Villus)
+1778,Stromal
+1779,Stromal
+1780,T (CD8+)
+1781,Paneth
+1782,Enterocyte (Mid Villus)
+1783,Enterocyte (Top Villus)
+1784,Stem + TA
+1785,Endothelial
+1786,Enterocyte (Mid Villus)
+1787,ICC
+1788,Smooth Muscle
+1789,Stem + TA
+1790,Enterocyte (Mid Villus)
+1791,Goblet
+1792,Enterocyte (Bottom Villus)
+1793,Endothelial
+1794,Endothelial
+1795,T (CD8+)
+1796,Goblet
+1797,Stem + TA
+1798,Endothelial
+1799,Enterocyte (Bottom Villus)
+1800,Telocyte
+1801,Enterocyte (Mid Villus)
+1802,Stem + TA
+1803,Stem + TA
+1804,Stromal
+1805,Enterocyte (Bottom Villus)
+1806,Stem + TA
+1807,Smooth Muscle
+1808,Paneth
+1809,Enterocyte (Mid Villus)
+1810,Smooth Muscle
+1811,Enterocyte (Mid Villus)
+1812,Enterocyte (Top Villus)
+1813,Enterocyte (Mid Villus)
+1814,ICC
+1815,Smooth Muscle
+1816,Goblet
+1817,Smooth Muscle
+1818,Goblet
+1819,T (CD8+)
+1820,T (CD8+)
+1821,Removed
+1822,Removed
+1823,Smooth Muscle
+1824,Paneth
+1825,Smooth Muscle
+1826,Enterocyte (Mid Villus)
+1827,Removed
+1828,Smooth Muscle
+1829,Goblet
+1830,Enterocyte (Mid Villus)
+1831,Stem + TA
+1832,Enterocyte (Top Villus)
+1833,T (CD8+)
+1834,Macrophage + DC
+1835,Enterocyte (Mid Villus)
+1836,B (Plasma)
+1837,Stromal
+1838,Enterocyte (Mid Villus)
+1839,Macrophage + DC
+1840,Macrophage + DC
+1841,Enterocyte (Mid Villus)
+1842,Enterocyte (Mid Villus)
+1843,Enterocyte (Mid Villus)
+1844,Smooth Muscle
+1845,Paneth
+1846,Removed
+1847,Paneth
+1848,Endothelial
+1849,T (CD8+)
+1850,Goblet
+1851,Goblet
+1852,Enterocyte (Bottom Villus)
+1853,Smooth Muscle
+1854,Smooth Muscle
+1855,Removed
+1856,Goblet
+1857,Enterocyte (Mid Villus)
+1858,Enterocyte (Bottom Villus)
+1859,Goblet
+1860,Enterocyte (Bottom Villus)
+1861,Goblet
+1862,Paneth
+1863,Tuft
+1864,Enterocyte (Top Villus)
+1865,Smooth Muscle
+1866,Smooth Muscle
+1867,Smooth Muscle
+1868,Endothelial
+1869,Smooth Muscle
+1870,B (Plasma)
+1871,Removed
+1872,Removed
+1873,Stromal
+1874,Enterocyte (Mid Villus)
+1875,Removed
+1876,Enterocyte (Bottom Villus)
+1877,Removed
+1878,Smooth Muscle
+1879,Enterocyte (Mid Villus)
+1880,Removed
+1881,Enterocyte (Top Villus)
+1882,Paneth
+1883,Goblet
+1884,Enterocyte (Top Villus)
+1885,Paneth
+1886,T (CD8+)
+1887,Paneth
+1888,Enterocyte (Bottom Villus)
+1889,Removed
+1890,Enterocyte (Mid Villus)
+1891,Stem + TA
+1892,Macrophage + DC
+1893,Stem + TA
+1894,Goblet
+1895,Stem + TA
+1896,Smooth Muscle
+1897,Smooth Muscle
+1898,Stromal
+1899,Enterocyte (Bottom Villus)
+1900,Removed
+1901,Smooth Muscle
+1902,B (Plasma)
+1903,Goblet
+1904,Enterocyte (Mid Villus)
+1905,Enterocyte (Bottom Villus)
+1906,Paneth
+1907,Stromal
+1908,Smooth Muscle
+1909,Enterocyte (Mid Villus)
+1910,Removed
+1911,Endothelial
+1912,Enterocyte (Mid Villus)
+1913,Enterocyte (Bottom Villus)
+1914,Enterocyte (Mid Villus)
+1915,Enterocyte (Mid Villus)
+1916,Goblet
+1917,Paneth
+1918,Stem + TA
+1919,Removed
+1920,Enterocyte (Mid Villus)
+1921,Smooth Muscle
+1922,Stem + TA
+1923,Pericyte
+1924,Enterocyte (Mid Villus)
+1925,Goblet
+1926,Macrophage + DC
+1927,Enterocyte (Bottom Villus)
+1928,Smooth Muscle
+1929,Enterocyte (Mid Villus)
+1930,Smooth Muscle
+1931,Enterocyte (Mid Villus)
+1932,Endothelial
+1933,Macrophage + DC
+1934,Enterocyte (Mid Villus)
+1935,Paneth
+1936,Removed
+1937,Stem + TA
+1938,Enterocyte (Mid Villus)
+1939,Stem + TA
+1940,Enterocyte (Mid Villus)
+1941,Stem + TA
+1942,Paneth
+1943,Enterocyte (Bottom Villus)
+1944,Endothelial
+1945,Enterocyte (Bottom Villus)
+1946,Enterocyte (Mid Villus)
+1947,Macrophage + DC
+1948,Smooth Muscle
+1949,Smooth Muscle
+1950,Enterocyte (Mid Villus)
+1951,Smooth Muscle
+1952,Stem + TA
+1953,Stem + TA
+1954,Goblet
+1955,Paneth
+1956,Goblet
+1957,Enterocyte (Mid Villus)
+1958,Goblet
+1959,Enterocyte (Bottom Villus)
+1960,Enterocyte (Bottom Villus)
+1961,Enterocyte (Mid Villus)
+1962,Enterocyte (Mid Villus)
+1963,Smooth Muscle
+1964,Paneth
+1965,Goblet
+1966,Paneth
+1967,T (CD8+)
+1968,Enterocyte (Bottom Villus)
+1969,Stromal
+1970,Enterocyte (Bottom Villus)
+1971,Enterocyte (Bottom Villus)
+1972,T (CD8+)
+1973,Goblet
+1974,B (Plasma)
+1975,Paneth
+1976,Myenteric Plexus
+1977,Paneth
+1978,Paneth
+1979,Stromal
+1980,Stromal
+1981,Enterocyte (Bottom Villus)
+1982,Paneth
+1983,Removed
+1984,T (CD4+)
+1985,Macrophage + DC
+1986,Smooth Muscle
+1987,Removed
+1988,Removed
+1989,Goblet
+1990,Smooth Muscle
+1991,Stem + TA
+1992,Stromal
+1993,Goblet
+1994,B (Plasma)
+1995,Smooth Muscle
+1996,B (Plasma)
+1997,Paneth
+1998,Smooth Muscle
+1999,Enterocyte (Bottom Villus)
+2000,Stromal
+2001,Enterocyte (Bottom Villus)
+2002,Goblet
+2003,Stem + TA
+2004,Myenteric Plexus
+2005,Stem + TA
+2006,Paneth
+2007,Stem + TA
+2008,Enterocyte (Mid Villus)
+2009,Removed
+2010,Paneth
+2011,Stem + TA
+2012,Enterocyte (Mid Villus)
+2013,Removed
+2014,Stem + TA
+2015,Paneth
+2016,T (CD4+)
+2017,Enterocyte (Bottom Villus)
+2018,Enterocyte (Bottom Villus)
+2019,Paneth
+2020,Myenteric Plexus
+2021,Smooth Muscle
+2022,Enterocyte (Mid Villus)
+2023,Stromal
+2024,Smooth Muscle
+2025,B (Plasma)
+2026,Enterocyte (Bottom Villus)
+2027,Enterocyte (Mid Villus)
+2028,Telocyte
+2029,Myenteric Plexus
+2030,Smooth Muscle
+2031,Stromal
+2032,Removed
+2033,Goblet
+2034,Stromal
+2035,B (Plasma)
+2036,Goblet
+2037,Stem + TA
+2038,Stromal
+2039,B (Plasma)
+2040,Stromal
+2041,Enterocyte (Mid Villus)
+2042,Goblet
+2043,Telocyte
+2044,Paneth
+2045,Telocyte
+2046,Smooth Muscle
+2047,Smooth Muscle
+2048,Stem + TA
+2049,Paneth
+2050,Enterocyte (Bottom Villus)
+2051,Removed
+2052,Smooth Muscle
+2053,Paneth
+2054,Removed
+2055,Enterocyte (Mid Villus)
+2056,Stem + TA
+2057,Paneth
+2058,Removed
+2059,Enterocyte (Mid Villus)
+2060,Enterocyte (Bottom Villus)
+2061,Stem + TA
+2062,Stem + TA
+2063,Macrophage + DC
+2064,Enterocyte (Mid Villus)
+2065,Enterocyte (Mid Villus)
+2066,Stromal
+2067,Enterocyte (Mid Villus)
+2068,Enterocyte (Mid Villus)
+2069,T (CD8+)
+2070,Stem + TA
+2071,Macrophage + DC
+2072,Paneth
+2073,Enterocyte (Mid Villus)
+2074,Enterocyte (Mid Villus)
+2075,Paneth
+2076,Enterocyte (Mid Villus)
+2077,B (Plasma)
+2078,Telocyte
+2079,Removed
+2080,Stromal
+2081,Stem + TA
+2082,Enterocyte (Mid Villus)
+2083,Macrophage + DC
+2084,Paneth
+2085,B (Plasma)
+2086,Goblet
+2087,Macrophage + DC
+2088,Stromal
+2089,Smooth Muscle
+2090,Goblet
+2091,Removed
+2092,Goblet
+2093,Enterocyte (Mid Villus)
+2094,Removed
+2095,Stromal
+2096,Stem + TA
+2097,Removed
+2098,Goblet
+2099,Endothelial
+2100,Enterocyte (Bottom Villus)
+2101,Stem + TA
+2102,Macrophage + DC
+2103,Goblet
+2104,Smooth Muscle
+2105,B (Plasma)
+2106,Enterocyte (Mid Villus)
+2107,Removed
+2108,Paneth
+2109,Stromal
+2110,Enterocyte (Bottom Villus)
+2111,T (CD4+)
+2112,Paneth
+2113,Endothelial
+2114,Endothelial
+2115,Stem + TA
+2116,Stem + TA
+2117,Stem + TA
+2118,Paneth
+2119,Enterocyte (Bottom Villus)
+2120,Smooth Muscle
+2121,Enterocyte (Bottom Villus)
+2122,Enterocyte (Bottom Villus)
+2123,Goblet
+2124,Paneth
+2125,Goblet
+2126,Removed
+2127,B (Plasma)
+2128,Macrophage + DC
+2129,Stem + TA
+2130,Enterocyte (Bottom Villus)
+2131,Enterocyte (Bottom Villus)
+2132,Stem + TA
+2133,Smooth Muscle
+2134,B (Plasma)
+2135,Smooth Muscle
+2136,T (CD4+)
+2137,Removed
+2138,T (CD4+)
+2139,T (CD4+)
+2140,Stem + TA
+2141,Stem + TA
+2142,Stem + TA
+2143,Telocyte
+2144,Paneth
+2145,Smooth Muscle
+2146,Enterocyte (Mid Villus)
+2147,Smooth Muscle
+2148,B (Plasma)
+2149,Endothelial
+2150,Enterocyte (Bottom Villus)
+2151,Stem + TA
+2152,Paneth
+2153,Smooth Muscle
+2154,Stem + TA
+2155,T (CD8+)
+2156,Goblet
+2157,Paneth
+2158,Endothelial
+2159,Enterocyte (Bottom Villus)
+2160,T (CD8+)
+2161,Macrophage + DC
+2162,Macrophage + DC
+2163,Enterocyte (Bottom Villus)
+2164,Smooth Muscle
+2165,Stem + TA
+2166,Endothelial
+2167,Removed
+2168,Removed
+2169,Paneth
+2170,Enterocyte (Bottom Villus)
+2171,Stem + TA
+2172,Goblet
+2173,Removed
+2174,Stromal
+2175,Endothelial
+2176,Macrophage + DC
+2177,Stromal
+2178,Smooth Muscle
+2179,Enterocyte (Mid Villus)
+2180,B (Plasma)
+2181,Enterocyte (Mid Villus)
+2182,Stem + TA
+2183,B (Plasma)
+2184,Removed
+2185,Macrophage + DC
+2186,Enterocyte (Bottom Villus)
+2187,Paneth
+2188,Goblet
+2189,Smooth Muscle
+2190,Telocyte
+2191,Tuft
+2192,B (Plasma)
+2193,Enterocyte (Bottom Villus)
+2194,Smooth Muscle
+2195,Smooth Muscle
+2196,T (CD4+)
+2197,T (CD4+)
+2198,Enterocyte (Mid Villus)
+2199,Paneth
+2200,Goblet
+2201,Stromal
+2202,Enterocyte (Mid Villus)
+2203,Smooth Muscle
+2204,Goblet
+2205,Macrophage + DC
+2206,Paneth
+2207,Smooth Muscle
+2208,Enterocyte (Bottom Villus)
+2209,Enterocyte (Bottom Villus)
+2210,B (Plasma)
+2211,Enterocyte (Bottom Villus)
+2212,Stem + TA
+2213,Paneth
+2214,Removed
+2215,Smooth Muscle
+2216,Endothelial
+2217,Macrophage + DC
+2218,Stem + TA
+2219,Macrophage + DC
+2220,Stromal
+2221,Enterocyte (Mid Villus)
+2222,Stem + TA
+2223,Stem + TA
+2224,B (Plasma)
+2225,Smooth Muscle
+2226,Enterocyte (Bottom Villus)
+2227,B (Plasma)
+2228,Endothelial
+2229,Stromal
+2230,Enterocyte (Bottom Villus)
+2231,Stem + TA
+2232,Removed
+2233,Enterocyte (Mid Villus)
+2234,T (CD8+)
+2235,Smooth Muscle
+2236,T (CD4+)
+2237,Removed
+2238,Stromal
+2239,Stromal
+2240,Enterocyte (Bottom Villus)
+2241,B (Plasma)
+2242,Smooth Muscle
+2243,Paneth
+2244,B (Plasma)
+2245,B (Plasma)
+2246,T (CD4+)
+2247,Enterocyte (Mid Villus)
+2248,Endothelial
+2249,Stem + TA
+2250,Paneth
+2251,Removed
+2252,Enterocyte (Mid Villus)
+2253,Goblet
+2254,Removed
+2255,Endothelial
+2256,T (CD4+)
+2257,B (Plasma)
+2258,Enterocyte (Bottom Villus)
+2259,Stem + TA
+2260,Enterocyte (Mid Villus)
+2261,Enterocyte (Bottom Villus)
+2262,B (Plasma)
+2263,B (Plasma)
+2264,Paneth
+2265,Enterocyte (Bottom Villus)
+2266,Smooth Muscle
+2267,Goblet
+2268,Enterocyte (Bottom Villus)
+2269,Stem + TA
+2270,Smooth Muscle
+2271,Removed
+2272,Stem + TA
+2273,Removed
+2274,Enterocyte (Mid Villus)
+2275,Stem + TA
+2276,Macrophage + DC
+2277,T (CD4+)
+2278,Endothelial
+2279,Goblet
+2280,Enterocyte (Bottom Villus)
+2281,Smooth Muscle
+2282,Enterocyte (Bottom Villus)
+2283,Endothelial
+2284,Macrophage + DC
+2285,Enterocyte (Bottom Villus)
+2286,Paneth
+2287,Removed
+2288,Goblet
+2289,Macrophage + DC
+2290,Enterocyte (Mid Villus)
+2291,Smooth Muscle
+2292,Enterocyte (Bottom Villus)
+2293,T (CD8+)
+2294,Enterocyte (Bottom Villus)
+2295,Paneth
+2296,Stem + TA
+2297,Stromal
+2298,Paneth
+2299,Enterocyte (Bottom Villus)
+2300,Stem + TA
+2301,Enterocyte (Mid Villus)
+2302,Macrophage + DC
+2303,T (CD4+)
+2304,B (Plasma)
+2305,B (Plasma)
+2306,Removed
+2307,Smooth Muscle
+2308,B (Plasma)
+2309,T (CD8+)
+2310,Smooth Muscle
+2311,T (CD4+)
+2312,Goblet
+2313,Stromal
+2314,Smooth Muscle
+2315,Stem + TA
+2316,Stromal
+2317,Stromal
+2318,Endothelial
+2319,Removed
+2320,Endothelial
+2321,B (Plasma)
+2322,Enterocyte (Mid Villus)
+2323,T (CD4+)
+2324,B (Plasma)
+2325,Enterocyte (Mid Villus)
+2326,Enterocyte (Mid Villus)
+2327,Smooth Muscle
+2328,Stem + TA
+2329,Enterocyte (Mid Villus)
+2330,Telocyte
+2331,Enterocyte (Mid Villus)
+2332,B (Plasma)
+2333,Stromal
+2334,Stem + TA
+2335,Paneth
+2336,Enterocyte (Mid Villus)
+2337,Smooth Muscle
+2338,Goblet
+2339,Enterocyte (Top Villus)
+2340,Enterocyte (Mid Villus)
+2341,Goblet
+2342,Smooth Muscle
+2343,Removed
+2344,Enterocyte (Bottom Villus)
+2345,Endothelial
+2346,Enterocyte (Mid Villus)
+2347,T (CD4+)
+2348,Pericyte
+2349,B (Plasma)
+2350,B (Plasma)
+2351,ICC
+2352,B (Plasma)
+2353,B (Plasma)
+2354,Smooth Muscle
+2355,Stromal
+2356,Telocyte
+2357,B (Plasma)
+2358,Enterocyte (Mid Villus)
+2359,Removed
+2360,Macrophage + DC
+2361,Stromal
+2362,Enterocyte (Mid Villus)
+2363,Stromal
+2364,Enterocyte (Top Villus)
+2365,B (Plasma)
+2366,Enterocyte (Top Villus)
+2367,Stromal
+2368,Macrophage + DC
+2369,Stem + TA
+2370,Stromal
+2371,Enterocyte (Bottom Villus)
+2372,Endothelial
+2373,Goblet
+2374,Stem + TA
+2375,Endothelial
+2376,B (Plasma)
+2377,Stem + TA
+2378,Stromal
+2379,T (CD8+)
+2380,Smooth Muscle
+2381,Paneth
+2382,B (Plasma)
+2383,Enterocyte (Mid Villus)
+2384,Goblet
+2385,B (Plasma)
+2386,Stromal
+2387,Macrophage + DC
+2388,B (Plasma)
+2389,B (Plasma)
+2390,Enterocyte (Top Villus)
+2391,Macrophage + DC
+2392,Enterocyte (Mid Villus)
+2393,Stromal
+2394,B (Plasma)
+2395,T (CD4+)
+2396,Pericyte
+2397,Enterocyte (Top Villus)
+2398,T (CD4+)
+2399,Removed
+2400,B (Plasma)
+2401,Enterocyte (Mid Villus)
+2402,Smooth Muscle
+2403,Enterocyte (Top Villus)
+2404,Smooth Muscle
+2405,Stem + TA
+2406,Removed
+2407,Goblet
+2408,T (CD4+)
+2409,Removed
+2410,Enterocyte (Bottom Villus)
+2411,B (Plasma)
+2412,Enterocyte (Mid Villus)
+2413,B (Plasma)
+2414,Enterocyte (Mid Villus)
+2415,Stem + TA
+2416,Macrophage + DC
+2417,Enterocyte (Mid Villus)
+2418,Stem + TA
+2419,Stromal
+2420,Paneth
+2421,Macrophage + DC
+2422,Stem + TA
+2423,Stem + TA
+2424,Endothelial
+2425,B (Plasma)
+2426,Enterocyte (Bottom Villus)
+2427,Paneth
+2428,B (Plasma)
+2429,B (Plasma)
+2430,Enterocyte (Bottom Villus)
+2431,Stem + TA
+2432,Removed
+2433,Stem + TA
+2434,T (CD4+)
+2435,Stem + TA
+2436,Enterocyte (Top Villus)
+2437,Stromal
+2438,Enterocyte (Top Villus)
+2439,Smooth Muscle
+2440,Enterocyte (Mid Villus)
+2441,B (Plasma)
+2442,Smooth Muscle
+2443,Removed
+2444,Stromal
+2445,Enterocyte (Mid Villus)
+2446,Telocyte
+2447,Enterocyte (Mid Villus)
+2448,B (Plasma)
+2449,Enterocyte (Bottom Villus)
+2450,Macrophage + DC
+2451,B (Plasma)
+2452,B (Plasma)
+2453,Smooth Muscle
+2454,Enterocyte (Top Villus)
+2455,Enterocyte (Bottom Villus)
+2456,Enterocyte (Mid Villus)
+2457,Enterocyte (Top Villus)
+2458,Enterocyte (Bottom Villus)
+2459,Goblet
+2460,Endothelial
+2461,Macrophage + DC
+2462,Paneth
+2463,Goblet
+2464,Smooth Muscle
+2465,Stromal
+2466,Macrophage + DC
+2467,Removed
+2468,Macrophage + DC
+2469,T (CD4+)
+2470,Stromal
+2471,Stromal
+2472,Stromal
+2473,Stem + TA
+2474,Smooth Muscle
+2475,Macrophage + DC
+2476,"B (Follicular, Circulating)"
+2477,Goblet
+2478,Smooth Muscle
+2479,Smooth Muscle
+2480,T (CD4+)
+2481,B (Plasma)
+2482,T (CD4+)
+2483,Stromal
+2484,B (Plasma)
+2485,Macrophage + DC
+2486,Stem + TA
+2487,Smooth Muscle
+2488,Stem + TA
+2489,Goblet
+2490,Enterocyte (Mid Villus)
+2491,Enterocyte (Mid Villus)
+2492,Stem + TA
+2493,B (Plasma)
+2494,B (Plasma)
+2495,Enterocyte (Bottom Villus)
+2496,Stromal
+2497,Enterocyte (Mid Villus)
+2498,T (CD4+)
+2499,B (Plasma)
+2500,Macrophage + DC
+2501,Stem + TA
+2502,Tuft
+2503,Enterocyte (Mid Villus)
+2504,B (Plasma)
+2505,Stem + TA
+2506,Macrophage + DC
+2507,Paneth
+2508,B (Plasma)
+2509,Enterocyte (Mid Villus)
+2510,Enterocyte (Top Villus)
+2511,Enterocyte (Top Villus)
+2512,Paneth
+2513,Stem + TA
+2514,B (Plasma)
+2515,T (CD4+)
+2516,Paneth
+2517,Enterocyte (Mid Villus)
+2518,Enterocyte (Bottom Villus)
+2519,Stem + TA
+2520,Paneth
+2521,B (Plasma)
+2522,Stromal
+2523,T (CD4+)
+2524,Removed
+2525,Macrophage + DC
+2526,Smooth Muscle
+2527,Goblet
+2528,Stem + TA
+2529,T (CD8+)
+2530,Enterocyte (Mid Villus)
+2531,Enterocyte (Top Villus)
+2532,B (Plasma)
+2533,Removed
+2534,Enterocyte (Bottom Villus)
+2535,Stem + TA
+2536,Smooth Muscle
+2537,Smooth Muscle
+2538,Goblet
+2539,T (CD4+)
+2540,Endothelial
+2541,Macrophage + DC
+2542,Enterocyte (Bottom Villus)
+2543,Stromal
+2544,Enterocyte (Bottom Villus)
+2545,ICC
+2546,Stem + TA
+2547,B (Plasma)
+2548,T (CD4+)
+2549,Removed
+2550,Paneth
+2551,Goblet
+2552,B (Plasma)
+2553,Telocyte
+2554,B (Plasma)
+2555,Enterocyte (Mid Villus)
+2556,Enterocyte (Top Villus)
+2557,Enterocyte (Bottom Villus)
+2558,Smooth Muscle
+2559,Stromal
+2560,B (Plasma)
+2561,Endothelial
+2562,Macrophage + DC
+2563,Smooth Muscle
+2564,Stromal
+2565,Removed
+2566,Enterocyte (Mid Villus)
+2567,Stem + TA
+2568,Enterocyte (Bottom Villus)
+2569,Enterocyte (Bottom Villus)
+2570,Stromal
+2571,Stromal
+2572,B (Plasma)
+2573,Enterocyte (Top Villus)
+2574,Stem + TA
+2575,ICC
+2576,Stem + TA
+2577,Enterocyte (Top Villus)
+2578,Stem + TA
+2579,Enterocyte (Bottom Villus)
+2580,Paneth
+2581,Stem + TA
+2582,Enterocyte (Mid Villus)
+2583,Paneth
+2584,Stromal
+2585,Enterocyte (Mid Villus)
+2586,Stem + TA
+2587,Stem + TA
+2588,Removed
+2589,Macrophage + DC
+2590,Enterocyte (Mid Villus)
+2591,Removed
+2592,Enterocyte (Mid Villus)
+2593,Stem + TA
+2594,Smooth Muscle
+2595,Goblet
+2596,Paneth
+2597,Enterocyte (Mid Villus)
+2598,Paneth
+2599,Goblet
+2600,Stromal
+2601,Enterocyte (Mid Villus)
+2602,Stromal
+2603,Stem + TA
+2604,Paneth
+2605,Stem + TA
+2606,T (CD4+)
+2607,Goblet
+2608,Smooth Muscle
+2609,B (Plasma)
+2610,Stem + TA
+2611,Enterocyte (Bottom Villus)
+2612,ICC
+2613,Stem + TA
+2614,Enterocyte (Bottom Villus)
+2615,B (Plasma)
+2616,Macrophage + DC
+2617,Stromal
+2618,T (CD8+)
+2619,Macrophage + DC
+2620,Macrophage + DC
+2621,T (CD8+)
+2622,B (Plasma)
+2623,Smooth Muscle
+2624,Paneth
+2625,Enterocyte (Top Villus)
+2626,Enterocyte (Mid Villus)
+2627,Enterocyte (Mid Villus)
+2628,T (CD4+)
+2629,Stromal
+2630,Stem + TA
+2631,T (CD4+)
+2632,Enterocyte (Bottom Villus)
+2633,Enterocyte (Mid Villus)
+2634,Stromal
+2635,Enterocyte (Mid Villus)
+2636,Enterocyte (Bottom Villus)
+2637,Smooth Muscle
+2638,Stromal
+2639,B (Plasma)
+2640,Enterocyte (Mid Villus)
+2641,Removed
+2642,B (Plasma)
+2643,Endothelial
+2644,Enterocyte (Mid Villus)
+2645,Stem + TA
+2646,Stem + TA
+2647,Paneth
+2648,Enterocyte (Bottom Villus)
+2649,Stem + TA
+2650,Enterocyte (Mid Villus)
+2651,Enterocyte (Bottom Villus)
+2652,Enterocyte (Mid Villus)
+2653,Paneth
+2654,Enterocyte (Mid Villus)
+2655,B (Plasma)
+2656,Enterocyte (Mid Villus)
+2657,Enterocyte (Top Villus)
+2658,B (Plasma)
+2659,Enterocyte (Mid Villus)
+2660,Macrophage + DC
+2661,Macrophage + DC
+2662,Endothelial
+2663,Paneth
+2664,Macrophage + DC
+2665,Enterocyte (Bottom Villus)
+2666,Enterocyte (Mid Villus)
+2667,Enterocyte (Mid Villus)
+2668,Stromal
+2669,Paneth
+2670,"B (Follicular, Circulating)"
+2671,Enterocyte (Mid Villus)
+2672,Endothelial
+2673,Macrophage + DC
+2674,Macrophage + DC
+2675,B (Plasma)
+2676,Enterocyte (Mid Villus)
+2677,B (Plasma)
+2678,Smooth Muscle
+2679,Enterocyte (Mid Villus)
+2680,Stem + TA
+2681,B (Plasma)
+2682,Smooth Muscle
+2683,Enterocyte (Bottom Villus)
+2684,Macrophage + DC
+2685,Enterocyte (Mid Villus)
+2686,Stromal
+2687,Enterocyte (Bottom Villus)
+2688,Telocyte
+2689,Enterocyte (Bottom Villus)
+2690,B (Plasma)
+2691,Macrophage + DC
+2692,Stromal
+2693,Enterocyte (Mid Villus)
+2694,Stem + TA
+2695,Smooth Muscle
+2696,Macrophage + DC
+2697,T (CD4+)
+2698,Stromal
+2699,B (Plasma)
+2700,Goblet
+2701,Endothelial
+2702,Endothelial
+2703,Enterocyte (Top Villus)
+2704,Enterocyte (Bottom Villus)
+2705,Macrophage + DC
+2706,B (Plasma)
+2707,B (Plasma)
+2708,B (Plasma)
+2709,Macrophage + DC
+2710,B (Plasma)
+2711,Stromal
+2712,Stromal
+2713,Enterocyte (Mid Villus)
+2714,"B (Follicular, Circulating)"
+2715,Enterocyte (Mid Villus)
+2716,Enterocyte (Mid Villus)
+2717,B (Plasma)
+2718,Enterocyte (Bottom Villus)
+2719,Enterocyte (Mid Villus)
+2720,Enterocyte (Mid Villus)
+2721,Paneth
+2722,Enterocyte (Top Villus)
+2723,Telocyte
+2724,Removed
+2725,Smooth Muscle
+2726,B (Plasma)
+2727,Paneth
+2728,Stem + TA
+2729,Pericyte
+2730,B (Plasma)
+2731,Stromal
+2732,Telocyte
+2733,Enterocyte (Bottom Villus)
+2734,Stromal
+2735,Enterocyte (Mid Villus)
+2736,Enterocyte (Bottom Villus)
+2737,Enterocyte (Mid Villus)
+2738,Stromal
+2739,Stromal
+2740,B (Plasma)
+2741,Endothelial
+2742,Macrophage + DC
+2743,Enterocyte (Mid Villus)
+2744,Enterocyte (Bottom Villus)
+2745,Goblet
+2746,Enterocyte (Mid Villus)
+2747,Enterocyte (Top Villus)
+2748,Enterocyte (Mid Villus)
+2749,Smooth Muscle
+2750,Stromal
+2751,Enterocyte (Bottom Villus)
+2752,Goblet
+2753,B (Plasma)
+2754,B (Plasma)
+2755,Stem + TA
+2756,Enterocyte (Mid Villus)
+2757,B (Plasma)
+2758,Stem + TA
+2759,Paneth
+2760,B (Plasma)
+2761,Macrophage + DC
+2762,Paneth
+2763,B (Plasma)
+2764,B (Plasma)
+2765,Enterocyte (Mid Villus)
+2766,T (CD8+)
+2767,T (CD4+)
+2768,Pericyte
+2769,Stromal
+2770,Enterocyte (Top Villus)
+2771,Stromal
+2772,Stem + TA
+2773,Enterocyte (Mid Villus)
+2774,"B (Follicular, Circulating)"
+2775,Stromal
+2776,Enterocyte (Bottom Villus)
+2777,"B (Follicular, Circulating)"
+2778,B (Plasma)
+2779,Macrophage + DC
+2780,Stem + TA
+2781,T (CD8+)
+2782,Enterocyte (Bottom Villus)
+2783,Enterocyte (Bottom Villus)
+2784,B (Plasma)
+2785,Telocyte
+2786,Enterocyte (Top Villus)
+2787,Endothelial
+2788,Enterocyte (Bottom Villus)
+2789,Endothelial
+2790,Endothelial
+2791,Macrophage + DC
+2792,Paneth
+2793,Stem + TA
+2794,Stromal
+2795,Macrophage + DC
+2796,Enterocyte (Mid Villus)
+2797,Stromal
+2798,Stromal
+2799,Goblet
+2800,Stem + TA
+2801,Paneth
+2802,Stromal
+2803,Enterocyte (Mid Villus)
+2804,Tuft
+2805,Smooth Muscle
+2806,T (CD8+)
+2807,T (CD4+)
+2808,Enterocyte (Bottom Villus)
+2809,Endothelial
+2810,B (Plasma)
+2811,Endothelial
+2812,Macrophage + DC
+2813,Stromal
+2814,Endothelial
+2815,Enterocyte (Mid Villus)
+2816,T (CD8+)
+2817,Goblet
+2818,Enterocyte (Bottom Villus)
+2819,B (Plasma)
+2820,Enterocyte (Mid Villus)
+2821,Stem + TA
+2822,Removed
+2823,Endothelial
+2824,Enterocyte (Bottom Villus)
+2825,Removed
+2826,B (Plasma)
+2827,Stem + TA
+2828,Enterocyte (Top Villus)
+2829,Enterocyte (Top Villus)
+2830,Macrophage + DC
+2831,Endothelial
+2832,Enterocyte (Mid Villus)
+2833,B (Plasma)
+2834,Enterocyte (Mid Villus)
+2835,Stem + TA
+2836,Stromal
+2837,B (Plasma)
+2838,Enterocyte (Top Villus)
+2839,Enterocyte (Top Villus)
+2840,Enterocyte (Bottom Villus)
+2841,Stromal
+2842,Stromal
+2843,B (Plasma)
+2844,Enterocyte (Top Villus)
+2845,B (Plasma)
+2846,Stem + TA
+2847,Removed
+2848,Enterocyte (Bottom Villus)
+2849,Stromal
+2850,B (Plasma)
+2851,"B (Follicular, Circulating)"
+2852,Enterocyte (Mid Villus)
+2853,Endothelial
+2854,B (Plasma)
+2855,Enterocyte (Bottom Villus)
+2856,Macrophage + DC
+2857,Enterocyte (Bottom Villus)
+2858,B (Plasma)
+2859,Stromal
+2860,Macrophage + DC
+2861,Enterocyte (Mid Villus)
+2862,T (CD8+)
+2863,Enterocyte (Mid Villus)
+2864,T (CD4+)
+2865,Removed
+2866,Endothelial
+2867,Macrophage + DC
+2868,Enterocyte (Bottom Villus)
+2869,Stem + TA
+2870,Enterocyte (Mid Villus)
+2871,Macrophage + DC
+2872,Stem + TA
+2873,Macrophage + DC
+2874,T (CD8+)
+2875,B (Plasma)
+2876,Paneth
+2877,Stromal
+2878,B (Plasma)
+2879,Removed
+2880,Enterocyte (Mid Villus)
+2881,Enterocyte (Mid Villus)
+2882,Macrophage + DC
+2883,Enterocyte (Mid Villus)
+2884,Enterocyte (Mid Villus)
+2885,Endothelial
+2886,Stromal
+2887,Enterocyte (Mid Villus)
+2888,Enterocyte (Top Villus)
+2889,Enterocyte (Top Villus)
+2890,Removed
+2891,T (CD4+)
+2892,"B (Follicular, Circulating)"
+2893,B (Plasma)
+2894,Enterocyte (Top Villus)
+2895,Stromal
+2896,Stem + TA
+2897,Goblet
+2898,B (Plasma)
+2899,Stem + TA
+2900,Macrophage + DC
+2901,Goblet
+2902,Enterocyte (Top Villus)
+2903,B (Plasma)
+2904,T (CD4+)
+2905,Macrophage + DC
+2906,B (Plasma)
+2907,Enterocyte (Top Villus)
+2908,Enterocyte (Mid Villus)
+2909,Enterocyte (Bottom Villus)
+2910,Enterocyte (Mid Villus)
+2911,Stromal
+2912,Enterocyte (Bottom Villus)
+2913,Removed
+2914,Enterocyte (Mid Villus)
+2915,Removed
+2916,B (Plasma)
+2917,Enterocyte (Mid Villus)
+2918,Pericyte
+2919,Removed
+2920,Enterocyte (Mid Villus)
+2921,B (Plasma)
+2922,Macrophage + DC
+2923,Goblet
+2924,Enterocyte (Mid Villus)
+2925,Paneth
+2926,Removed
+2927,T (CD8+)
+2928,Telocyte
+2929,Enterocyte (Mid Villus)
+2930,Enterocyte (Mid Villus)
+2931,Enterocyte (Mid Villus)
+2932,Smooth Muscle
+2933,Enterocyte (Top Villus)
+2934,Macrophage + DC
+2935,Macrophage + DC
+2936,B (Plasma)
+2937,Stromal
+2938,Macrophage + DC
+2939,Pericyte
+2940,Pericyte
+2941,Macrophage + DC
+2942,Goblet
+2943,Enterocyte (Mid Villus)
+2944,Paneth
+2945,Macrophage + DC
+2946,Removed
+2947,Stem + TA
+2948,Stem + TA
+2949,Enterocyte (Bottom Villus)
+2950,Stromal
+2951,Macrophage + DC
+2952,Macrophage + DC
+2953,T (CD8+)
+2954,Goblet
+2955,Enterocyte (Mid Villus)
+2956,Enterocyte (Top Villus)
+2957,Stromal
+2958,Enterocyte (Top Villus)
+2959,Paneth
+2960,Enterocyte (Mid Villus)
+2961,B (Plasma)
+2962,Macrophage + DC
+2963,Pericyte
+2964,Endothelial
+2965,B (Plasma)
+2966,Paneth
+2967,Enterocyte (Bottom Villus)
+2968,Paneth
+2969,Endothelial
+2970,T (CD4+)
+2971,Enterocyte (Mid Villus)
+2972,Removed
+2973,B (Plasma)
+2974,B (Plasma)
+2975,Enterocyte (Mid Villus)
+2976,Goblet
+2977,Enterocyte (Bottom Villus)
+2978,Enterocyte (Mid Villus)
+2979,Smooth Muscle
+2980,Removed
+2981,Macrophage + DC
+2982,B (Plasma)
+2983,Enterocyte (Mid Villus)
+2984,Pericyte
+2985,Enterocyte (Top Villus)
+2986,Paneth
+2987,Macrophage + DC
+2988,Enterocyte (Mid Villus)
+2989,T (CD8+)
+2990,Stem + TA
+2991,B (Plasma)
+2992,Goblet
+2993,Macrophage + DC
+2994,Enterocyte (Top Villus)
+2995,Enterocyte (Top Villus)
+2996,Enterocyte (Mid Villus)
+2997,Enterocyte (Bottom Villus)
+2998,Macrophage + DC
+2999,Stromal
+3000,Enterocyte (Bottom Villus)
+3001,Goblet
+3002,Goblet
+3003,Enterocyte (Mid Villus)
+3004,B (Plasma)
+3005,Macrophage + DC
+3006,B (Plasma)
+3007,B (Plasma)
+3008,Macrophage + DC
+3009,Endothelial
+3010,Enterocyte (Top Villus)
+3011,T (CD8+)
+3012,Stromal
+3013,Enterocyte (Mid Villus)
+3014,Enterocyte (Top Villus)
+3015,Macrophage + DC
+3016,Enterocyte (Bottom Villus)
+3017,Enterocyte (Bottom Villus)
+3018,Enterocyte (Mid Villus)
+3019,Enterocyte (Mid Villus)
+3020,Enterocyte (Mid Villus)
+3021,Enterocyte (Top Villus)
+3022,Paneth
+3023,Stem + TA
+3024,Enterocyte (Mid Villus)
+3025,Stem + TA
+3026,Removed
+3027,B (Plasma)
+3028,B (Plasma)
+3029,Macrophage + DC
+3030,Stem + TA
+3031,B (Plasma)
+3032,Enterocyte (Mid Villus)
+3033,Enterocyte (Mid Villus)
+3034,Enterocyte (Top Villus)
+3035,Stromal
+3036,Stromal
+3037,Enterocyte (Bottom Villus)
+3038,Enterocyte (Top Villus)
+3039,Stromal
+3040,Macrophage + DC
+3041,Enterocyte (Mid Villus)
+3042,Enterocyte (Bottom Villus)
+3043,Goblet
+3044,B (Plasma)
+3045,T (CD8+)
+3046,Stem + TA
+3047,Stromal
+3048,Removed
+3049,Enterocyte (Mid Villus)
+3050,Macrophage + DC
+3051,Enterocyte (Top Villus)
+3052,Enterocyte (Bottom Villus)
+3053,Goblet
+3054,Goblet
+3055,Enterocyte (Mid Villus)
+3056,Goblet
+3057,Stromal
+3058,B (Plasma)
+3059,Endothelial
+3060,Goblet
+3061,T (CD8+)
+3062,Enterocyte (Mid Villus)
+3063,Stem + TA
+3064,Paneth
+3065,Stem + TA
+3066,Removed
+3067,Enterocyte (Top Villus)
+3068,Enterocyte (Bottom Villus)
+3069,Paneth
+3070,Tuft
+3071,T (CD4+)
+3072,B (Plasma)
+3073,Stromal
+3074,Stem + TA
+3075,Stem + TA
+3076,Macrophage + DC
+3077,Enterocyte (Mid Villus)
+3078,Enterocyte (Mid Villus)
+3079,Enterocyte (Bottom Villus)
+3080,Enterocyte (Top Villus)
+3081,Removed
+3082,Enterocyte (Mid Villus)
+3083,Pericyte
+3084,Enterocyte (Mid Villus)
+3085,Enterocyte (Bottom Villus)
+3086,Goblet
+3087,Paneth
+3088,Enterocyte (Top Villus)
+3089,Goblet
+3090,Stem + TA
+3091,Enterocyte (Top Villus)
+3092,Goblet
+3093,T (CD4+)
+3094,Removed
+3095,Stem + TA
+3096,B (Plasma)
+3097,Removed
+3098,Macrophage + DC
+3099,Paneth
+3100,Enterocyte (Mid Villus)
+3101,Removed
+3102,Enterocyte (Top Villus)
+3103,Enterocyte (Mid Villus)
+3104,B (Plasma)
+3105,Stem + TA
+3106,Enterocyte (Mid Villus)
+3107,Removed
+3108,B (Plasma)
+3109,Removed
+3110,Enterocyte (Mid Villus)
+3111,T (CD4+)
+3112,Enterocyte (Mid Villus)
+3113,Enterocyte (Mid Villus)
+3114,Stem + TA
+3115,B (Plasma)
+3116,B (Plasma)
+3117,Goblet
+3118,Enterocyte (Mid Villus)
+3119,Removed
+3120,Enterocyte (Mid Villus)
+3121,Enterocyte (Top Villus)
+3122,Stem + TA
+3123,Removed
+3124,B (Plasma)
+3125,Macrophage + DC
+3126,Paneth
+3127,Macrophage + DC
+3128,Paneth
+3129,T (CD8+)
+3130,Enterocyte (Bottom Villus)
+3131,Stem + TA
+3132,Stem + TA
+3133,Removed
+3134,Removed
+3135,Enterocyte (Mid Villus)
+3136,Stem + TA
+3137,T (CD4+)
+3138,Enterocyte (Mid Villus)
+3139,Enterocyte (Mid Villus)
+3140,Goblet
+3141,Enterocyte (Mid Villus)
+3142,Enterocyte (Mid Villus)
+3143,Enterocyte (Mid Villus)
+3144,Enterocyte (Mid Villus)
+3145,Enterocyte (Top Villus)
+3146,Stem + TA
+3147,Pericyte
+3148,Enterocyte (Top Villus)
+3149,Paneth
+3150,Enterocyte (Bottom Villus)
+3151,T (CD8+)
+3152,Stromal
+3153,T (CD8+)
+3154,Macrophage + DC
+3155,Enterocyte (Bottom Villus)
+3156,Macrophage + DC
+3157,Stem + TA
+3158,Enterocyte (Mid Villus)
+3159,B (Plasma)
+3160,Paneth
+3161,B (Plasma)
+3162,B (Plasma)
+3163,Enterocyte (Mid Villus)
+3164,Removed
+3165,Stem + TA
+3166,Enterocyte (Mid Villus)
+3167,Endothelial
+3168,Pericyte
+3169,T (CD4+)
+3170,Macrophage + DC
+3171,Stromal
+3172,Paneth
+3173,T (CD4+)
+3174,Enterocyte (Bottom Villus)
+3175,Smooth Muscle
+3176,Removed
+3177,Macrophage + DC
+3178,Removed
+3179,Enterocyte (Bottom Villus)
+3180,B (Plasma)
+3181,Endothelial
+3182,Enterocyte (Mid Villus)
+3183,Enterocyte (Mid Villus)
+3184,Stem + TA
+3185,Goblet
+3186,Goblet
+3187,Enterocyte (Mid Villus)
+3188,Macrophage + DC
+3189,Enterocyte (Mid Villus)
+3190,B (Plasma)
+3191,Enterocyte (Mid Villus)
+3192,Enterocyte (Mid Villus)
+3193,Enterocyte (Mid Villus)
+3194,Macrophage + DC
+3195,B (Plasma)
+3196,Macrophage + DC
+3197,Macrophage + DC
+3198,T (CD8+)
+3199,Enterocyte (Mid Villus)
+3200,Endothelial
+3201,Enterocyte (Bottom Villus)
+3202,T (CD8+)
+3203,Removed
+3204,Enterocyte (Mid Villus)
+3205,Removed
+3206,Enterocyte (Bottom Villus)
+3207,Stem + TA
+3208,Removed
+3209,Enterocyte (Mid Villus)
+3210,Enterocyte (Mid Villus)
+3211,Goblet
+3212,Enterocyte (Bottom Villus)
+3213,Macrophage + DC
+3214,T (CD4+)
+3215,Stem + TA
+3216,T (CD4+)
+3217,Enterocyte (Mid Villus)
+3218,Enterocyte (Bottom Villus)
+3219,T (CD8+)
+3220,T (CD8+)
+3221,Enterocyte (Mid Villus)
+3222,Goblet
+3223,Enterocyte (Top Villus)
+3224,Goblet
+3225,Stem + TA
+3226,Stem + TA
+3227,T (CD8+)
+3228,Endothelial
+3229,Paneth
+3230,Macrophage + DC
+3231,Enterocyte (Mid Villus)
+3232,Stromal
+3233,Enterocyte (Bottom Villus)
+3234,Enterocyte (Bottom Villus)
+3235,Enterocyte (Bottom Villus)
+3236,Macrophage + DC
+3237,Enterocyte (Mid Villus)
+3238,Enterocyte (Bottom Villus)
+3239,Enterocyte (Mid Villus)
+3240,Stem + TA
+3241,Enterocyte (Mid Villus)
+3242,Enterocyte (Mid Villus)
+3243,Enterocyte (Bottom Villus)
+3244,Enterocyte (Mid Villus)
+3245,Enterocyte (Mid Villus)
+3246,T (CD8+)
+3247,Enterocyte (Top Villus)
+3248,Enterocyte (Bottom Villus)
+3249,Macrophage + DC
+3250,Enterocyte (Top Villus)
+3251,Enterocyte (Mid Villus)
+3252,Enterocyte (Mid Villus)
+3253,Enterocyte (Mid Villus)
+3254,B (Plasma)
+3255,Enterocyte (Mid Villus)
+3256,Stem + TA
+3257,Goblet
+3258,Stem + TA
+3259,T (CD4+)
+3260,Removed
+3261,Enterocyte (Top Villus)
+3262,Stromal
+3263,B (Plasma)
+3264,Enterocyte (Bottom Villus)
+3265,Enterocyte (Mid Villus)
+3266,B (Plasma)
+3267,Enterocyte (Mid Villus)
+3268,Stem + TA
+3269,Macrophage + DC
+3270,Stem + TA
+3271,B (Plasma)
+3272,T (CD8+)
+3273,Enterocyte (Top Villus)
+3274,Stem + TA
+3275,Enterocyte (Top Villus)
+3276,B (Plasma)
+3277,Goblet
+3278,Goblet
+3279,Stem + TA
+3280,Removed
+3281,Stem + TA
+3282,Pericyte
+3283,Stem + TA
+3284,Endothelial
+3285,T (CD8+)
+3286,Stromal
+3287,Paneth
+3288,T (CD4+)
+3289,Enterocyte (Mid Villus)
+3290,Goblet
+3291,T (CD8+)
+3292,Endothelial
+3293,Enterocyte (Bottom Villus)
+3294,Goblet
+3295,Stem + TA
+3296,Enterocyte (Bottom Villus)
+3297,Pericyte
+3298,Enterocyte (Bottom Villus)
+3299,Stem + TA
+3300,Removed
+3301,Enterocyte (Top Villus)
+3302,Enterocyte (Mid Villus)
+3303,Pericyte
+3304,Telocyte
+3305,Enterocyte (Top Villus)
+3306,T (CD4+)
+3307,Stem + TA
+3308,Removed
+3309,B (Plasma)
+3310,Stromal
+3311,Enterocyte (Mid Villus)
+3312,Stem + TA
+3313,Enterocyte (Mid Villus)
+3314,Enterocyte (Mid Villus)
+3315,T (CD4+)
+3316,Stem + TA
+3317,Macrophage + DC
+3318,Enterocyte (Mid Villus)
+3319,Goblet
+3320,Goblet
+3321,T (CD4+)
+3322,T (CD8+)
+3323,Enterocyte (Mid Villus)
+3324,Enterocyte (Bottom Villus)
+3325,Goblet
+3326,Enterocyte (Mid Villus)
+3327,B (Plasma)
+3328,Goblet
+3329,Endothelial
+3330,Enterocyte (Mid Villus)
+3331,Enterocyte (Mid Villus)
+3332,Macrophage + DC
+3333,Stromal
+3334,Stem + TA
+3335,B (Plasma)
+3336,Stromal
+3337,Removed
+3338,Enterocyte (Mid Villus)
+3339,Macrophage + DC
+3340,Enterocyte (Mid Villus)
+3341,T (CD4+)
+3342,Endothelial
+3343,B (Plasma)
+3344,Stem + TA
+3345,Stromal
+3346,Macrophage + DC
+3347,Enterocyte (Mid Villus)
+3348,Stem + TA
+3349,Enterocyte (Bottom Villus)
+3350,Stem + TA
+3351,Stem + TA
+3352,Enterocyte (Top Villus)
+3353,Enterocyte (Top Villus)
+3354,Goblet
+3355,Endothelial
+3356,T (CD4+)
+3357,Goblet
+3358,B (Plasma)
+3359,Stem + TA
+3360,T (CD8+)
+3361,Enterocyte (Mid Villus)
+3362,Stromal
+3363,Enterocyte (Top Villus)
+3364,B (Plasma)
+3365,T (CD4+)
+3366,Enterocyte (Mid Villus)
+3367,Enterocyte (Mid Villus)
+3368,Enterocyte (Mid Villus)
+3369,Enterocyte (Mid Villus)
+3370,Stem + TA
+3371,Stem + TA
+3372,Goblet
+3373,T (CD8+)
+3374,Goblet
+3375,Endothelial
+3376,Macrophage + DC
+3377,T (CD4+)
+3378,Stem + TA
+3379,Enterocyte (Mid Villus)
+3380,Enterocyte (Top Villus)
+3381,Stromal
+3382,Stem + TA
+3383,Enterocyte (Mid Villus)
+3384,Stem + TA
+3385,Goblet
+3386,T (CD4+)
+3387,Macrophage + DC
+3388,Enterocyte (Mid Villus)
+3389,Enterocyte (Mid Villus)
+3390,Removed
+3391,Stromal
+3392,Enterocyte (Mid Villus)
+3393,Enterocyte (Bottom Villus)
+3394,Enterocyte (Mid Villus)
+3395,Enterocyte (Mid Villus)
+3396,Enterocyte (Bottom Villus)
+3397,Goblet
+3398,Enterocyte (Mid Villus)
+3399,Stromal
+3400,Macrophage + DC
+3401,Stem + TA
+3402,Enterocyte (Mid Villus)
+3403,Macrophage + DC
+3404,Enterocyte (Mid Villus)
+3405,B (Plasma)
+3406,Enterocyte (Mid Villus)
+3407,T (CD4+)
+3408,Enterocyte (Mid Villus)
+3409,Removed
+3410,Removed
+3411,B (Plasma)
+3412,Enterocyte (Mid Villus)
+3413,Stem + TA
+3414,Enterocyte (Mid Villus)
+3415,Paneth
+3416,Telocyte
+3417,B (Plasma)
+3418,Stem + TA
+3419,Stromal
+3420,Enterocyte (Mid Villus)
+3421,Goblet
+3422,Paneth
+3423,B (Plasma)
+3424,Enterocyte (Mid Villus)
+3425,Tuft
+3426,Macrophage + DC
+3427,Enterocyte (Mid Villus)
+3428,B (Plasma)
+3429,Tuft
+3430,Enterocyte (Bottom Villus)
+3431,Paneth
+3432,Enterocyte (Bottom Villus)
+3433,B (Plasma)
+3434,Stromal
+3435,Stromal
+3436,Enterocyte (Mid Villus)
+3437,Stem + TA
+3438,B (Plasma)
+3439,Stem + TA
+3440,Macrophage + DC
+3441,Macrophage + DC
+3442,Enterocyte (Bottom Villus)
+3443,Enterocyte (Bottom Villus)
+3444,Macrophage + DC
+3445,Enterocyte (Mid Villus)
+3446,Goblet
+3447,Enterocyte (Mid Villus)
+3448,T (CD8+)
+3449,Enterocyte (Mid Villus)
+3450,B (Plasma)
+3451,Stem + TA
+3452,Goblet
+3453,Removed
+3454,Stem + TA
+3455,Enterocyte (Bottom Villus)
+3456,B (Plasma)
+3457,Stromal
+3458,Stem + TA
+3459,Goblet
+3460,Macrophage + DC
+3461,Enterocyte (Mid Villus)
+3462,Stem + TA
+3463,Goblet
+3464,Goblet
+3465,Enterocyte (Mid Villus)
+3466,Enterocyte (Mid Villus)
+3467,Macrophage + DC
+3468,Enterocyte (Mid Villus)
+3469,Stem + TA
+3470,Enterocyte (Mid Villus)
+3471,Goblet
+3472,Enterocyte (Mid Villus)
+3473,Stem + TA
+3474,Goblet
+3475,Stem + TA
+3476,B (Plasma)
+3477,Paneth
+3478,T (CD8+)
+3479,Paneth
+3480,Stem + TA
+3481,Enterocyte (Mid Villus)
+3482,Enterocyte (Mid Villus)
+3483,Macrophage + DC
+3484,Stem + TA
+3485,Enterocyte (Mid Villus)
+3486,Enterocyte (Bottom Villus)
+3487,Enterocyte (Bottom Villus)
+3488,Stromal
+3489,Enterocyte (Mid Villus)
+3490,Paneth
+3491,T (CD4+)
+3492,T (CD4+)
+3493,Enterocyte (Bottom Villus)
+3494,B (Plasma)
+3495,Stromal
+3496,Enterocyte (Mid Villus)
+3497,Enterocyte (Mid Villus)
+3498,B (Plasma)
+3499,Enterocyte (Mid Villus)
+3500,Endothelial
+3501,Stem + TA
+3502,T (CD8+)
+3503,Enterocyte (Mid Villus)
+3504,T (CD4+)
+3505,Enterocyte (Mid Villus)
+3506,Goblet
+3507,Stem + TA
+3508,Goblet
+3509,Enterocyte (Mid Villus)
+3510,Enterocyte (Bottom Villus)
+3511,Tuft
+3512,Enterocyte (Mid Villus)
+3513,Macrophage + DC
+3514,Stem + TA
+3515,Macrophage + DC
+3516,Enterocyte (Mid Villus)
+3517,Pericyte
+3518,Enterocyte (Mid Villus)
+3519,Enterocyte (Mid Villus)
+3520,Stromal
+3521,Stromal
+3522,Stem + TA
+3523,Enterocyte (Mid Villus)
+3524,B (Plasma)
+3525,Removed
+3526,Enterocyte (Mid Villus)
+3527,Enterocyte (Mid Villus)
+3528,Enterocyte (Bottom Villus)
+3529,Enterocyte (Mid Villus)
+3530,T (CD8+)
+3531,B (Plasma)
+3532,Goblet
+3533,Enterocyte (Bottom Villus)
+3534,Endothelial
+3535,Pericyte
+3536,Goblet
+3537,Stem + TA
+3538,Stromal
+3539,Tuft
+3540,Macrophage + DC
+3541,Goblet
+3542,Enterocyte (Mid Villus)
+3543,Enterocyte (Mid Villus)
+3544,Enterocyte (Bottom Villus)
+3545,B (Plasma)
+3546,T (CD4+)
+3547,"B (Follicular, Circulating)"
+3548,Enterocyte (Mid Villus)
+3549,Stem + TA
+3550,Enterocyte (Mid Villus)
+3551,Paneth
+3552,Stem + TA
+3553,Stem + TA
+3554,Stem + TA
+3555,T (CD4+)
+3556,Removed
+3557,Goblet
+3558,Goblet
+3559,B (Plasma)
+3560,Stromal
+3561,Enterocyte (Mid Villus)
+3562,Endothelial
+3563,Enterocyte (Mid Villus)
+3564,Macrophage + DC
+3565,Macrophage + DC
+3566,Enterocyte (Mid Villus)
+3567,Enterocyte (Bottom Villus)
+3568,T (CD4+)
+3569,Enterocyte (Mid Villus)
+3570,Pericyte
+3571,Stem + TA
+3572,Enterocyte (Mid Villus)
+3573,Removed
+3574,Stromal
+3575,Enterocyte (Mid Villus)
+3576,Enterocyte (Mid Villus)
+3577,Enterocyte (Mid Villus)
+3578,Stem + TA
+3579,Stromal
+3580,T (CD4+)
+3581,Stem + TA
+3582,Goblet
+3583,Enterocyte (Mid Villus)
+3584,Enterocyte (Mid Villus)
+3585,Paneth
+3586,Endothelial
+3587,Stromal
+3588,Enterocyte (Bottom Villus)
+3589,Enterocyte (Mid Villus)
+3590,T (CD8+)
+3591,Enterocyte (Mid Villus)
+3592,Enterocyte (Mid Villus)
+3593,Removed
+3594,Goblet
+3595,B (Plasma)
+3596,Enterocyte (Mid Villus)
+3597,Enterocyte (Top Villus)
+3598,Enterocyte (Bottom Villus)
+3599,Macrophage + DC
+3600,B (Plasma)
+3601,Enterocyte (Top Villus)
+3602,Enterocyte (Mid Villus)
+3603,T (CD4+)
+3604,"B (Follicular, Circulating)"
+3605,Enterocyte (Top Villus)
+3606,Goblet
+3607,Macrophage + DC
+3608,Pericyte
+3609,Removed
+3610,Goblet
+3611,B (Plasma)
+3612,Macrophage + DC
+3613,Enterocyte (Bottom Villus)
+3614,Enterocyte (Bottom Villus)
+3615,Enterocyte (Mid Villus)
+3616,T (CD8+)
+3617,Enterocyte (Bottom Villus)
+3618,T (CD8+)
+3619,Goblet
+3620,Enterocyte (Mid Villus)
+3621,Enterocyte (Mid Villus)
+3622,Stem + TA
+3623,Stem + TA
+3624,T (CD8+)
+3625,Enterocyte (Mid Villus)
+3626,Endothelial
+3627,"B (Follicular, Circulating)"
+3628,Enterocyte (Mid Villus)
+3629,Enterocyte (Mid Villus)
+3630,Enterocyte (Mid Villus)
+3631,Enterocyte (Mid Villus)
+3632,Enterocyte (Bottom Villus)
+3633,Enterocyte (Mid Villus)
+3634,Enterocyte (Mid Villus)
+3635,Enterocyte (Top Villus)
+3636,Goblet
+3637,Macrophage + DC
+3638,Goblet
+3639,Macrophage + DC
+3640,Enterocyte (Mid Villus)
+3641,B (Plasma)
+3642,Enterocyte (Bottom Villus)
+3643,Enterocyte (Mid Villus)
+3644,Enterocyte (Mid Villus)
+3645,T (CD8+)
+3646,Enterocyte (Mid Villus)
+3647,T (CD8+)
+3648,B (Plasma)
+3649,Removed
+3650,Enterocyte (Mid Villus)
+3651,Enterocyte (Mid Villus)
+3652,Enterocyte (Mid Villus)
+3653,Goblet
+3654,Enterocyte (Mid Villus)
+3655,Goblet
+3656,Enterocyte (Mid Villus)
+3657,Enterocyte (Mid Villus)
+3658,Removed
+3659,Enterocyte (Top Villus)
+3660,B (Plasma)
+3661,T (CD8+)
+3662,B (Plasma)
+3663,Goblet
+3664,Enterocyte (Mid Villus)
+3665,B (Plasma)
+3666,Enterocyte (Bottom Villus)
+3667,Goblet
+3668,Enterocyte (Mid Villus)
+3669,Endothelial
+3670,Goblet
+3671,Pericyte
+3672,Enterocyte (Mid Villus)
+3673,B (Plasma)
+3674,Goblet
+3675,Enterocyte (Top Villus)
+3676,Enterocyte (Mid Villus)
+3677,B (Plasma)
+3678,T (CD8+)
+3679,Enterocyte (Mid Villus)
+3680,Enterocyte (Bottom Villus)
+3681,Enterocyte (Mid Villus)
+3682,Endothelial
+3683,Enterocyte (Mid Villus)
+3684,Stromal
+3685,Stem + TA
+3686,T (CD4+)
+3687,Enterocyte (Mid Villus)
+3688,Goblet
+3689,Endothelial
+3690,Enterocyte (Mid Villus)
+3691,Macrophage + DC
+3692,Enterocyte (Mid Villus)
+3693,Pericyte
+3694,Enterocyte (Bottom Villus)
+3695,Macrophage + DC
+3696,Enterocyte (Mid Villus)
+3697,B (Plasma)
+3698,Enterocyte (Bottom Villus)
+3699,Enterocyte (Mid Villus)
+3700,Enterocyte (Top Villus)
+3701,Enterocyte (Mid Villus)
+3702,Enterocyte (Mid Villus)
+3703,Enterocyte (Mid Villus)
+3704,Enterocyte (Mid Villus)
+3705,B (Plasma)
+3706,Pericyte
+3707,Removed
+3708,Enterocyte (Mid Villus)
+3709,Goblet
+3710,Enterocyte (Mid Villus)
+3711,B (Plasma)
+3712,Stromal
+3713,Enterocyte (Mid Villus)
+3714,B (Plasma)
+3715,Goblet
+3716,B (Plasma)
+3717,Enterocyte (Bottom Villus)
+3718,Endothelial
+3719,Enterocyte (Mid Villus)
+3720,Enterocyte (Top Villus)
+3721,Enterocyte (Mid Villus)
+3722,Pericyte
+3723,Enterocyte (Mid Villus)
+3724,Enterocyte (Mid Villus)
+3725,B (Plasma)
+3726,Stem + TA
+3727,Enterocyte (Top Villus)
+3728,Enterocyte (Mid Villus)
+3729,T (CD8+)
+3730,Enterocyte (Mid Villus)
+3731,Enterocyte (Bottom Villus)
+3732,Enterocyte (Top Villus)
+3733,Goblet
+3734,Enterocyte (Mid Villus)
+3735,Enterocyte (Mid Villus)
+3736,B (Plasma)
+3737,Macrophage + DC
+3738,Goblet
+3739,Enterocyte (Mid Villus)
+3740,Enterocyte (Mid Villus)
+3741,B (Plasma)
+3742,Enterocyte (Mid Villus)
+3743,B (Plasma)
+3744,B (Plasma)
+3745,Enterocyte (Top Villus)
+3746,Pericyte
+3747,Enterocyte (Mid Villus)
+3748,Pericyte
+3749,Pericyte
+3750,B (Plasma)
+3751,Pericyte
+3752,Enterocyte (Top Villus)
+3753,B (Plasma)
+3754,Goblet
+3755,T (CD8+)
+3756,Pericyte
+3757,B (Plasma)
+3758,Enterocyte (Mid Villus)
+3759,T (CD8+)
+3760,T (CD8+)
+3761,Stem + TA
+3762,Enterocyte (Bottom Villus)
+3763,Removed
+3764,T (CD8+)
+3765,B (Plasma)
+3766,Stromal
+3767,Enterocyte (Bottom Villus)
+3768,Enterocyte (Top Villus)
+3769,Enterocyte (Mid Villus)
+3770,Enterocyte (Bottom Villus)
+3771,T (CD8+)
+3772,Enterocyte (Mid Villus)
+3773,Goblet
+3774,Removed
+3775,Enterocyte (Mid Villus)
+3776,Enterocyte (Bottom Villus)
+3777,Goblet
+3778,Stem + TA
+3779,T (CD8+)
+3780,Removed
+3781,Enterocyte (Bottom Villus)
+3782,Stem + TA
+3783,Enterocyte (Mid Villus)
+3784,Removed
+3785,B (Plasma)
+3786,B (Plasma)
+3787,Enterocyte (Top Villus)
+3788,Enterocyte (Mid Villus)
+3789,B (Plasma)
+3790,Enterocyte (Bottom Villus)
+3791,Macrophage + DC
+3792,B (Plasma)
+3793,Enterocyte (Top Villus)
+3794,B (Plasma)
+3795,Enterocyte (Bottom Villus)
+3796,Macrophage + DC
+3797,T (CD8+)
+3798,Goblet
+3799,Enterocyte (Mid Villus)
+3800,Enterocyte (Top Villus)
+3801,Enterocyte (Mid Villus)
+3802,T (CD8+)
+3803,Enterocyte (Bottom Villus)
+3804,Enterocyte (Mid Villus)
+3805,Enterocyte (Top Villus)
+3806,Stromal
+3807,Enterocyte (Mid Villus)
+3808,Enterocyte (Bottom Villus)
+3809,Enterocyte (Mid Villus)
+3810,Enterocyte (Mid Villus)
+3811,Enterocyte (Mid Villus)
+3812,Enterocyte (Top Villus)
+3813,Enterocyte (Mid Villus)
+3814,B (Plasma)
+3815,Macrophage + DC
+3816,Enterocyte (Top Villus)
+3817,Enterocyte (Bottom Villus)
+3818,Enterocyte (Bottom Villus)
+3819,Enterocyte (Mid Villus)
+3820,Macrophage + DC
+3821,Macrophage + DC
+3822,Stromal
+3823,B (Plasma)
+3824,Enterocyte (Top Villus)
+3825,Enterocyte (Mid Villus)
+3826,Enterocyte (Mid Villus)
+3827,Enterocyte (Bottom Villus)
+3828,Stromal
+3829,Macrophage + DC
+3830,Endothelial
+3831,Enterocyte (Mid Villus)
+3832,Stromal
+3833,T (CD4+)
+3834,B (Plasma)
+3835,Enterocyte (Bottom Villus)
+3836,Enterocyte (Bottom Villus)
+3837,B (Plasma)
+3838,Enterocyte (Mid Villus)
+3839,Goblet
+3840,T (CD4+)
+3841,B (Plasma)
+3842,Enterocyte (Top Villus)
+3843,B (Plasma)
+3844,B (Plasma)
+3845,Stromal
+3846,B (Plasma)
+3847,B (Plasma)
+3848,Enterocyte (Mid Villus)
+3849,Enterocyte (Mid Villus)
+3850,B (Plasma)
+3851,B (Plasma)
+3852,Macrophage + DC
+3853,Enterocyte (Bottom Villus)
+3854,B (Plasma)
+3855,B (Plasma)
+3856,Endothelial
+3857,Macrophage + DC
+3858,Enterocyte (Mid Villus)
+3859,Stromal
+3860,B (Plasma)
+3861,Smooth Muscle
+3862,B (Plasma)
+3863,"B (Follicular, Circulating)"
+3864,Stromal
+3865,Enterocyte (Mid Villus)
+3866,Enterocyte (Mid Villus)
+3867,"B (Follicular, Circulating)"
+3868,Enterocyte (Mid Villus)
+3869,Stromal
+3870,Pericyte
+3871,B (Plasma)
+3872,Macrophage + DC
+3873,B (Plasma)
+3874,Enterocyte (Top Villus)
+3875,Enterocyte (Top Villus)
+3876,T (CD8+)
+3877,Enterocyte (Top Villus)
+3878,Enterocyte (Mid Villus)
+3879,Enterocyte (Mid Villus)
+3880,B (Plasma)
+3881,Stromal
+3882,Stromal
+3883,Endothelial
+3884,Enterocyte (Bottom Villus)
+3885,Enterocyte (Mid Villus)
+3886,Removed
+3887,T (CD8+)
+3888,Enterocyte (Bottom Villus)
+3889,Enterocyte (Bottom Villus)
+3890,Endothelial
+3891,Stromal
+3892,Endothelial
+3893,T (CD8+)
+3894,B (Plasma)
+3895,Goblet
+3896,Enterocyte (Mid Villus)
+3897,T (CD8+)
+3898,Enterocyte (Top Villus)
+3899,B (Plasma)
+3900,B (Plasma)
+3901,Pericyte
+3902,Goblet
+3903,Macrophage + DC
+3904,Enterocyte (Bottom Villus)
+3905,Stromal
+3906,Enterocyte (Mid Villus)
+3907,B (Plasma)
+3908,Removed
+3909,B (Plasma)
+3910,B (Plasma)
+3911,T (CD4+)
+3912,B (Plasma)
+3913,Stromal
+3914,T (CD8+)
+3915,Enterocyte (Top Villus)
+3916,Enterocyte (Mid Villus)
+3917,Enterocyte (Mid Villus)
+3918,Enterocyte (Mid Villus)
+3919,Enterocyte (Mid Villus)
+3920,B (Plasma)
+3921,Goblet
+3922,Tuft
+3923,B (Plasma)
+3924,Enterocyte (Bottom Villus)
+3925,Enterocyte (Mid Villus)
+3926,T (CD4+)
+3927,Goblet
+3928,B (Plasma)
+3929,Macrophage + DC
+3930,T (CD8+)
+3931,B (Plasma)
+3932,Stromal
+3933,Enterocyte (Bottom Villus)
+3934,B (Plasma)
+3935,Stromal
+3936,Removed
+3937,Stromal
+3938,Enterocyte (Mid Villus)
+3939,Enterocyte (Bottom Villus)
+3940,Stromal
+3941,B (Plasma)
+3942,Enterocyte (Mid Villus)
+3943,T (CD8+)
+3944,B (Plasma)
+3945,Macrophage + DC
+3946,Enterocyte (Mid Villus)
+3947,Stromal
+3948,Macrophage + DC
+3949,Pericyte
+3950,Stromal
+3951,Enterocyte (Mid Villus)
+3952,Macrophage + DC
+3953,Stromal
+3954,Tuft
+3955,Enterocyte (Bottom Villus)
+3956,Macrophage + DC
+3957,Enterocyte (Mid Villus)
+3958,Removed
+3959,Goblet
+3960,B (Plasma)
+3961,B (Plasma)
+3962,Stromal
+3963,B (Plasma)
+3964,B (Plasma)
+3965,Enterocyte (Bottom Villus)
+3966,B (Plasma)
+3967,Enterocyte (Mid Villus)
+3968,Endothelial
+3969,Endothelial
+3970,Enterocyte (Mid Villus)
+3971,B (Plasma)
+3972,Macrophage + DC
+3973,T (CD4+)
+3974,B (Plasma)
+3975,B (Plasma)
+3976,Enterocyte (Mid Villus)
+3977,T (CD8+)
+3978,Enterocyte (Mid Villus)
+3979,Goblet
+3980,B (Plasma)
+3981,T (CD8+)
+3982,Macrophage + DC
+3983,Enterocyte (Mid Villus)
+3984,Macrophage + DC
+3985,Stromal
+3986,B (Plasma)
+3987,B (Plasma)
+3988,B (Plasma)
+3989,Enterocyte (Mid Villus)
+3990,Enterocyte (Top Villus)
+3991,Macrophage + DC
+3992,B (Plasma)
+3993,Endothelial
+3994,Enterocyte (Top Villus)
+3995,T (CD8+)
+3996,Enterocyte (Top Villus)
+3997,Macrophage + DC
+3998,Endothelial
+3999,Enterocyte (Mid Villus)
+4000,B (Plasma)
+4001,B (Plasma)
+4002,B (Plasma)
+4003,Macrophage + DC
+4004,Enterocyte (Mid Villus)
+4005,Enterocyte (Mid Villus)
+4006,B (Plasma)
+4007,Enterocyte (Mid Villus)
+4008,B (Plasma)
+4009,Enterocyte (Mid Villus)
+4010,T (CD8+)
+4011,Removed
+4012,Enterocyte (Top Villus)
+4013,Removed
+4014,Enterocyte (Mid Villus)
+4015,Enterocyte (Mid Villus)
+4016,Enterocyte (Mid Villus)
+4017,B (Plasma)
+4018,B (Plasma)
+4019,Enterocyte (Top Villus)
+4020,Macrophage + DC
+4021,Enterocyte (Top Villus)
+4022,T (CD4+)
+4023,B (Plasma)
+4024,Enterocyte (Top Villus)
+4025,Goblet
+4026,Goblet
+4027,Macrophage + DC
+4028,Stromal
+4029,T (CD8+)
+4030,B (Plasma)
+4031,Enterocyte (Mid Villus)
+4032,Enterocyte (Mid Villus)
+4033,Enterocyte (Mid Villus)
+4034,Enterocyte (Top Villus)
+4035,Endothelial
+4036,Removed
+4037,B (Plasma)
+4038,Removed
+4039,Macrophage + DC
+4040,Enterocyte (Mid Villus)
+4041,Enterocyte (Top Villus)
+4042,B (Plasma)
+4043,T (CD8+)
+4044,B (Plasma)
+4045,Enterocyte (Top Villus)
+4046,Macrophage + DC
+4047,Enterocyte (Mid Villus)
+4048,B (Plasma)
+4049,Enterocyte (Top Villus)
+4050,T (CD8+)
+4051,Enterocyte (Mid Villus)
+4052,Enterocyte (Top Villus)
+4053,Enterocyte (Top Villus)
+4054,Enterocyte (Top Villus)
+4055,T (CD8+)
+4056,B (Plasma)
+4057,Enterocyte (Mid Villus)
+4058,Enterocyte (Mid Villus)
+4059,B (Plasma)
+4060,Enterocyte (Mid Villus)
+4061,Enterocyte (Mid Villus)
+4062,Enterocyte (Top Villus)
+4063,Enterocyte (Mid Villus)
+4064,Enterocyte (Mid Villus)
+4065,Enterocyte (Mid Villus)
+4066,Enterocyte (Mid Villus)
+4067,Enterocyte (Top Villus)
+4068,Enterocyte (Top Villus)
+4069,T (CD8+)
+4070,Enterocyte (Mid Villus)
+4071,Enterocyte (Mid Villus)
+4072,Enterocyte (Mid Villus)
+4073,Endothelial
+4074,Enterocyte (Mid Villus)
+4075,Enterocyte (Mid Villus)
+4076,Enterocyte (Mid Villus)
+4077,Macrophage + DC
+4078,T (CD8+)
+4079,T (CD8+)
+4080,Enterocyte (Mid Villus)
+4081,Enterocyte (Mid Villus)
+4082,Enterocyte (Mid Villus)
+4083,Enterocyte (Mid Villus)
+4084,Pericyte
+4085,T (CD8+)
+4086,Enterocyte (Mid Villus)
+4087,Enterocyte (Mid Villus)
+4088,Enterocyte (Mid Villus)
+4089,Enterocyte (Mid Villus)
+4090,Enterocyte (Mid Villus)
+4091,Enterocyte (Mid Villus)
+4092,Enterocyte (Mid Villus)
+4093,Enterocyte (Mid Villus)
+4094,Enterocyte (Mid Villus)
+4095,Enterocyte (Mid Villus)
+4096,Enterocyte (Mid Villus)
+4097,Enterocyte (Mid Villus)
+4098,Enterocyte (Mid Villus)
+4099,Enterocyte (Mid Villus)
+4100,Enterocyte (Mid Villus)
+4101,Enterocyte (Mid Villus)
+4102,Enterocyte (Mid Villus)
+4103,Goblet
+4104,Enterocyte (Mid Villus)
+4105,Enterocyte (Mid Villus)
+4106,Enterocyte (Mid Villus)
+4107,Enterocyte (Mid Villus)
+4108,Enterocyte (Mid Villus)
+4109,T (CD8+)
+4110,Enterocyte (Mid Villus)
+4111,Enterocyte (Mid Villus)
+4112,Enterocyte (Mid Villus)
+4113,Enterocyte (Mid Villus)
+4114,Enterocyte (Mid Villus)
+4115,Enterocyte (Mid Villus)
+4116,Enterocyte (Top Villus)
+4117,Enterocyte (Mid Villus)
+4118,Enterocyte (Mid Villus)
+4119,Enterocyte (Mid Villus)
+4120,Enterocyte (Mid Villus)
+4121,Enterocyte (Mid Villus)
+4122,Enterocyte (Mid Villus)
+4123,Enterocyte (Top Villus)
+4124,Enterocyte (Mid Villus)
+4125,Enterocyte (Top Villus)
+4126,Enterocyte (Top Villus)
+4127,Enterocyte (Mid Villus)
+4128,Enterocyte (Top Villus)
+4129,Enterocyte (Mid Villus)
+4130,Enterocyte (Top Villus)
+4131,Enterocyte (Top Villus)
+4132,Enterocyte (Mid Villus)
+4133,Tuft
+4134,Enterocyte (Top Villus)
+4135,Enterocyte (Top Villus)
+4136,Enterocyte (Mid Villus)
+4137,Macrophage + DC
+4138,Enterocyte (Top Villus)
+4139,Enterocyte (Mid Villus)
+4140,Enterocyte (Top Villus)
+4141,Enterocyte (Top Villus)
+4142,Enterocyte (Top Villus)
+4143,Enterocyte (Top Villus)
+4144,Enterocyte (Top Villus)
+4145,Enterocyte (Top Villus)
+4146,Enterocyte (Top Villus)
+4147,Enterocyte (Top Villus)
+4148,Enterocyte (Top Villus)
+4149,Pericyte
+4150,Pericyte
+4151,Enterocyte (Top Villus)
+4152,Pericyte
+4153,T (CD8+)
+4154,Enterocyte (Top Villus)
+4155,Stromal
+4156,T (CD8+)
+4157,Macrophage + DC
+4158,Enterocyte (Top Villus)
+4159,Enterocyte (Top Villus)
+4160,Macrophage + DC
+4161,T (CD8+)
+4162,Pericyte
+4163,Pericyte
+4164,Enterocyte (Top Villus)
+4165,Macrophage + DC
+4166,Pericyte
+4167,Endothelial
+4168,Stromal
+4169,Endothelial
+4170,Enterocyte (Top Villus)
+4171,T (CD8+)
+4172,Macrophage + DC
+4173,T (CD4+)
+4174,Pericyte
+4175,Enterocyte (Top Villus)
+4176,Pericyte
+4177,Enterocyte (Top Villus)
+4178,Removed
+4179,Enterocyte (Top Villus)
+4180,Goblet
+4181,Enterocyte (Top Villus)
+4182,Enterocyte (Top Villus)
+4183,Enterocyte (Top Villus)
+4184,Enterocyte (Top Villus)
+4185,Removed
+4186,Enterocyte (Top Villus)
+4187,Enterocyte (Top Villus)
+4188,Enterocyte (Bottom Villus)
+4189,Enterocyte (Mid Villus)
+4190,Removed
+4191,Myenteric Plexus
+4192,Stromal
+4193,Smooth Muscle
+4194,Removed
+4195,Removed
+4196,Stromal
+4197,Removed
+4198,Enterocyte (Bottom Villus)
+4199,Enterocyte (Mid Villus)
+4200,Telocyte
+4201,Stem + TA
+4202,Goblet
+4203,Removed
+4204,Enterocyte (Mid Villus)
+4205,Removed
+4206,Enterocyte (Mid Villus)
+4207,T (CD8+)
+4208,Stromal
+4209,Stem + TA
+4210,B (Plasma)
+4211,Pericyte
+4212,Enterocyte (Mid Villus)
+4213,Goblet
+4214,Goblet
+4215,Enterocyte (Bottom Villus)
+4216,Enterocyte (Bottom Villus)
+4217,Endothelial
+4218,T (CD4+)
+4219,Enterocyte (Top Villus)
+4220,Goblet
+4221,Enterocyte (Mid Villus)
+4222,B (Plasma)
+4223,Removed
+4224,Macrophage + DC
+4225,T (CD8+)
+4226,Macrophage + DC
+4227,T (CD4+)
+4228,Macrophage + DC
+4229,Paneth
+4230,Removed
+4231,Enterocyte (Top Villus)
+4232,Telocyte
+4233,T (CD4+)
+4234,T (CD4+)
+4235,B (Plasma)
+4236,Removed
+4237,ICC
+4238,Stem + TA
+4239,Enterocyte (Bottom Villus)
+4240,Stromal
+4241,B (Plasma)
+4242,Goblet
+4243,Removed
+4244,Removed
+4245,B (Plasma)
+4246,Telocyte
+4247,Paneth
+4248,Removed
+4249,Enterocyte (Bottom Villus)
+4250,Macrophage + DC
+4251,Stem + TA
+4252,Enterocyte (Mid Villus)
+4253,Goblet
+4254,B (Plasma)
+4255,Removed
+4256,Enterocyte (Mid Villus)
+4257,Paneth
+4258,Pericyte
+4259,T (CD4+)
+4260,Smooth Muscle
+4261,Macrophage + DC
+4262,Enterocyte (Bottom Villus)
+4263,Removed
+4264,Stem + TA
+4265,Removed
+4266,Paneth
+4267,Removed
+4268,Macrophage + DC
+4269,Enterocyte (Mid Villus)
+4270,Endothelial
+4271,Removed
+4272,B (Plasma)
+4273,Enterocyte (Mid Villus)
+4274,Telocyte
+4275,Goblet
+4276,Goblet
+4277,T (CD4+)
+4278,Removed
+4279,Macrophage + DC
+4280,Removed
+4281,Removed
+4282,Telocyte
+4283,Smooth Muscle
+4284,Stem + TA
+4285,Pericyte
+4286,"B (Follicular, Circulating)"
+4287,B (Plasma)
+4288,Paneth
+4289,Enterocyte (Mid Villus)
+4290,Macrophage + DC
+4291,Macrophage + DC
+4292,T (CD8+)
+4293,Stromal
+4294,Stromal
+4295,B (Plasma)
+4296,Enterocyte (Mid Villus)
+4297,Macrophage + DC
+4298,Stromal
+4299,Paneth
+4300,Paneth
+4301,Telocyte
+4302,T (CD4+)
+4303,Enterocyte (Mid Villus)
+4304,Goblet
+4305,Removed
+4306,Enterocyte (Bottom Villus)
+4307,Macrophage + DC
+4308,Telocyte
+4309,Enterocyte (Mid Villus)
+4310,Stem + TA
+4311,Goblet
+4312,Removed
+4313,Macrophage + DC
+4314,Enterocyte (Mid Villus)
+4315,Enterocyte (Mid Villus)
+4316,Enterocyte (Mid Villus)
+4317,Endothelial
+4318,Endothelial
+4319,T (CD4+)
+4320,B (Plasma)
+4321,B (Plasma)
+4322,Enterocyte (Mid Villus)
+4323,Paneth
+4324,Removed
+4325,Telocyte
+4326,Macrophage + DC
+4327,Removed
+4328,Macrophage + DC
+4329,Stromal
+4330,Telocyte
+4331,Stem + TA
+4332,T (CD4+)
+4333,Macrophage + DC
+4334,Enterocyte (Mid Villus)
+4335,Goblet
+4336,T (CD8+)
+4337,Enterocyte (Mid Villus)
+4338,Stromal
+4339,Macrophage + DC
+4340,Enterocyte (Bottom Villus)
+4341,B (Plasma)
+4342,Stem + TA
+4343,T (CD4+)
+4344,Stem + TA
+4345,Stem + TA
+4346,Stem + TA
+4347,Macrophage + DC
+4348,Removed
+4349,Enterocyte (Mid Villus)
+4350,T (CD4+)
+4351,T (CD4+)
+4352,Stromal
+4353,Smooth Muscle
+4354,T (CD8+)
+4355,Goblet
+4356,T (CD8+)
+4357,Macrophage + DC
+4358,Paneth
+4359,Goblet
+4360,B (Plasma)
+4361,Paneth
+4362,B (Plasma)
+4363,Removed
+4364,Endothelial
+4365,Enterocyte (Mid Villus)
+4366,Enterocyte (Mid Villus)
+4367,Removed
+4368,Removed
+4369,Stromal
+4370,Stem + TA
+4371,Enterocyte (Bottom Villus)
+4372,B (Plasma)
+4373,Removed
+4374,Pericyte
+4375,Pericyte
+4376,Macrophage + DC
+4377,Stem + TA
+4378,Macrophage + DC
+4379,Goblet
+4380,Removed
+4381,Removed
+4382,Stem + TA
+4383,Macrophage + DC
+4384,Macrophage + DC
+4385,Goblet
+4386,Stromal
+4387,Macrophage + DC
+4388,Enterocyte (Bottom Villus)
+4389,Stem + TA
+4390,Pericyte
+4391,B (Plasma)
+4392,Macrophage + DC
+4393,Removed
+4394,Stromal
+4395,Macrophage + DC
+4396,B (Plasma)
+4397,Macrophage + DC
+4398,Stromal
+4399,Enterocyte (Mid Villus)
+4400,Goblet
+4401,Enterocyte (Bottom Villus)
+4402,Macrophage + DC
+4403,Smooth Muscle
+4404,Telocyte
+4405,Stromal
+4406,Endothelial
+4407,"B (Follicular, Circulating)"
+4408,Stromal
+4409,Smooth Muscle
+4410,Macrophage + DC
+4411,Removed
+4412,Stromal
+4413,Myenteric Plexus
+4414,Stromal
+4415,Goblet
+4416,Enterocyte (Mid Villus)
+4417,B (Plasma)
+4418,T (CD4+)
+4419,Removed
+4420,Removed
+4421,T (CD4+)
+4422,Endothelial
+4423,Stem + TA
+4424,Endothelial
+4425,Enterocyte (Mid Villus)
+4426,Pericyte
+4427,Stromal
+4428,Stem + TA
+4429,Stem + TA
+4430,Removed
+4431,Enterocyte (Mid Villus)
+4432,Stem + TA
+4433,Paneth
+4434,Removed
+4435,Pericyte
+4436,Paneth
+4437,Stromal
+4438,Removed
+4439,Removed
+4440,Stem + TA
+4441,T (CD8+)
+4442,Macrophage + DC
+4443,T (CD4+)
+4444,B (Plasma)
+4445,Paneth
+4446,B (Plasma)
+4447,Removed
+4448,Stem + TA
+4449,Stromal
+4450,Pericyte
+4451,B (Plasma)
+4452,Stem + TA
+4453,Goblet
+4454,Enterocyte (Bottom Villus)
+4455,Stromal
+4456,T (CD4+)
+4457,Pericyte
+4458,Enterocyte (Bottom Villus)
+4459,Endothelial
+4460,Pericyte
+4461,Enterocyte (Mid Villus)
+4462,Telocyte
+4463,B (Plasma)
+4464,T (CD4+)
+4465,Removed
+4466,Stromal
+4467,Stem + TA
+4468,Removed
+4469,Removed
+4470,Removed
+4471,Macrophage + DC
+4472,T (CD4+)
+4473,Stromal
+4474,Enterocyte (Bottom Villus)
+4475,Macrophage + DC
+4476,Paneth
+4477,Smooth Muscle
+4478,Enterocyte (Bottom Villus)
+4479,Paneth
+4480,Stem + TA
+4481,Stromal
+4482,Removed
+4483,Endothelial
+4484,Goblet
+4485,Pericyte
+4486,Enterocyte (Mid Villus)
+4487,Macrophage + DC
+4488,Enterocyte (Mid Villus)
+4489,Removed
+4490,Enterocyte (Bottom Villus)
+4491,Removed
+4492,Stem + TA
+4493,Telocyte
+4494,B (Plasma)
+4495,Enterocyte (Top Villus)
+4496,B (Plasma)
+4497,Stem + TA
+4498,Stem + TA
+4499,Pericyte
+4500,Removed
+4501,Goblet
+4502,Goblet
+4503,Goblet
+4504,T (CD4+)
+4505,Stem + TA
+4506,Goblet
+4507,Removed
+4508,Enterocyte (Bottom Villus)
+4509,Stem + TA
+4510,Stem + TA
+4511,Stem + TA
+4512,Stromal
+4513,Enterocyte (Mid Villus)
+4514,Stem + TA
+4515,Macrophage + DC
+4516,Macrophage + DC
+4517,Telocyte
+4518,Stromal
+4519,Pericyte
+4520,Telocyte
+4521,Stem + TA
+4522,Macrophage + DC
+4523,Paneth
+4524,Enterocyte (Bottom Villus)
+4525,B (Plasma)
+4526,Goblet
+4527,Macrophage + DC
+4528,Removed
+4529,Removed
+4530,Paneth
+4531,Paneth
+4532,Stromal
+4533,Pericyte
+4534,Enterocyte (Bottom Villus)
+4535,T (CD4+)
+4536,Smooth Muscle
+4537,B (Plasma)
+4538,Stromal
+4539,Enterocyte (Mid Villus)
+4540,Stromal
+4541,Macrophage + DC
+4542,Removed
+4543,Stromal
+4544,Endothelial
+4545,Pericyte
+4546,Goblet
+4547,"B (Follicular, Circulating)"
+4548,T (CD4+)
+4549,T (CD4+)
+4550,Stem + TA
+4551,Smooth Muscle
+4552,Enterocyte (Mid Villus)
+4553,Macrophage + DC
+4554,Endothelial
+4555,T (CD4+)
+4556,Stem + TA
+4557,"B (Follicular, Circulating)"
+4558,Paneth
+4559,Stromal
+4560,Endothelial
+4561,Endothelial
+4562,Goblet
+4563,B (Plasma)
+4564,Removed
+4565,B (Plasma)
+4566,Endothelial
+4567,T (CD8+)
+4568,Stem + TA
+4569,Macrophage + DC
+4570,Paneth
+4571,Telocyte
+4572,Stem + TA
+4573,Enterocyte (Mid Villus)
+4574,Paneth
+4575,Macrophage + DC
+4576,Stromal
+4577,Stromal
+4578,Stem + TA
+4579,Enterocyte (Mid Villus)
+4580,Paneth
+4581,Goblet
+4582,ICC
+4583,Stromal
+4584,B (Plasma)
+4585,Stromal
+4586,Stromal
+4587,T (CD4+)
+4588,Stem + TA
+4589,Stem + TA
+4590,Endothelial
+4591,Macrophage + DC
+4592,Enterocyte (Mid Villus)
+4593,Stem + TA
+4594,Stem + TA
+4595,Removed
+4596,Paneth
+4597,Macrophage + DC
+4598,Stem + TA
+4599,Removed
+4600,Enterocyte (Mid Villus)
+4601,Stromal
+4602,Goblet
+4603,Removed
+4604,B (Plasma)
+4605,Macrophage + DC
+4606,B (Plasma)
+4607,Goblet
+4608,Removed
+4609,Stem + TA
+4610,Goblet
+4611,Paneth
+4612,Stromal
+4613,Stem + TA
+4614,Paneth
+4615,Stem + TA
+4616,Removed
+4617,Stem + TA
+4618,Macrophage + DC
+4619,Stem + TA
+4620,Pericyte
+4621,Stromal
+4622,Stem + TA
+4623,Stromal
+4624,Stromal
+4625,Stromal
+4626,Stem + TA
+4627,B (Plasma)
+4628,B (Plasma)
+4629,Goblet
+4630,Stem + TA
+4631,Removed
+4632,Stromal
+4633,Macrophage + DC
+4634,Enterocyte (Bottom Villus)
+4635,Enterocyte (Mid Villus)
+4636,Stromal
+4637,Removed
+4638,Stromal
+4639,Stromal
+4640,Goblet
+4641,Enterocyte (Top Villus)
+4642,Enterocyte (Mid Villus)
+4643,Pericyte
+4644,Enterocyte (Mid Villus)
+4645,T (CD4+)
+4646,Paneth
+4647,B (Plasma)
+4648,Enterocyte (Mid Villus)
+4649,Stem + TA
+4650,Stromal
+4651,Stem + TA
+4652,Goblet
+4653,Macrophage + DC
+4654,Paneth
+4655,Paneth
+4656,Paneth
+4657,Stromal
+4658,Stromal
+4659,Pericyte
+4660,Endothelial
+4661,Enterocyte (Mid Villus)
+4662,Paneth
+4663,Macrophage + DC
+4664,T (CD8+)
+4665,Macrophage + DC
+4666,Endothelial
+4667,Stem + TA
+4668,Enterocyte (Mid Villus)
+4669,Enterocyte (Top Villus)
+4670,Enterocyte (Bottom Villus)
+4671,Macrophage + DC
+4672,Removed
+4673,Endothelial
+4674,Paneth
+4675,Endothelial
+4676,Enterocyte (Bottom Villus)
+4677,Goblet
+4678,Stem + TA
+4679,Stromal
+4680,Stromal
+4681,Stem + TA
+4682,Telocyte
+4683,B (Plasma)
+4684,Macrophage + DC
+4685,Stem + TA
+4686,Paneth
+4687,Stem + TA
+4688,Stromal
+4689,Telocyte
+4690,Telocyte
+4691,Stem + TA
+4692,Goblet
+4693,Stem + TA
+4694,Paneth
+4695,Macrophage + DC
+4696,B (Plasma)
+4697,Stromal
+4698,Macrophage + DC
+4699,Enterocyte (Mid Villus)
+4700,Pericyte
+4701,"B (Follicular, Circulating)"
+4702,Enterocyte (Bottom Villus)
+4703,T (CD8+)
+4704,Stromal
+4705,Enterocyte (Bottom Villus)
+4706,Removed
+4707,Stromal
+4708,Removed
+4709,Smooth Muscle
+4710,Macrophage + DC
+4711,Enterocyte (Bottom Villus)
+4712,Goblet
+4713,Macrophage + DC
+4714,Removed
+4715,Macrophage + DC
+4716,T (CD4+)
+4717,Enterocyte (Mid Villus)
+4718,Stromal
+4719,Removed
+4720,Enterocyte (Mid Villus)
+4721,B (Plasma)
+4722,T (CD4+)
+4723,T (CD4+)
+4724,B (Plasma)
+4725,Removed
+4726,"B (Follicular, Circulating)"
+4727,Enterocyte (Mid Villus)
+4728,Enterocyte (Mid Villus)
+4729,Stromal
+4730,Removed
+4731,Removed
+4732,Stem + TA
+4733,Paneth
+4734,T (CD4+)
+4735,Enterocyte (Mid Villus)
+4736,Enterocyte (Mid Villus)
+4737,"B (Follicular, Circulating)"
+4738,Removed
+4739,Stem + TA
+4740,Stromal
+4741,Macrophage + DC
+4742,Macrophage + DC
+4743,Stromal
+4744,Stem + TA
+4745,B (Plasma)
+4746,Removed
+4747,Macrophage + DC
+4748,Pericyte
+4749,Stem + TA
+4750,Removed
+4751,Stem + TA
+4752,Stem + TA
+4753,Enterocyte (Bottom Villus)
+4754,Stromal
+4755,Macrophage + DC
+4756,Stem + TA
+4757,Endothelial
+4758,Stem + TA
+4759,Enterocyte (Mid Villus)
+4760,Endothelial
+4761,Telocyte
+4762,T (CD4+)
+4763,Removed
+4764,Enterocyte (Mid Villus)
+4765,Telocyte
+4766,Enterocyte (Mid Villus)
+4767,Macrophage + DC
+4768,Removed
+4769,Stromal
+4770,T (CD4+)
+4771,Macrophage + DC
+4772,Removed
+4773,Goblet
+4774,Stromal
+4775,Enterocyte (Bottom Villus)
+4776,Stromal
+4777,Endothelial
+4778,Enterocyte (Mid Villus)
+4779,B (Plasma)
+4780,Telocyte
+4781,Goblet
+4782,Stem + TA
+4783,Stem + TA
+4784,Stem + TA
+4785,Stem + TA
+4786,Paneth
+4787,Stromal
+4788,Stromal
+4789,Enterocyte (Bottom Villus)
+4790,"B (Follicular, Circulating)"
+4791,Stem + TA
+4792,Stem + TA
+4793,Stem + TA
+4794,Macrophage + DC
+4795,Enterocyte (Bottom Villus)
+4796,Stem + TA
+4797,Enterocyte (Mid Villus)
+4798,Goblet
+4799,Stem + TA
+4800,Macrophage + DC
+4801,Removed
+4802,Macrophage + DC
+4803,Stromal
+4804,Removed
+4805,T (CD8+)
+4806,Stromal
+4807,Telocyte
+4808,Paneth
+4809,Enterocyte (Mid Villus)
+4810,Endothelial
+4811,Stromal
+4812,Macrophage + DC
+4813,B (Plasma)
+4814,Goblet
+4815,T (CD8+)
+4816,Paneth
+4817,B (Plasma)
+4818,Enterocyte (Bottom Villus)
+4819,Removed
+4820,B (Plasma)
+4821,Endothelial
+4822,Macrophage + DC
+4823,B (Plasma)
+4824,Paneth
+4825,Goblet
+4826,Macrophage + DC
+4827,Macrophage + DC
+4828,Removed
+4829,Removed
+4830,Enterocyte (Mid Villus)
+4831,Stromal
+4832,Stem + TA
+4833,Enterocyte (Mid Villus)
+4834,Enterocyte (Mid Villus)
+4835,Macrophage + DC
+4836,Enterocyte (Bottom Villus)
+4837,Stem + TA
+4838,Enterocyte (Mid Villus)
+4839,Enterocyte (Mid Villus)
+4840,Paneth
+4841,Removed
+4842,ICC
+4843,Stem + TA
+4844,T (CD4+)
+4845,B (Plasma)
+4846,B (Plasma)
+4847,Stem + TA
+4848,Tuft
+4849,Stromal
+4850,B (Plasma)
+4851,Telocyte
+4852,B (Plasma)
+4853,Stem + TA
+4854,Stem + TA
+4855,Stem + TA
+4856,Enterocyte (Mid Villus)
+4857,Stem + TA
+4858,Stromal
+4859,T (CD4+)
+4860,Enterocyte (Mid Villus)
+4861,Enterocyte (Mid Villus)
+4862,Macrophage + DC
+4863,Endothelial
+4864,Stromal
+4865,B (Plasma)
+4866,Stem + TA
+4867,Endothelial
+4868,Endothelial
+4869,Removed
+4870,T (CD4+)
+4871,Macrophage + DC
+4872,Stromal
+4873,Stem + TA
+4874,Stromal
+4875,Paneth
+4876,Enterocyte (Mid Villus)
+4877,Stromal
+4878,Stem + TA
+4879,Endothelial
+4880,Stromal
+4881,Paneth
+4882,Endothelial
+4883,T (CD8+)
+4884,B (Plasma)
+4885,Macrophage + DC
+4886,Stem + TA
+4887,Enterocyte (Mid Villus)
+4888,Telocyte
+4889,B (Plasma)
+4890,Macrophage + DC
+4891,Stromal
+4892,Macrophage + DC
+4893,Enterocyte (Mid Villus)
+4894,Removed
+4895,Macrophage + DC
+4896,T (CD8+)
+4897,Stem + TA
+4898,ICC
+4899,Telocyte
+4900,Paneth
+4901,Stromal
+4902,Stem + TA
+4903,Goblet
+4904,Stem + TA
+4905,T (CD4+)
+4906,Stem + TA
+4907,Removed
+4908,Endothelial
+4909,Telocyte
+4910,Macrophage + DC
+4911,Enterocyte (Bottom Villus)
+4912,Stem + TA
+4913,Stem + TA
+4914,Endothelial
+4915,Removed
+4916,Enterocyte (Bottom Villus)
+4917,B (Plasma)
+4918,Stromal
+4919,Endothelial
+4920,Endothelial
+4921,Endothelial
+4922,Stem + TA
+4923,Stromal
+4924,Endothelial
+4925,Stromal
+4926,Enterocyte (Mid Villus)
+4927,Macrophage + DC
+4928,Stromal
+4929,Enterocyte (Bottom Villus)
+4930,Removed
+4931,Stem + TA
+4932,T (CD4+)
+4933,Enterocyte (Bottom Villus)
+4934,Removed
+4935,Stem + TA
+4936,Telocyte
+4937,Removed
+4938,Removed
+4939,Stem + TA
+4940,Stem + TA
+4941,Enterocyte (Bottom Villus)
+4942,Enterocyte (Bottom Villus)
+4943,Enterocyte (Bottom Villus)
+4944,Macrophage + DC
+4945,Pericyte
+4946,B (Plasma)
+4947,Enterocyte (Bottom Villus)
+4948,Pericyte
+4949,Stromal
+4950,Paneth
+4951,B (Plasma)
+4952,B (Plasma)
+4953,Stromal
+4954,Stromal
+4955,Enterocyte (Mid Villus)
+4956,Enterocyte (Mid Villus)
+4957,Stromal
+4958,Enterocyte (Bottom Villus)
+4959,T (CD4+)
+4960,Macrophage + DC
+4961,Enterocyte (Mid Villus)
+4962,B (Plasma)
+4963,Endothelial
+4964,T (CD8+)
+4965,Stromal
+4966,Stem + TA
+4967,Goblet
+4968,Macrophage + DC
+4969,"B (Follicular, Circulating)"
+4970,Macrophage + DC
+4971,Stromal
+4972,Pericyte
+4973,T (CD4+)
+4974,Stem + TA
+4975,Stem + TA
+4976,Stromal
+4977,Stromal
+4978,Stromal
+4979,Enterocyte (Mid Villus)
+4980,T (CD4+)
+4981,Stromal
+4982,Stem + TA
+4983,T (CD4+)
+4984,Enterocyte (Mid Villus)
+4985,Stem + TA
+4986,Enterocyte (Bottom Villus)
+4987,Stem + TA
+4988,Pericyte
+4989,Removed
+4990,Enterocyte (Bottom Villus)
+4991,T (CD4+)
+4992,Removed
+4993,Removed
+4994,Stromal
+4995,Pericyte
+4996,Macrophage + DC
+4997,Endothelial
+4998,Removed
+4999,Goblet
+5000,Paneth
+5001,Paneth
+5002,Enterocyte (Bottom Villus)
+5003,Enterocyte (Mid Villus)
+5004,Removed
+5005,Stem + TA
+5006,Paneth
+5007,Enterocyte (Bottom Villus)
+5008,Endothelial
+5009,Removed
+5010,T (CD8+)
+5011,Endothelial
+5012,Removed
+5013,Enterocyte (Mid Villus)
+5014,Endothelial
+5015,Goblet
+5016,Endothelial
+5017,Stem + TA
+5018,Stem + TA
+5019,T (CD4+)
+5020,Removed
+5021,T (CD4+)
+5022,Removed
+5023,Myenteric Plexus
+5024,Stromal
+5025,Stem + TA
+5026,B (Plasma)
+5027,Removed
+5028,Removed
+5029,Enterocyte (Bottom Villus)
+5030,Stem + TA
+5031,B (Plasma)
+5032,Removed
+5033,Smooth Muscle
+5034,"B (Follicular, Circulating)"
+5035,Macrophage + DC
+5036,Macrophage + DC
+5037,Stromal
+5038,Stromal
+5039,Enterocyte (Mid Villus)
+5040,Stem + TA
+5041,Macrophage + DC
+5042,Removed
+5043,Telocyte
+5044,Pericyte
+5045,Enterocyte (Mid Villus)
+5046,T (CD4+)
+5047,Enterocyte (Mid Villus)
+5048,Stromal
+5049,Stromal
+5050,Stromal
+5051,Endothelial
+5052,Endothelial
+5053,Enterocyte (Bottom Villus)
+5054,Telocyte
+5055,Enterocyte (Bottom Villus)
+5056,Enterocyte (Mid Villus)
+5057,Removed
+5058,Macrophage + DC
+5059,Stem + TA
+5060,Stem + TA
+5061,Endothelial
+5062,Goblet
+5063,Stem + TA
+5064,B (Plasma)
+5065,Paneth
+5066,Goblet
+5067,Pericyte
+5068,T (CD8+)
+5069,Removed
+5070,Stromal
+5071,Goblet
+5072,Stromal
+5073,Removed
+5074,Smooth Muscle
+5075,Macrophage + DC
+5076,Macrophage + DC
+5077,Stem + TA
+5078,Stem + TA
+5079,Removed
+5080,Enterocyte (Mid Villus)
+5081,Enterocyte (Mid Villus)
+5082,Pericyte
+5083,Paneth
+5084,B (Plasma)
+5085,Enterocyte (Mid Villus)
+5086,T (CD4+)
+5087,Enterocyte (Mid Villus)
+5088,Stromal
+5089,Paneth
+5090,Removed
+5091,Telocyte
+5092,Removed
+5093,Pericyte
+5094,Goblet
+5095,Paneth
+5096,Endothelial
+5097,Removed
+5098,T (CD4+)
+5099,Telocyte
+5100,Removed
+5101,Stromal
+5102,Stem + TA
+5103,Stem + TA
+5104,Enterocyte (Mid Villus)
+5105,Stem + TA
+5106,Macrophage + DC
+5107,Macrophage + DC
+5108,Enterocyte (Bottom Villus)
+5109,Smooth Muscle
+5110,Goblet
+5111,Macrophage + DC
+5112,Removed
+5113,Pericyte
+5114,Pericyte
+5115,Enterocyte (Top Villus)
+5116,Stromal
+5117,Stromal
+5118,Goblet
+5119,T (CD4+)
+5120,Removed
+5121,Macrophage + DC
+5122,Stem + TA
+5123,Stem + TA
+5124,Macrophage + DC
+5125,T (CD4+)
+5126,Macrophage + DC
+5127,Endothelial
+5128,Endothelial
+5129,Endothelial
+5130,Stem + TA
+5131,B (Plasma)
+5132,Goblet
+5133,Paneth
+5134,Removed
+5135,Removed
+5136,Telocyte
+5137,Stem + TA
+5138,Goblet
+5139,Stromal
+5140,Removed
+5141,Removed
+5142,T (CD4+)
+5143,Endothelial
+5144,Enterocyte (Mid Villus)
+5145,Goblet
+5146,Enterocyte (Bottom Villus)
+5147,Stem + TA
+5148,T (CD4+)
+5149,Paneth
+5150,T (CD4+)
+5151,Macrophage + DC
+5152,Enterocyte (Mid Villus)
+5153,Macrophage + DC
+5154,Stem + TA
+5155,Macrophage + DC
+5156,Removed
+5157,Macrophage + DC
+5158,Enterocyte (Bottom Villus)
+5159,Enterocyte (Bottom Villus)
+5160,Stromal
+5161,Paneth
+5162,Pericyte
+5163,Enterocyte (Mid Villus)
+5164,Enterocyte (Mid Villus)
+5165,Stem + TA
+5166,Enterocyte (Mid Villus)
+5167,Stromal
+5168,Smooth Muscle
+5169,Removed
+5170,Removed
+5171,Smooth Muscle
+5172,Paneth
+5173,Stromal
+5174,Removed
+5175,Endothelial
+5176,Macrophage + DC
+5177,B (Plasma)
+5178,Enterocyte (Mid Villus)
+5179,Enterocyte (Mid Villus)
+5180,Pericyte
+5181,Enterocyte (Bottom Villus)
+5182,Removed
+5183,Endothelial
+5184,Stem + TA
+5185,Paneth
+5186,Pericyte
+5187,Stromal
+5188,Enterocyte (Mid Villus)
+5189,Removed
+5190,Endothelial
+5191,Stem + TA
+5192,"B (Follicular, Circulating)"
+5193,Enterocyte (Mid Villus)
+5194,Pericyte
+5195,Stem + TA
+5196,Removed
+5197,Enterocyte (Bottom Villus)
+5198,Stem + TA
+5199,Telocyte
+5200,Stromal
+5201,B (Plasma)
+5202,Removed
+5203,Stem + TA
+5204,Pericyte
+5205,Stromal
+5206,Endothelial
+5207,T (CD4+)
+5208,Pericyte
+5209,Macrophage + DC
+5210,Macrophage + DC
+5211,Goblet
+5212,Stem + TA
+5213,Stem + TA
+5214,Removed
+5215,Stromal
+5216,Removed
+5217,Enterocyte (Mid Villus)
+5218,Enterocyte (Mid Villus)
+5219,Macrophage + DC
+5220,Telocyte
+5221,Paneth
+5222,Macrophage + DC
+5223,Stromal
+5224,Removed
+5225,Paneth
+5226,Stromal
+5227,Stem + TA
+5228,Myenteric Plexus
+5229,T (CD4+)
+5230,Macrophage + DC
+5231,Pericyte
+5232,Endothelial
+5233,Macrophage + DC
+5234,Removed
+5235,Goblet
+5236,Macrophage + DC
+5237,Stromal
+5238,Removed
+5239,Removed
+5240,Stem + TA
+5241,Macrophage + DC
+5242,Stromal
+5243,Enterocyte (Mid Villus)
+5244,T (CD4+)
+5245,Stromal
+5246,Enterocyte (Mid Villus)
+5247,Smooth Muscle
+5248,Removed
+5249,Removed
+5250,Stromal
+5251,Removed
+5252,Endothelial
+5253,Paneth
+5254,Enterocyte (Mid Villus)
+5255,Goblet
+5256,Enterocyte (Mid Villus)
+5257,Pericyte
+5258,Stem + TA
+5259,"B (Follicular, Circulating)"
+5260,Removed
+5261,Enterocyte (Mid Villus)
+5262,Endothelial
+5263,Stem + TA
+5264,T (CD4+)
+5265,Enterocyte (Mid Villus)
+5266,Removed
+5267,Removed
+5268,Enterocyte (Mid Villus)
+5269,Removed
+5270,Macrophage + DC
+5271,Stem + TA
+5272,Paneth
+5273,T (CD4+)
+5274,Stromal
+5275,Pericyte
+5276,T (CD4+)
+5277,Enterocyte (Bottom Villus)
+5278,Paneth
+5279,T (CD4+)
+5280,B (Plasma)
+5281,Removed
+5282,T (CD8+)
+5283,Enterocyte (Mid Villus)
+5284,Removed
+5285,Paneth
+5286,T (CD4+)
+5287,Endothelial
+5288,Enterocyte (Mid Villus)
+5289,Endothelial
+5290,Stromal
+5291,Paneth
+5292,Enterocyte (Mid Villus)
+5293,Paneth
+5294,Stromal
+5295,Stromal
+5296,ICC
+5297,Macrophage + DC
+5298,Stem + TA
+5299,Paneth
+5300,Paneth
+5301,T (CD4+)
+5302,T (CD4+)
+5303,Removed
+5304,Telocyte
+5305,Enterocyte (Mid Villus)
+5306,Stromal
+5307,Telocyte
+5308,B (Plasma)
+5309,Pericyte
+5310,Paneth
+5311,Stromal
+5312,Removed
+5313,Enterocyte (Mid Villus)
+5314,Enterocyte (Mid Villus)
+5315,Removed
+5316,Stromal
+5317,B (Plasma)
+5318,Macrophage + DC
+5319,Endothelial
+5320,Enterocyte (Mid Villus)
+5321,Macrophage + DC
+5322,Paneth
+5323,Removed
+5324,Macrophage + DC
+5325,Enterocyte (Top Villus)
+5326,Enterocyte (Mid Villus)
+5327,Smooth Muscle
+5328,Removed
+5329,Macrophage + DC
+5330,Macrophage + DC
+5331,Enterocyte (Bottom Villus)
+5332,Stem + TA
+5333,Stem + TA
+5334,B (Plasma)
+5335,Stromal
+5336,Macrophage + DC
+5337,Stem + TA
+5338,Pericyte
+5339,Removed
+5340,Stromal
+5341,Stromal
+5342,T (CD8+)
+5343,Removed
+5344,Stem + TA
+5345,B (Plasma)
+5346,Endothelial
+5347,T (CD4+)
+5348,Macrophage + DC
+5349,Endothelial
+5350,Removed
+5351,Stem + TA
+5352,T (CD4+)
+5353,Enterocyte (Bottom Villus)
+5354,Removed
+5355,Macrophage + DC
+5356,Stromal
+5357,T (CD4+)
+5358,T (CD4+)
+5359,Removed
+5360,B (Plasma)
+5361,T (CD4+)
+5362,Endothelial
+5363,Macrophage + DC
+5364,Pericyte
+5365,Enterocyte (Mid Villus)
+5366,Endothelial
+5367,Endothelial
+5368,Stem + TA
+5369,Telocyte
+5370,Telocyte
+5371,Stem + TA
+5372,T (CD4+)
+5373,T (CD4+)
+5374,Stromal
+5375,Goblet
+5376,Endothelial
+5377,T (CD8+)
+5378,Stem + TA
+5379,Stromal
+5380,"B (Follicular, Circulating)"
+5381,Removed
+5382,Removed
+5383,Endothelial
+5384,Removed
+5385,Stromal
+5386,Pericyte
+5387,Goblet
+5388,Macrophage + DC
+5389,Removed
+5390,Removed
+5391,T (CD8+)
+5392,Removed
+5393,Enterocyte (Bottom Villus)
+5394,Stem + TA
+5395,Removed
+5396,Endothelial
+5397,Enterocyte (Bottom Villus)
+5398,Endothelial
+5399,Stromal
+5400,Stromal
+5401,Stromal
+5402,Removed
+5403,Paneth
+5404,Paneth
+5405,Paneth
+5406,Stromal
+5407,Paneth
+5408,B (Plasma)
+5409,Removed
+5410,Removed
+5411,Stromal
+5412,Removed
+5413,Removed
+5414,T (CD8+)
+5415,Pericyte
+5416,T (CD8+)
+5417,Removed
+5418,"B (Follicular, Circulating)"
+5419,T (CD8+)
+5420,B (Plasma)
+5421,Endothelial
+5422,Removed
+5423,Stromal
+5424,B (Plasma)
+5425,Goblet
+5426,Stem + TA
+5427,Endothelial
+5428,B (Plasma)
+5429,T (CD4+)
+5430,Stromal
+5431,Enterocyte (Mid Villus)
+5432,Goblet
+5433,Removed
+5434,Removed
+5435,B (Plasma)
+5436,Stem + TA
+5437,Enterocyte (Bottom Villus)
+5438,Removed
+5439,Stem + TA
+5440,Macrophage + DC
+5441,Removed
+5442,T (CD4+)
+5443,Macrophage + DC
+5444,Stromal
+5445,Enterocyte (Mid Villus)
+5446,Enterocyte (Bottom Villus)
+5447,Enterocyte (Bottom Villus)
+5448,T (CD4+)
+5449,Paneth
+5450,Enterocyte (Mid Villus)
+5451,Macrophage + DC
+5452,Paneth
+5453,T (CD4+)
+5454,Stromal
+5455,Paneth
+5456,Macrophage + DC
+5457,T (CD8+)
+5458,Endothelial
+5459,Removed
+5460,Stem + TA
+5461,Stromal
+5462,B (Plasma)
+5463,Removed
+5464,Removed
+5465,Removed
+5466,Macrophage + DC
+5467,Macrophage + DC
+5468,Removed
+5469,Removed
+5470,Paneth
+5471,Endothelial
+5472,B (Plasma)
+5473,Goblet
+5474,T (CD4+)
+5475,Removed
+5476,T (CD4+)
+5477,Macrophage + DC
+5478,Stem + TA
+5479,Tuft
+5480,Stromal
+5481,B (Plasma)
+5482,Removed
+5483,Removed
+5484,Removed
+5485,Stromal
+5486,Pericyte
+5487,B (Plasma)
+5488,Endothelial
+5489,Macrophage + DC
+5490,Goblet
+5491,Removed
+5492,Removed
+5493,Removed
+5494,Stem + TA
+5495,Removed
+5496,Enterocyte (Mid Villus)
+5497,T (CD4+)
+5498,Endothelial
+5499,Removed
+5500,Stem + TA
+5501,Stem + TA
+5502,Removed
+5503,B (Plasma)
+5504,Removed
+5505,Removed
+5506,Removed
+5507,Removed
+5508,Goblet
+5509,Enterocyte (Mid Villus)
+5510,Removed
+5511,Stromal
+5512,T (CD4+)
+5513,Macrophage + DC
+5514,Endothelial
+5515,Goblet
+5516,B (Plasma)
+5517,Stem + TA
+5518,Removed
+5519,Macrophage + DC
+5520,Stromal
+5521,Telocyte
+5522,Removed
+5523,Endothelial
+5524,Paneth
+5525,Removed
+5526,Removed
+5527,Removed
+5528,Pericyte
+5529,Macrophage + DC
+5530,Macrophage + DC
+5531,Paneth
+5532,Pericyte
+5533,Goblet
+5534,Stromal
+5535,Macrophage + DC
+5536,Enterocyte (Mid Villus)
+5537,Stromal
+5538,B (Plasma)
+5539,Stromal
+5540,Macrophage + DC
+5541,Smooth Muscle
+5542,Goblet
+5543,Removed
+5544,Endothelial
+5545,Paneth
+5546,Goblet
+5547,Enterocyte (Mid Villus)
+5548,Macrophage + DC
+5549,Removed
+5550,Removed
+5551,T (CD4+)
+5552,Stromal
+5553,Stromal
+5554,Macrophage + DC
+5555,Stromal
+5556,Endothelial
+5557,Removed
+5558,Stem + TA
+5559,Enterocyte (Mid Villus)
+5560,Removed
+5561,Macrophage + DC
+5562,Stromal
+5563,B (Plasma)
+5564,Pericyte
+5565,Paneth
+5566,Endothelial
+5567,"B (Follicular, Circulating)"
+5568,Stromal
+5569,Stem + TA
+5570,Telocyte
+5571,Macrophage + DC
+5572,Removed
+5573,Stromal
+5574,Removed
+5575,Removed
+5576,Enterocyte (Mid Villus)
+5577,Removed
+5578,Enterocyte (Bottom Villus)
+5579,Removed
+5580,B (Plasma)
+5581,Stem + TA
+5582,T (CD4+)
+5583,Removed
+5584,Removed
+5585,Stromal
+5586,Removed
+5587,B (Plasma)
+5588,Removed
+5589,Removed
+5590,Stromal
+5591,Macrophage + DC
+5592,Removed
+5593,Macrophage + DC
+5594,Pericyte
+5595,Telocyte
+5596,Stem + TA
+5597,T (CD4+)
+5598,T (CD4+)
+5599,Removed
+5600,Removed
+5601,T (CD4+)
+5602,Removed
+5603,Stem + TA
+5604,Stromal
+5605,Removed
+5606,Enterocyte (Mid Villus)
+5607,Stem + TA
+5608,Goblet
+5609,Removed
+5610,Removed
+5611,Enterocyte (Bottom Villus)
+5612,"B (Follicular, Circulating)"
+5613,Stromal
+5614,Removed
+5615,Macrophage + DC
+5616,Removed
+5617,Enterocyte (Bottom Villus)
+5618,Removed
+5619,T (CD4+)
+5620,Removed
+5621,Removed
+5622,Removed
+5623,Removed
+5624,Removed
+5625,Stromal
+5626,Macrophage + DC
+5627,Removed
+5628,Enterocyte (Bottom Villus)
+5629,Removed
+5630,Enterocyte (Mid Villus)
+5631,T (CD4+)
+5632,Removed
+5633,T (CD4+)
+5634,Pericyte
+5635,Paneth
+5636,Removed
+5637,Removed
+5638,Enterocyte (Mid Villus)
+5639,Removed
+5640,Macrophage + DC
+5641,Pericyte
+5642,Removed
+5643,Stem + TA
+5644,Removed
+5645,Removed
+5646,Removed
+5647,Removed
+5648,Removed
+5649,Enterocyte (Mid Villus)
+5650,Removed
+5651,Removed
+5652,Removed
+5653,Removed
+5654,Macrophage + DC
+5655,Stromal
+5656,Removed
+5657,Macrophage + DC
+5658,Removed
+5659,Removed
+5660,Endothelial
+5661,Stromal
+5662,Removed
+5663,Enterocyte (Top Villus)
+5664,Tuft
+5665,T (CD4+)
+5666,Removed
+5667,T (CD4+)
+5668,Pericyte
+5669,Telocyte
+5670,Stromal
+5671,Removed
+5672,Enterocyte (Mid Villus)
+5673,Removed
+5674,Removed
+5675,Stem + TA
+5676,Removed
+5677,Removed
+5678,Removed
+5679,Removed
+5680,Removed
+5681,Removed
+5682,Removed
+5683,Removed
+5684,Removed
+5685,Removed
+5686,Removed
+5687,Removed
+5688,Removed
+5689,Macrophage + DC
+5690,Removed
+5691,Removed
+5692,Removed
+5693,Removed
+5694,Enterocyte (Bottom Villus)
+5695,Stromal
+5696,Removed
+5697,Stem + TA
+5698,Macrophage + DC
+5699,Removed
+5700,Macrophage + DC
+5701,Paneth
+5702,T (CD4+)
+5703,Removed
+5704,Endothelial
+5705,Removed
+5706,Removed
+5707,Removed
+5708,Removed
+5709,Removed
+5710,Removed
+5711,Removed
+5712,Endothelial
+5713,Removed
+5714,Removed
+5715,Removed
+5716,Removed
+5717,Removed
+5718,Removed
+5719,Removed
+5720,Removed
+5721,Enterocyte (Mid Villus)
+5722,Removed
+5723,Removed
+5724,Removed
+5725,T (CD4+)
+5726,Removed
+5727,Macrophage + DC
+5728,Removed
+5729,Removed
+5730,Removed
+5731,Removed
+5732,Removed
+5733,Removed
+5734,Removed
+5735,Removed
+5736,Removed
+5737,Removed
+5738,Removed
+5739,Removed
+5740,Removed
+5741,Removed
+5742,Removed
+5743,Removed
+5744,Removed
+5745,Removed
+5746,Stromal
+5747,Removed
+5748,Goblet
+5749,Stromal
+5750,Removed
+5751,Removed
+5752,Macrophage + DC
+5753,T (CD4+)
+5754,Removed
+5755,Removed
+5756,Removed
+5757,Removed
+5758,Removed
+5759,Removed
+5760,Removed
+5761,Removed
+5762,Removed
+5763,Removed
+5764,Removed
+5765,Removed
+5766,Removed
+5767,Enterocyte (Top Villus)
+5768,Removed
+5769,Removed
+5770,Removed
+5771,Enterocyte (Mid Villus)
+5772,Removed
+5773,Removed
+5774,Removed
+5775,Removed
+5776,Removed
+5777,Removed
+5778,Removed
+5779,Removed
+5780,Stem + TA
+5781,Removed
+5782,Enterocyte (Mid Villus)
+5783,Removed
+5784,Removed
+5785,Removed
+5786,Removed
+5787,Removed
+5788,Removed
+5789,Removed
+5790,Stromal
+5791,Removed
+5792,Removed
+5793,Removed
+5794,Removed
+5795,Removed
+5796,Removed
+5797,Removed
+5798,Removed
+5799,Removed
+5800,Removed
