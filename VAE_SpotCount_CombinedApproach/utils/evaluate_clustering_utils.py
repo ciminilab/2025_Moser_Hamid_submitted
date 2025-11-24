@@ -4,20 +4,22 @@ import pandas as pd
 import squidpy as sq
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.metrics import silhouette_score, homogeneity_score, adjusted_mutual_info_score, jaccard_score
+from sklearn.metrics import silhouette_score, homogeneity_score, adjusted_mutual_info_score, jaccard_score, adjusted_rand_score
 from imblearn.metrics import specificity_score, sensitivity_score
 
-from utils.anndata_utils import *
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from scipy.optimize import linear_sum_assignment
 
 import muon as mu
 import scanpy as sc
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
 
-from utils.anndata_utils import clear_clustering_data
+from VAE_SpotCount_CombinedApproach.utils.anndata_utils import *
+from VAE_SpotCount_CombinedApproach.utils.anndata_utils import clear_clustering_data
 
 
-def calculate_cluster_correlations(ground_truth_clustering_df, data_object):
+def calculate_cluster_correlations(ground_truth_clustering_df, data_object, clustering_key):
     """
     Calculate the correlation between true labels and predicted clusters using Jaccard, specificity and sensitivity scores.
 
@@ -34,14 +36,14 @@ def calculate_cluster_correlations(ground_truth_clustering_df, data_object):
 
     # Get unique true and predicted labels
     true_labels = np.unique(ground_truth_clustering_df['cell_type'].values)
-    predicted_labels = np.unique(data_object.obs['clusters'].values)
+    predicted_labels = np.unique(data_object.obs[clustering_key].values)
 
     # Iterate through each pair of predicted and true labels
     for pred_label in predicted_labels:
         for true_label in true_labels:
             # Create binary vectors for each label
             true_labels_vector = [1 if x == true_label else 0 for x in ground_truth_clustering_df['cell_type'].values]
-            predicted_labels_vector = [1 if x == pred_label else 0 for x in data_object.obs['clusters'].values]
+            predicted_labels_vector = [1 if x == pred_label else 0 for x in data_object.obs[clustering_key].values]
 
             # Calculate Jaccard, specificity, and sensitivity scores
             jaccard_value = jaccard_score(y_pred=predicted_labels_vector, y_true=true_labels_vector)
@@ -70,7 +72,7 @@ def calculate_cluster_correlations(ground_truth_clustering_df, data_object):
     return association_value_dict
 
 
-def calculate_clustering_metrics(data_object, ground_truth_clustering_df):
+def calculate_clustering_metrics(data_object, ground_truth_clustering_df, clustering_key):
     """
     Calculate various clustering metrics for a given AnnData object.
 
@@ -78,14 +80,14 @@ def calculate_clustering_metrics(data_object, ground_truth_clustering_df):
         data_object (AnnData or MuData): AnnData or MuData object containing clustering results in its .obs attribute.
         ground_truth_clustering_df (pd.DataFrame): DataFrame containing the ground truth cell type labels.
 
-    Returns:
-        dict: Dictionary containing silhouette, homogeneity, and adjusted mutual information scores.
+     Returns:
+        dict: Dictionary containing silhouette, homogeneity, adjusted mutual information, and ARI scores.
     """
-    if isinstance(data_object, sc.AnnData) and len(data_object.obs['clusters'].unique()) > 1:
+    if isinstance(data_object, sc.AnnData) and len(data_object.obs[clustering_key].unique()) > 1:
         # Calculate silhouette score if there are at least two clusters
         # Corrected bug carried from old code base. It was used the physical tissue spatial data for the silhouette score calculation instead of the distance matrix in the feature space
-        silhouette = silhouette_score(data_object.X, data_object.obs['clusters'])
-    elif isinstance(data_object, mu.MuData) and len(data_object.obs['clusters'].unique()) > 1:
+        silhouette = silhouette_score(data_object.X, data_object.obs[clustering_key])
+    elif isinstance(data_object, mu.MuData) and len(data_object.obs[clustering_key].unique()) > 1:
         # Assumes only two modalities
         # Fetching modality keys
         mod1 = list(data_object.mod.keys())[0]
@@ -93,27 +95,34 @@ def calculate_clustering_metrics(data_object, ground_truth_clustering_df):
 
         # Calculate silhouette score if there are at least two clusters
         # As this is for MuData objects, the silhouette score is computed for each modality with the data used for the distance matrix, and then the average is used
-        silhouette1 = silhouette_score(data_object[mod1].X, data_object.obs['clusters'])
-        silhouette2 = silhouette_score(data_object[mod2].X, data_object.obs['clusters'])
+        silhouette1 = silhouette_score(data_object[mod1].X, data_object.obs[clustering_key])
+        silhouette2 = silhouette_score(data_object[mod2].X, data_object.obs[clustering_key])
         silhouette = (silhouette1 + silhouette2) / 2
     else:
         # Set silhouette score to NaN if there is only one cluster or wrong object type
         silhouette = np.nan
 
     # Calculate homogeneity score
-    homogeneity = homogeneity_score(data_object.obs['clusters'], ground_truth_clustering_df['cell_type'])
+    homogeneity = homogeneity_score(data_object.obs[clustering_key], ground_truth_clustering_df['cell_type'])
 
     # Calculate adjusted mutual information score
-    adjusted_mutual = adjusted_mutual_info_score(data_object.obs['clusters'], ground_truth_clustering_df['cell_type'])
+    adjusted_mutual = adjusted_mutual_info_score(data_object.obs[clustering_key], ground_truth_clustering_df['cell_type'])
+
+    # Calculate adjusted Rand index
+    ari = adjusted_rand_score(
+        data_object.obs[clustering_key],
+        ground_truth_clustering_df['cell_type']
+    )
 
     return {
         'silhouette_score': silhouette,
         'homogeneity_score': homogeneity,
-        'adjusted_mutual_info': adjusted_mutual
+        'adjusted_mutual_info': adjusted_mutual,
+        'adjusted_rand_index': ari,
     }
 
 
-def generate_interaction_plots(AnnData_object, key, output_directory=None, export_individual=False):
+def generate_interaction_plots(AnnData_object, key, clustering_key, output_directory=None, export_individual=False):
     """
     Generate interaction plots (neighborhood enrichment, co-occurrence) for an AnnData object and optionally export them.
 
@@ -125,7 +134,7 @@ def generate_interaction_plots(AnnData_object, key, output_directory=None, expor
     """
     # Assign colors to clusters if not already present
     if 'clusters_colors' not in AnnData_object.uns:
-        unique_clusters = AnnData_object.obs['clusters'].unique()
+        unique_clusters = AnnData_object.obs[clustering_key].unique()
         num_clusters = len(unique_clusters)
         cmap = plt.get_cmap('tab20')  # Use a colormap to generate colors for the clusters
         colors = [cmap(i / num_clusters) for i in range(num_clusters)]
@@ -133,21 +142,21 @@ def generate_interaction_plots(AnnData_object, key, output_directory=None, expor
 
     # Calculate spatial neighbors and interaction matrices
     sq.gr.spatial_neighbors(AnnData_object, coord_type="generic", spatial_key="spatial")
-    sq.gr.interaction_matrix(AnnData_object, cluster_key="clusters")
-    sq.gr.nhood_enrichment(AnnData_object, cluster_key='clusters')
-    sq.gr.co_occurrence(AnnData_object, cluster_key="clusters")
+    sq.gr.interaction_matrix(AnnData_object, cluster_key=clustering_key)
+    sq.gr.nhood_enrichment(AnnData_object, cluster_key=clustering_key)
+    sq.gr.co_occurrence(AnnData_object, cluster_key=clustering_key)
 
     # Export individual plots if requested
     if export_individual and output_directory:
         os.makedirs(output_directory, exist_ok=True)  # Create directory if it doesn't exist
 
         # Export neighborhood enrichment plot
-        sq.pl.nhood_enrichment(AnnData_object, cluster_key="clusters", mode='zscore', method="average",
+        sq.pl.nhood_enrichment(AnnData_object, cluster_key=clustering_key, mode='zscore', method="average",
                                figsize=(10, 10), cmap='Blues', annotate=True, title=key,
                                save=f"{output_directory}/{key}_nhood_enrichment_plot.png")
 
         # Create the co-occurrence plot without saving it directly, for title param
-        sq.pl.co_occurrence(AnnData_object, cluster_key="clusters", clusters=['1'], figsize=(8, 5))
+        sq.pl.co_occurrence(AnnData_object, cluster_key=clustering_key, clusters=['1'], figsize=(8, 5))
         plt.title(f'Co-occurrence Plot for {key}', fontsize=16)
 
         # Save the plot with the title
@@ -198,7 +207,7 @@ def plot_clustering_metrics(metrics_df, dataset_custom_order_list=None, dataset_
 
     plt.rcParams.update({'font.size': font_size})
     metrics = metrics_df.index
-    fig, axes = plt.subplots(nrows=len(metrics), ncols=1, figsize=(15, 12), sharex=True)
+    fig, axes = plt.subplots(nrows=len(metrics), ncols=1, figsize=(15, 16), sharex=True)
 
     # Prepare new x-axis labels
     if dataset_name_substitution_dict:
@@ -531,7 +540,7 @@ def generate_heatmaps(aggregated_df, metric, ground_truth_clustering_df, output_
     plt.show()
 
 
-def evaluate_clustering(data_object_dictionary, ground_truth_dataframe, output_directory, sort_labels=False,
+def evaluate_clustering(data_object_dictionary, ground_truth_dataframe, output_directory, clustering_key, sort_labels=False,
                         generate_interaction_plots=True, generate_jaccard_heatmap=True,
                         generate_specificity_heatmap=True, generate_sensitivity_heatmap=True,
                         dataset_custom_order_list=None, dataset_name_substitution_dict=None,
@@ -545,6 +554,7 @@ def evaluate_clustering(data_object_dictionary, ground_truth_dataframe, output_d
         data_object_dictionary (dict): Dictionary containing AnnData objects.
         ground_truth_dataframe (pd.DataFrame): DataFrame containing ground truth cell type labels.
         output_directory (str): Directory to save the plots.
+        clustering_key (str): key for stored clustering in data object
         sort_labels (bool): Whether to sort true labels by cell type count (default: False).
         generate_interaction_plots (bool): Whether to generate interaction plots (default: True).
         generate_jaccard_heatmap (bool): Whether to generate jaccard heatmaps (default: True).
@@ -563,10 +573,12 @@ def evaluate_clustering(data_object_dictionary, ground_truth_dataframe, output_d
     clusterMetricsDict = {}
     cluster_correl_dict_of_dicts = {}
     for key, adObj in data_object_dictionary.items():
-        clusterMetricsDict[key] = calculate_clustering_metrics(adObj, ground_truth_dataframe)
-        cluster_correl_dict_of_dicts[key] = calculate_cluster_correlations(ground_truth_dataframe, adObj)
+        clusterMetricsDict[key] = calculate_clustering_metrics(adObj, ground_truth_dataframe, clustering_key=clustering_key)
+        cluster_correl_dict_of_dicts[key] = calculate_cluster_correlations(ground_truth_dataframe, adObj,
+                                                                           clustering_key=clustering_key)
         if generate_interaction_plots:
-            generate_interaction_plots(adObj, key, output_directory=output_directory, export_individual=True)
+            generate_interaction_plots(adObj, key, output_directory=output_directory, export_individual=True,
+                                       clustering_key=clustering_key)
 
     # Export cluster correlation metrics
     cluster_matching_dict = \
@@ -614,7 +626,7 @@ def evaluate_clustering(data_object_dictionary, ground_truth_dataframe, output_d
 def optimize_leiden_hyperparams(object, min_clusters=None, k_range=None, resolution_range=None,
                                 resolution_threshold=None, increment_multiple_after_threshold=None,
                                 optimal_MuDataObj_resolution_dict=None,
-                                modality_weight_increment=None):
+                                modality_weight_increment=None, global_seed=137):
     """
     Runs a grid search to optimize the hyperparameters for mono- or multiplex Leiden clustering.
     Handles errors gracefully by skipping invalid parameter combinations.
@@ -654,20 +666,20 @@ def optimize_leiden_hyperparams(object, min_clusters=None, k_range=None, resolut
                     try:
                         # Clearing previous clustering data
                         tempDict = {"object": object}
-                        clear_clustering_data(tempDict)
+                        clear_clustering_data(tempDict, key_added='leiden_clusters')
 
                         # Generating kNN and clustering
-                        sc.pp.neighbors(object, n_neighbors=k, n_pcs=0, random_state=137)
-                        sc.tl.leiden(object, key_added='clusters', resolution=resolution)
+                        sc.pp.neighbors(object, n_neighbors=k, n_pcs=0, random_state=global_seed)
+                        sc.tl.leiden(object, key_added='leiden_clusters', resolution=resolution)
 
                         # Skipping if below minimum number of clusters
                         if min_clusters is not None:
-                            nClusters = object.obs['clusters'].nunique()
+                            nClusters = object.obs['leiden_clusters'].nunique()
                             if nClusters <= min_clusters:
                                 continue
 
                         # Computing silhouette score
-                        silhouette = silhouette_score(object.X, object.obs['clusters'])
+                        silhouette = silhouette_score(object.X, object.obs['leiden_clusters'])
 
                         # Comparing to previous best score
                         if silhouette > best_score:
@@ -698,18 +710,18 @@ def optimize_leiden_hyperparams(object, min_clusters=None, k_range=None, resolut
                     }
 
                     # Running multiplex Leiden clustering
-                    mu.tl.leiden(object, resolution=optimal_MuDataObj_resolution_dict, key_added='clusters',
-                                 mod_weights=weights_dict, random_state=137)
+                    mu.tl.leiden(object, resolution=optimal_MuDataObj_resolution_dict, key_added='leiden_clusters',
+                                 mod_weights=weights_dict, random_state=global_seed)
 
                     # Skipping if below minimum number of clusters
                     if min_clusters is not None:
-                        nClusters = object.obs['clusters'].nunique()
+                        nClusters = object.obs['leiden_clusters'].nunique()
                         if nClusters <= min_clusters:
                             continue
 
                     # Computing Silhouette score
-                    silhouette1 = silhouette_score(object.mod[mod1].X, object.obs['clusters'])
-                    silhouette2 = silhouette_score(object.mod[mod2].X, object.obs['clusters'])
+                    silhouette1 = silhouette_score(object.mod[mod1].X, object.obs['leiden_clusters'])
+                    silhouette2 = silhouette_score(object.mod[mod2].X, object.obs['leiden_clusters'])
                     silhouette = (silhouette1 + silhouette2) / 2
 
                     # Comparing to previous best score
@@ -728,6 +740,130 @@ def optimize_leiden_hyperparams(object, min_clusters=None, k_range=None, resolut
 
     return best_params
 
+
+def optimize_mofa_kmeans_hyperparams(
+    obj,
+    *,
+    min_clusters=None,
+    n_factors_range=(5, 20, 5),    # (start, end, step)
+    n_clusters_range=(5, 20, 1),   # (start, end, step)
+    likelihood="gaussian",
+    gpu_mode=True,
+    global_seed=137,
+):
+    """
+    Grid search for MOFA (1 view) + k-means on a single AnnData.
+
+    Parameters
+    ----------
+    obj : AnnData
+        Single-modality AnnData to use as one MOFA view.
+    min_clusters : int or None
+        Minimum number of clusters required to accept a solution.
+    n_factors_range : (int, int, int)
+        (start, end, step) for MOFA n_factors.
+    n_clusters_range : (int, int, int)
+        (start, end, step) for k-means n_clusters.
+    likelihood : str
+        MOFA likelihood for this modality ("gaussian" for your data).
+    gpu_mode : bool
+        Whether to ask MOFA to use GPU (falls back to CPU if unavailable).
+    global_seed : int
+        Random seed for both MOFA and k-means.
+
+    Returns
+    -------
+    best_params : dict or None
+        {
+          "n_factors": int,
+          "n_clusters": int,
+          "silhouette_score": float,
+        }
+        or None if nothing passed the min_clusters filter.
+    """
+    if not isinstance(obj, (sc.AnnData, mu.MuData)):
+        raise TypeError("optimize_mofa_kmeans_hyperparams expects AnnData or MuData.")
+
+    # Make sure there are no NaNs in X
+    if isinstance(obj, sc.AnnData):
+        X = np.nan_to_num(obj.X, nan=np.nanmean(obj.X, axis=0))
+        views = {"view": obj.copy()}
+
+    elif isinstance(obj, mu.MuData):
+        # Use all modalities as MOFA views
+        views = {}
+        for mod_key, mod_obj in obj.mod.items():
+            mod_copy = mod_obj.copy()
+            mod_copy.X = np.nan_to_num(mod_copy.X, nan=np.nanmean(mod_copy.X, axis=0))
+            views[mod_key] = mod_copy
+
+    # Prebuild ranges
+    n_factors_list = list(range(n_factors_range[0], n_factors_range[1] + 1, n_factors_range[2]))
+    n_clusters_list = list(range(n_clusters_range[0], n_clusters_range[1] + 1, n_clusters_range[2]))
+
+    best_score = -np.inf
+    best_params = None
+
+    for n_factors in n_factors_list:
+        try:
+            mtmp = mu.MuData(views)
+
+            # Fit MOFA
+            mu.tl.mofa(
+                mtmp,
+                n_factors=n_factors,
+                likelihoods=likelihood,
+                gpu_mode=gpu_mode,
+                seed=global_seed,
+            )
+
+            # Extract latent factors
+            F = mtmp.obsm["X_mofa"]
+
+            # Standardize factors before k-means
+            F_std = StandardScaler().fit_transform(F)
+
+        except Exception as e:
+            print(f"[MOFA] Error fitting n_factors={n_factors}: {e}")
+            continue
+
+        for n_clusters in n_clusters_list:
+            try:
+                km = KMeans(
+                    n_clusters=n_clusters,
+                    n_init=50,
+                    random_state=global_seed,
+                )
+                labels = km.fit_predict(F_std)
+
+                # Effective number of clusters (just in case)
+                n_eff = len(np.unique(labels))
+                if min_clusters is not None and n_eff <= min_clusters:
+                    continue
+
+                # Silhouette in MOFA space
+                if isinstance(obj, sc.AnnData):
+                    sil = silhouette_score(F_std, labels)
+
+                elif isinstance(obj, mu.MuData):
+                    sils = []
+                    for mod_key in obj.mod:
+                        X_mod = StandardScaler().fit_transform(obj.mod[mod_key].X)
+                        sils.append(silhouette_score(X_mod, labels))
+                    sil = np.mean(sils)
+
+                if sil > best_score:
+                    best_score = sil
+                    best_params = {
+                        "n_factors": n_factors,
+                        "n_clusters": n_clusters,
+                        "silhouette_score": float(sil),
+                    }
+            except Exception as e:
+                print(f"[MOFA+kmeans] Error n_factors={n_factors}, n_clusters={n_clusters}: {e}")
+                continue
+
+    return best_params
 
 def optimize_clustering_for_object(ad_key, ad_obj, n_neighbors_range, resolution_range, metric_weights,
                                    ground_truth_clustering_df):
