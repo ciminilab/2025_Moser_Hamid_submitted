@@ -4,7 +4,11 @@ import pandas as pd
 import squidpy as sq
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.metrics import silhouette_score, homogeneity_score, adjusted_mutual_info_score, jaccard_score, adjusted_rand_score
+from itertools import product
+from sklearn.metrics import (silhouette_score, homogeneity_score, adjusted_mutual_info_score,
+                             jaccard_score, adjusted_rand_score, roc_auc_score, balanced_accuracy_score)
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import StratifiedKFold
 from imblearn.metrics import specificity_score, sensitivity_score
 import warnings
 import tempfile
@@ -1322,3 +1326,144 @@ def plot_mofa_variance_decomposition(contrib_per_factor, title=None):
     if title is not None:
         plt.title(title)
     plt.tight_layout()
+
+
+
+def rf_cv_hyperparam_sweep(
+        feature_space_dict,
+        y,
+        *,
+        n_estimators_list=(300, 600, 1000),
+        max_depth_list=(None, 20, 40),
+        max_features_list=("sqrt", "log2", 0.8),
+        n_splits=5,
+        class_weight="balanced",
+        global_seed=137,
+):
+    """
+    Sweep RF hyperparameters over multiple feature spaces.
+
+    Parameters
+    ----------
+    feature_space_dict : dict[str, AnnData]
+        Keys are feature space names, values are AnnData objects with .X as features.
+    y : array-like, shape (n_samples,)
+        True labels, aligned with rows of each AnnData in feature_space_dict.
+    n_estimators_list, max_depth_list, max_features_list : iterable
+        Hyperparameter values to sweep.
+    n_splits : int
+        Number of CV folds.
+    class_weight : str or dict
+        Passed to RandomForestClassifier.
+    global_seed : int
+        Seed for CV splitting and RF.
+
+    Returns
+    -------
+    overall_df : pd.DataFrame
+        Columns:
+        ['Feature Space', 'n_estimators', 'max_depth', 'max_features',
+         'Mean AUC', 'AUC Std Dev', 'Mean Balanced Accuracy',
+         'Balanced Accuracy Std Dev']
+    per_label_df : pd.DataFrame
+        Columns:
+        ['Feature Space', 'Label', 'n_estimators', 'max_depth', 'max_features',
+         'Mean AUC', 'Mean Balanced Accuracy']
+    """
+    y = np.asarray(y)
+    label_names = np.unique(y)
+
+    overall_rows = []
+    per_label_rows = []
+
+    # Fixed CV object
+    cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=global_seed)
+
+    # Hyperparameter grid
+    hyperparam_grid = list(product(n_estimators_list, max_depth_list, max_features_list))
+
+    for feat_name, adata in feature_space_dict.items():
+        print(f"Processing feature space: {feat_name}")
+
+        # X: features, standardized once per feature space
+        X = np.nan_to_num(adata.X, nan=np.nanmean(adata.X, axis=0))
+        X_std = StandardScaler().fit_transform(X)
+
+        # Pre-compute splits once so they are identical across hyperparams
+        splits = list(cv.split(X_std, y))
+
+        for n_estimators, max_depth, max_features in hyperparam_grid:
+            # Initialize classifier with current hyperparams
+            model = RandomForestClassifier(
+                n_estimators=n_estimators,
+                max_depth=max_depth,
+                max_features=max_features,
+                class_weight=class_weight,
+                random_state=global_seed,
+                n_jobs=-1,
+            )
+
+            # Per-label storage for this (feat, hyperparam) combo
+            per_label_auc = {lbl: [] for lbl in label_names}
+            per_label_bal = {lbl: [] for lbl in label_names}
+
+            # Overall macro metrics
+            auc_scores = []
+            bal_scores = []
+
+            # CV loop
+            for train_idx, test_idx in splits:
+                model.fit(X_std[train_idx], y[train_idx])
+                y_prob = model.predict_proba(X_std[test_idx])
+                y_pred = model.predict(X_std[test_idx])
+
+                # Overall multi-class metrics
+                auc_scores.append(
+                    roc_auc_score(y[test_idx], y_prob, multi_class="ovr")
+                )
+                bal_scores.append(
+                    balanced_accuracy_score(y[test_idx], y_pred)
+                )
+
+                # Per-label metrics (one-vs-rest)
+                for i, lbl in enumerate(label_names):
+                    label_mask = (y[test_idx] == lbl)
+                    if np.sum(label_mask) > 1:
+                        per_label_auc[lbl].append(
+                            roc_auc_score(label_mask, y_prob[:, i])
+                        )
+                        per_label_bal[lbl].append(
+                            balanced_accuracy_score(label_mask, (y_pred == lbl))
+                        )
+
+            # Store overall results for this hyperparam combo
+            overall_rows.append({
+                "Feature Space": feat_name,
+                "n_estimators": n_estimators,
+                "max_depth": max_depth,
+                "max_features": max_features,
+                "Mean AUC": np.mean(auc_scores),
+                "AUC Std Dev": np.std(auc_scores),
+                "Mean Balanced Accuracy": np.mean(bal_scores),
+                "Balanced Accuracy Std Dev": np.std(bal_scores),
+            })
+
+            # Store per-label averaged results for this combo
+            for lbl in label_names:
+                lbl_auc_vals = per_label_auc[lbl]
+                lbl_bal_vals = per_label_bal[lbl]
+
+                per_label_rows.append({
+                    "Feature Space": feat_name,
+                    "Label": lbl,
+                    "n_estimators": n_estimators,
+                    "max_depth": max_depth,
+                    "max_features": max_features,
+                    "Mean AUC": np.mean(lbl_auc_vals) if len(lbl_auc_vals) > 0 else np.nan,
+                    "Mean Balanced Accuracy": np.mean(lbl_bal_vals) if len(lbl_bal_vals) > 0 else np.nan,
+                })
+
+    overall_df = pd.DataFrame(overall_rows)
+    per_label_df = pd.DataFrame(per_label_rows)
+
+    return overall_df, per_label_df
