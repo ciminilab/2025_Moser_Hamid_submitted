@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import silhouette_score, homogeneity_score, adjusted_mutual_info_score, jaccard_score, adjusted_rand_score
 from imblearn.metrics import specificity_score, sensitivity_score
+import warnings
+import tempfile
+
 
 from concurrent.futures import ProcessPoolExecutor, ThreadPoolExecutor
 from scipy.optimize import linear_sum_assignment
@@ -83,21 +86,35 @@ def calculate_clustering_metrics(data_object, ground_truth_clustering_df, cluste
      Returns:
         dict: Dictionary containing silhouette, homogeneity, adjusted mutual information, and ARI scores.
     """
+    # Check if the clustering is MOFA-based so metrics are computed in the right space
+    if "mofa" in clustering_key.lower():
+        useMOFASpace = True
+    else:
+        useMOFASpace = False
+
+    # Sanity check
+    print(f"Calculating clustering metrics in {'MOFA' if useMOFASpace else 'data'} space")
+
     if isinstance(data_object, sc.AnnData) and len(data_object.obs[clustering_key].unique()) > 1:
         # Calculate silhouette score if there are at least two clusters
-        # Corrected bug carried from old code base. It was used the physical tissue spatial data for the silhouette score calculation instead of the distance matrix in the feature space
-        silhouette = silhouette_score(data_object.X, data_object.obs[clustering_key])
+        if not useMOFASpace:
+            silhouette = silhouette_score(data_object.X, data_object.obs[clustering_key])
+        else:
+            silhouette = silhouette_score(data_object.obsm["X_mofa_std"], data_object.obs[clustering_key])
     elif isinstance(data_object, mu.MuData) and len(data_object.obs[clustering_key].unique()) > 1:
-        # Assumes only two modalities
-        # Fetching modality keys
-        mod1 = list(data_object.mod.keys())[0]
-        mod2 = list(data_object.mod.keys())[1]
+        if not useMOFASpace:
+            # Assumes only two modalities
+            # Fetching modality keys
+            mod1 = list(data_object.mod.keys())[0]
+            mod2 = list(data_object.mod.keys())[1]
 
-        # Calculate silhouette score if there are at least two clusters
-        # As this is for MuData objects, the silhouette score is computed for each modality with the data used for the distance matrix, and then the average is used
-        silhouette1 = silhouette_score(data_object[mod1].X, data_object.obs[clustering_key])
-        silhouette2 = silhouette_score(data_object[mod2].X, data_object.obs[clustering_key])
-        silhouette = (silhouette1 + silhouette2) / 2
+            # Calculate silhouette score if there are at least two clusters
+            # As this is for MuData objects, the silhouette score is computed for each modality with the data used for the distance matrix, and then the average is used
+            silhouette1 = silhouette_score(data_object.mod[mod1].X, data_object.obs[clustering_key])
+            silhouette2 = silhouette_score(data_object.mod[mod2].X, data_object.obs[clustering_key])
+            silhouette = (silhouette1 + silhouette2) / 2
+        else:
+            silhouette = silhouette_score(data_object.obsm["X_mofa_std"], data_object.obs[clustering_key])
     else:
         # Set silhouette score to NaN if there is only one cluster or wrong object type
         silhouette = np.nan
@@ -740,6 +757,172 @@ def optimize_leiden_hyperparams(object, min_clusters=None, k_range=None, resolut
 
     return best_params
 
+#
+# def optimize_mofa_kmeans_hyperparams(
+#     obj,
+#     *,
+#     min_clusters=None,
+#     n_factors_range=(5, 20, 5),    # (start, end, step)
+#     n_clusters_range=(5, 20, 1),   # (start, end, step)
+#     likelihood="gaussian",
+#     gpu_mode=True,
+#     global_seed=137,
+# ):
+#     """
+#     Grid search for MOFA (1 view) + k-means on a single AnnData.
+#
+#     Parameters
+#     ----------
+#     obj : AnnData or MuData
+#         Single-modality AnnData to use as one MOFA view or multi-modality MuData.
+#     min_clusters : int or None
+#         Minimum number of clusters required to accept a solution.
+#     n_factors_range : (int, int, int)
+#         (start, end, step) for MOFA n_factors.
+#     n_clusters_range : (int, int, int)
+#         (start, end, step) for k-means n_clusters.
+#     likelihood : str
+#         MOFA likelihood for this modality ("gaussian" for your data).
+#     gpu_mode : bool
+#         Whether to ask MOFA to use GPU (falls back to CPU if unavailable).
+#     global_seed : int
+#         Random seed for both MOFA and k-means.
+#
+#     Returns
+#     -------
+#     best_params : dict or None
+#         {
+#           "n_factors": int,
+#           "n_clusters": int,
+#           "silhouette_score": float,
+#         }
+#         or None if nothing passed the min_clusters filter.
+#     """
+#     if not isinstance(obj, (sc.AnnData, mu.MuData)):
+#         raise TypeError("optimize_mofa_kmeans_hyperparams expects AnnData or MuData.")
+#
+#     # Make sure there are no NaNs in X
+#     if isinstance(obj, sc.AnnData):
+#         ad_copy = obj.copy()
+#         ad_copy.X = np.nan_to_num(ad_copy.X, nan=np.nanmean(ad_copy.X, axis=0))
+#         views = {"view": ad_copy}
+#
+#         # Compute max factors data supports (min of cells and features)
+#         max_factors = int(min(obj.n_vars, obj.n_obs))
+#
+#     elif isinstance(obj, mu.MuData):
+#         # Use all modalities as MOFA views
+#         views = {}
+#         for mod_key, mod_obj in obj.mod.items():
+#             mod_copy = mod_obj.copy()
+#             mod_copy.X = np.nan_to_num(mod_copy.X, nan=np.nanmean(mod_copy.X, axis=0))
+#             views[mod_key] = mod_copy
+#
+#         # Computing max factors the data supports (min of cells and features of all modalities)
+#         min_vars = min(mod_obj.n_vars for mod_obj in obj.mod.values())
+#         min_obs = min(mod_obj.n_obs for mod_obj in obj.mod.values())
+#         max_factors = int(min(min_vars, min_obs))
+#
+#     # Prebuild ranges
+#     n_factors_raw = list(range(n_factors_range[0],
+#                                n_factors_range[1] + 1,
+#                                n_factors_range[2]))
+#
+#     # keep only n_factors <= max_factors
+#     n_factors_list = [k for k in n_factors_raw if k <= max_factors]
+#
+#     if not n_factors_list:
+#         warnings.warn(
+#             f"All requested n_factors ({n_factors_raw}) exceed max_factors={max_factors}; "
+#             "no MOFA fits attempted.",
+#             UserWarning,
+#         )
+#         return None
+#
+#     n_clusters_list = list(range(n_clusters_range[0], n_clusters_range[1] + 1, n_clusters_range[2]))
+#
+#     best_score = -np.inf
+#     best_params = None
+#
+#     # for n_factors in n_factors_list:
+#     #     try:
+#     #         mtmp = mu.MuData(views)
+#     #
+#     #         # Fit MOFA
+#     #         mu.tl.mofa(
+#     #             mtmp,
+#     #             n_factors=n_factors,
+#     #             likelihoods=likelihood,
+#     #             gpu_mode=gpu_mode,
+#     #             seed=global_seed,
+#     #         )
+#     #
+#     #         # Extract latent factors
+#     #         F = mtmp.obsm["X_mofa"]
+#     #
+#     #         # Standardize factors before k-means
+#     #         F_std = StandardScaler().fit_transform(F)
+#
+#     for n_factors in n_factors_list:
+#         try:
+#             mtmp = mu.MuData(views)
+#
+#             # Unique outfile per process to avoid HDF5 lock clashes
+#             tmp_outfile = os.path.join(
+#                 tempfile.gettempdir(),
+#                 f"mofa_{os.getpid()}.hdf5",
+#             )
+#
+#             mu.tl.mofa(
+#                 mtmp,
+#                 n_factors=n_factors,
+#                 likelihoods=likelihood,
+#                 gpu_mode=gpu_mode,
+#                 seed=global_seed,
+#                 outfile=tmp_outfile,
+#                 save_interrupted=False,
+#                 save_data=False,
+#                 save_metadata=False,
+#                 save_parameters=False,
+#             )
+#
+#             F = mtmp.obsm["X_mofa"]
+#             F_std = StandardScaler().fit_transform(F)
+#
+#         except Exception as e:
+#             print(f"[MOFA] Error fitting n_factors={n_factors}: {e}")
+#             continue
+#
+#         for n_clusters in n_clusters_list:
+#             try:
+#                 km = KMeans(
+#                     n_clusters=n_clusters,
+#                     n_init=50,
+#                     random_state=global_seed,
+#                 )
+#                 labels = km.fit_predict(F_std)
+#
+#                 # Effective number of clusters (just in case)
+#                 n_eff = len(np.unique(labels))
+#                 if min_clusters is not None and n_eff <= min_clusters:
+#                     continue
+#
+#                 # Silhouette in MOFA space
+#                 sil = silhouette_score(F_std, labels)
+#
+#                 if sil > best_score:
+#                     best_score = sil
+#                     best_params = {
+#                         "n_factors": n_factors,
+#                         "n_clusters": n_clusters,
+#                         "silhouette_score": float(sil),
+#                     }
+#             except Exception as e:
+#                 print(f"[MOFA+kmeans] Error n_factors={n_factors}, n_clusters={n_clusters}: {e}")
+#                 continue
+#
+#     return best_params
+
 
 def optimize_mofa_kmeans_hyperparams(
     obj,
@@ -747,47 +930,87 @@ def optimize_mofa_kmeans_hyperparams(
     min_clusters=None,
     n_factors_range=(5, 20, 5),    # (start, end, step)
     n_clusters_range=(5, 20, 1),   # (start, end, step)
+    total_var_explained_threshold_fraction=0.95,
     likelihood="gaussian",
     gpu_mode=True,
     global_seed=137,
 ):
+
     """
-    Grid search for MOFA (1 view) + k-means on a single AnnData.
+    Two-stage hyperparameter optimization for MOFA + k-means clustering.
+
+    Stage 1 (MOFA dimensionality):
+        Fit MOFA for each candidate n_factors.
+        For each model, compute the total variance explained (summed over all
+        modalities and factors). Select the smallest n_factors that achieves at
+        least `total_var_explained_threshold_fraction` of the maximum variance
+        explained observed across the sweep.
+
+    Stage 2 (k-means in MOFA space):
+        Using the MOFA model corresponding to the selected n_factors, extract
+        the latent factors, standardize them, sweep over a range of k values,
+        and select the k that maximizes the silhouette score.
 
     Parameters
     ----------
-    obj : AnnData
-        Single-modality AnnData to use as one MOFA view.
+    obj : AnnData or MuData
+        If AnnData, it is treated as a single-view MOFA model.
+        If MuData, each modality is treated as a separate MOFA view.
     min_clusters : int or None
-        Minimum number of clusters required to accept a solution.
+        Require at least this many effective clusters from k-means; solutions
+        producing fewer are discarded.
     n_factors_range : (int, int, int)
-        (start, end, step) for MOFA n_factors.
+        (start, end, step) for candidate MOFA factor counts.
     n_clusters_range : (int, int, int)
-        (start, end, step) for k-means n_clusters.
+        (start, end, step) for candidate k-means cluster counts.
+    total_var_explained_threshold_fraction : float
+        Fraction of the maximum total variance explained required to accept a
+        candidate n_factors (e.g., 0.95 selects the smallest model whose total
+        variance explained is at least 95% of the best observed).
     likelihood : str
-        MOFA likelihood for this modality ("gaussian" for your data).
+        MOFA likelihood for all views (e.g., "gaussian").
     gpu_mode : bool
-        Whether to ask MOFA to use GPU (falls back to CPU if unavailable).
+        Whether to request GPU mode for MOFA (falls back to CPU if unavailable).
     global_seed : int
-        Random seed for both MOFA and k-means.
+        Random seed used for MOFA and k-means.
 
     Returns
     -------
     best_params : dict or None
         {
-          "n_factors": int,
-          "n_clusters": int,
-          "silhouette_score": float,
+            "n_factors": int,
+            "n_clusters": int,
+            "silhouette_score": float,
         }
-        or None if nothing passed the min_clusters filter.
+        or None if no valid solution was found (e.g., all fits failed or all
+        k-means runs violated the min_clusters constraint).
     """
+
     if not isinstance(obj, (sc.AnnData, mu.MuData)):
         raise TypeError("optimize_mofa_kmeans_hyperparams expects AnnData or MuData.")
 
+    # Local helpers
+    def _get_total_variance_explained(mtmp):
+        """
+        Sum of variance explained over all modalities and factors.
+        Expects mtmp.uns['mofa']['variance'] to be a dict:
+            {modality: 1D array (n_factors,)}
+        """
+        try:
+            var_dict = mtmp.uns["mofa"]["variance"]
+        except KeyError:
+            raise KeyError("mtmp.uns['mofa']['variance'] not found; cannot compute variance explained.")
+        return sum(np.sum(v) for v in var_dict.values())
+
+
     # Make sure there are no NaNs in X
     if isinstance(obj, sc.AnnData):
-        X = np.nan_to_num(obj.X, nan=np.nanmean(obj.X, axis=0))
-        views = {"view": obj.copy()}
+        ad_copy = obj.copy()
+        ad_copy.X = np.nan_to_num(ad_copy.X, nan=np.nanmean(ad_copy.X, axis=0))
+        views = {"view": ad_copy}
+
+        # Compute max factors data supports (min of cells and features)
+        max_factors = int(min(obj.n_vars, obj.n_obs))
 
     elif isinstance(obj, mu.MuData):
         # Use all modalities as MOFA views
@@ -797,73 +1020,126 @@ def optimize_mofa_kmeans_hyperparams(
             mod_copy.X = np.nan_to_num(mod_copy.X, nan=np.nanmean(mod_copy.X, axis=0))
             views[mod_key] = mod_copy
 
+        # Computing max factors the data supports (min of cells and features of all modalities)
+        min_vars = min(mod_obj.n_vars for mod_obj in obj.mod.values())
+        min_obs = min(mod_obj.n_obs for mod_obj in obj.mod.values())
+        max_factors = int(min(min_vars, min_obs))
+
     # Prebuild ranges
-    n_factors_list = list(range(n_factors_range[0], n_factors_range[1] + 1, n_factors_range[2]))
+    n_factors_raw = list(range(n_factors_range[0],
+                               n_factors_range[1] + 1,
+                               n_factors_range[2]))
+
+    # keep only n_factors <= max_factors
+    n_factors_list = [k for k in n_factors_raw if k <= max_factors]
+
+    if not n_factors_list:
+        warnings.warn(
+            f"All requested n_factors ({n_factors_raw}) exceed max_factors={max_factors}; "
+            "no MOFA fits attempted.",
+            UserWarning,
+        )
+        return None
+
     n_clusters_list = list(range(n_clusters_range[0], n_clusters_range[1] + 1, n_clusters_range[2]))
 
-    best_score = -np.inf
-    best_params = None
+    # Stage-1 bookkeeping: variance per n_factors and fitted models
+    n_factors_variance = []  # list of dicts: {"n_factors": ..., "total_variance": ...}
+    mofa_models_by_n_factors = {}  # n_factors -> fitted MuData
 
-    for n_factors in n_factors_list:
+    # --------- STAGE 1: OPTIMIZE n_factors. Sweep n_factors, fit MOFA, store total variance explained
+    for n_factor in n_factors_list:
         try:
             mtmp = mu.MuData(views)
 
-            # Fit MOFA
+            # Unique outfile per process to avoid HDF5 lock clashes (in case of multiprocessing, though not implemented)
+            tmp_outfile = os.path.join(
+                tempfile.gettempdir(),
+                f"mofa_{os.getpid()}.hdf5",
+            )
+
             mu.tl.mofa(
                 mtmp,
-                n_factors=n_factors,
+                n_factors=n_factor,
                 likelihoods=likelihood,
                 gpu_mode=gpu_mode,
                 seed=global_seed,
+                outfile=tmp_outfile,
+                save_interrupted=False,
+                save_data=False,
+                save_metadata=False,
+                save_parameters=False,
             )
 
-            # Extract latent factors
             F = mtmp.obsm["X_mofa"]
-
-            # Standardize factors before k-means
             F_std = StandardScaler().fit_transform(F)
 
+            # Stage-1: total variance explained at this n_factor
+            total_var = _get_total_variance_explained(mtmp)
+            n_factors_variance.append(
+                {"n_factors": n_factor, "total_variance": float(total_var)}
+            )
+            mofa_models_by_n_factors[n_factor] = mtmp
+
         except Exception as e:
-            print(f"[MOFA] Error fitting n_factors={n_factors}: {e}")
+            print(f"[MOFA] Error fitting n_factors={n_factor}: {e}")
             continue
 
-        for n_clusters in n_clusters_list:
-            try:
-                km = KMeans(
-                    n_clusters=n_clusters,
-                    n_init=50,
-                    random_state=global_seed,
-                )
-                labels = km.fit_predict(F_std)
+    # --------- Choose best n_factors by total variance explained
+    n_factors_variance_sorted = sorted(n_factors_variance, key=lambda d: d["n_factors"])
+    tvs = np.array([d["total_variance"] for d in n_factors_variance_sorted])
+    nfs = np.array([d["n_factors"] for d in n_factors_variance_sorted])
 
-                # Effective number of clusters (just in case)
-                n_eff = len(np.unique(labels))
-                if min_clusters is not None and n_eff <= min_clusters:
-                    continue
+    tv_max = tvs.max()
 
-                # Silhouette in MOFA space
-                if isinstance(obj, sc.AnnData):
-                    sil = silhouette_score(F_std, labels)
+    mask = tvs >= total_var_explained_threshold_fraction * tv_max
+    if mask.any():
+        best_n_factors = int(nfs[mask][0])  # smallest nf within threshold of max TVE
+    else:
+        best_n_factors = int(nfs[tvs.argmax()])  # fallback: nf with max TVE
 
-                elif isinstance(obj, mu.MuData):
-                    sils = []
-                    for mod_key in obj.mod:
-                        X_mod = StandardScaler().fit_transform(obj.mod[mod_key].X)
-                        sils.append(silhouette_score(X_mod, labels))
-                    sil = np.mean(sils)
+    # Get the corresponding fitted MOFA model and embedding
+    mtmp_best = mofa_models_by_n_factors[best_n_factors]
+    F_best = mtmp_best.obsm["X_mofa"]
+    F_best_std = StandardScaler().fit_transform(F_best)
 
-                if sil > best_score:
-                    best_score = sil
-                    best_params = {
-                        "n_factors": n_factors,
-                        "n_clusters": n_clusters,
-                        "silhouette_score": float(sil),
-                    }
-            except Exception as e:
-                print(f"[MOFA+kmeans] Error n_factors={n_factors}, n_clusters={n_clusters}: {e}")
+    # ---------- STAGE 2: OPTIMIZE K. Sweep k with silhouette score as an objective in MOFA space
+    best_score = -np.inf
+    best_params = None
+
+    for n_clusters in n_clusters_list:
+        try:
+            km = KMeans(
+                n_clusters=n_clusters,
+                n_init=50,
+                random_state=global_seed,
+            )
+            labels = km.fit_predict(F_best_std)
+
+            # Effective number of clusters (just in case)
+            n_eff = len(np.unique(labels))
+            if min_clusters is not None and n_eff <= min_clusters:
                 continue
 
+            # Need at least 2 clusters for silhouette
+            if len(np.unique(labels)) < 2:
+                continue
+
+            sil = silhouette_score(F_best_std, labels)
+
+            if sil > best_score:
+                best_score = sil
+                best_params = {
+                    "n_factors": best_n_factors,
+                    "n_clusters": n_clusters,
+                    "silhouette_score": float(sil),
+                }
+        except Exception as e:
+            print(f"[MOFA+kmeans] Error n_factors={best_n_factors}, n_clusters={n_clusters}: {e}")
+            continue
+
     return best_params
+
 
 def optimize_clustering_for_object(ad_key, ad_obj, n_neighbors_range, resolution_range, metric_weights,
                                    ground_truth_clustering_df):
@@ -1001,3 +1277,48 @@ def optimize_clustering(
         results_df.to_csv(csv_export_path, index=False)
 
     return results_df
+
+def get_mofa_modality_importance(mdata):
+    """
+    mdata: MuData after mu.tl.mofa(...)
+           must have mdata.uns["mofa"]["variance"] as a dict:
+           {modality -> 1D array (n_factors,)}
+    Returns:
+      ve_df: variance explained per factor per modality
+      contrib_per_factor: row-normalized (per-factor) contributions
+      overall_importance: single scalar importance per modality
+    """
+    var = mdata.uns["mofa"]["variance"]    # dict: mod -> np.ndarray (n_factors,)
+    modalities = list(var.keys())
+    n_factors = var[modalities[0]].shape[0]
+    factor_idx = [f"{i+1}" for i in range(n_factors)]
+
+    # Absolute variance explained per factor per modality
+    ve_df = pd.DataFrame({mod: var[mod] for mod in modalities},
+                         index=factor_idx)
+
+    # Per-factor fractional contribution (rows sum to 1)
+    contrib_per_factor = ve_df.div(ve_df.sum(axis=1), axis=0)
+
+    # Overall importance: total variance per modality, normalized
+    total_var = ve_df.sum(axis=0)
+    overall_importance = (total_var / total_var.sum()).sort_values(ascending=False)
+
+    return ve_df, contrib_per_factor, overall_importance
+
+
+def plot_mofa_variance_decomposition(contrib_per_factor, title=None):
+    plt.figure(figsize=(3, 6))
+    sns.heatmap(
+        contrib_per_factor,
+        cmap="Purples",
+        annot=False,
+        cbar=True,
+        vmin=0,
+        vmax=1
+    )
+    plt.xlabel("Feature Space")
+    plt.ylabel("Factor")
+    if title is not None:
+        plt.title(title)
+    plt.tight_layout()
